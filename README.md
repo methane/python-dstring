@@ -5,13 +5,12 @@ This repository is for verifying the impact of using [PEP 822 d-string](https://
 ## CPython
 
 
-### Replace dedent() with dstring
+### Replace dedent() with d-string
 
 [`dstringify.py`](./dstringify.py) is a script that replaces `dedent("""...""")` with `d"""..."""`.
 The result of running dstringify.py on `Python/Lib` is in [`dstringify.patch`](./dstringify.patch).
 
-The goals of this attempt is to verify the problem caused by the specification of d-string that strips the leading newline.
-Therefore, it does not add an empty line at the beginning when replacing.
+The goal of this experiment is to investigate issues caused by d-string's behavior of stripping the leading newline. To reproduce that behavior faithfully, `dstringify.py` does not insert a leading blank line when replacing `dedent("""...""")`.
 
 The result of running `make quicktest` is as follows.
 
@@ -22,12 +21,11 @@ The result of running `make quicktest` is as follows.
     test_tomllib test_traceback test_unittest test_warnings
 ```
 
-The first thing we can see is that many code does not use `dedent("""...""")` even though it is not necessary to have an empty line at the beginning.
-This is because we do not know whether the empty line at the beginning is necessary or not, or whether it is because we do not want to write `\` for some reason, and it is a cause of technical debt.
+The first thing we can see is that much of the code does not use `dedent("""\` even though it is not necessary to have an empty line at the beginning.
+Code readers can't know whether the empty line at the beginning is necessary or not, and it is a cause of technical debt.
 
-Tests that check the line number of warning and stacktrace fail as expected.
-Let's look at the code that fails by other reasons.
-
+Tests that check the line number of warnings and stacktraces fail as expected.
+Let's look at the code that fails for other reasons.
 
 ```python
 # Lib/test/test__interpreters.py
@@ -43,11 +41,11 @@ def _captured_script(script):
     return wrapped, open(r, encoding="utf-8")
 ```
 
-This code indents the argument script and embeds it in the f-string. However, the first line of `indented` is not indented, and the second line and subsequent lines are indented with 16-space.
+This code indents the argument script and embeds it in the f-string. However, the first line of `indented` is not indented, and the second line and subsequent lines are indented with 16 spaces.
 
-The f-string in `wrapped` indents `{indented}` with 8-space. If the `script` is written with `dedent("""...""")`, the first line has an empty line, so it is not a problem. However, when using d-string for `script` in `test__interpreters.py` and `test__interpchannels.py`, the indentation is incorrect and the test fails.
+The f-string in `wrapped` indents `{indented}` with 8 spaces. Since the `script` is written with `dedent("""...""")`, the first line has an empty line, so it is not a problem. However, when using d-string for `script` in `test__interpreters.py` and `test__interpchannels.py`, the indentation is incorrect and the test fails.
 
-This technical debt is caused by the fact that `dedent("""...""")` includes an empty line at the beginning. And this is an example of why it is is beneficial for code maintainability that d-string removes the leading newline.
+This technical debt is caused by the fact that `dedent("""...""")` includes an empty line at the beginning. And this is an example of why it is beneficial for code maintainability that d-string removes the leading newline.
 
 This function should be rewritten as follows.
 
@@ -64,7 +62,7 @@ def _captured_script(script):
     return wrapped, open(r, encoding="utf-8")
 ```
 
-The similar problem exists in `test_gc.py`. The first line of `code` is indented twice.
+A similar problem exists in `test_gc.py`. The first line of `code` is indented twice.
 Rewriting `code` with d-string breaks the test because the first line is not empty.
 
 ```python
@@ -81,7 +79,7 @@ Rewriting `code` with d-string breaks the test because the first line is not emp
         assert_python_ok("-c", code_inside_function)
 ```
 
-However, there is also a problem that occurs because there is no empty line at the beginning of d-string.
+Conversely, d-string's lack of a leading newline can also cause failures when a multiline fragment is concatenated onto a preceding line without a trailing newline.
 
 The following code caused an error because `additional_code` was a one-line code snippet that did not end with a newline, and there was no empty line at the beginning of the following d-string.
 
@@ -102,18 +100,18 @@ To fix this problem, an explicit empty line needs to be added at the beginning o
 ### Multiline strings without dedent()
 
 To confirm the usefulness of d-string, it is also important to see cases where dedent() is not used. [`find_multilines.py`](./find_multilines.py) is a script that finds multiline strings without dedent().
-[`/multiline_literal.txt`](./multiline_literal.txt) is list of multiline string literals without dedent().
-[`/multiline_concat.txt`](./multiline_concat.txt) is list of concatinated string lines. (e.g. `"foo\n" + "bar\n"`)
+[`/multiline_literal.txt`](./multiline_literal.txt) is a list of multiline string literals without dedent().
+[`/multiline_concat.txt`](./multiline_concat.txt) is a list of concatenated string lines. (e.g. `"foo\n" + "bar\n"`)
 
 > [!NOTE]
 > Some multiline literals are not directly passed to `dedent()`, but are passed to `dedent()` later.
-> `/multiline_literal.txt` contains such cases.
+> [`/multiline_literal.txt`](./multiline_literal.txt) contains such cases.
 
 Of course, in most cases, `dedent()` can be used. The reason why the code writer did not use `dedent()` is only guesswork.
 Maybe they didn't want to import it, or maybe they thought it was better to have fewer calls and parentheses.
 
 There is a possibility that d-string will not be used even if it exists.
-However, it is useful to confirm how d-string can be used and it affects code readability.
+However, it is useful to confirm how d-string can be used and how it affects code readability.
 
 test_signal.py: The code block can be written using d-string in the function arguments or list.
  When using dedent(), there is an additional function call nested in the argument list and list, so d-string is simpler.
@@ -139,7 +137,7 @@ test_signal.py: The code block can be written using d-string in the function arg
 ```
 
 test_re.py: With d-string, the position of the error is easier to understand and the test is more maintainable.
-The difference between dedent() and d-string is only whether there is one leading newline and whether there is a function call nested.
+The difference between dedent() and d-string is only whether there is one leading newline and whether there is a nested function call.
 
 ```python
 # current
@@ -176,7 +174,7 @@ The difference between dedent() and d-string is only whether there is one leadin
 ```
 
 datetimetester.py: It uses `if True:` hack to avoid using `dedent()`. This hack is not necessary if d-string is used.
-The readability benefit is almost none compared to dedent(), but it is more efficient to process at compile time compared to processing after the f-string is executed.
+The readability benefit is minimal compared to `dedent()`, but it is more efficient to process at compile time compared to processing after the f-string is executed.
 
 ```python
 # current
@@ -222,7 +220,7 @@ The readability benefit is almost none compared to dedent(), but it is more effi
             """
 ```
 
-test_codecencodings_cn.py: There are some multiline bytes. They can be written using d-string, while `dedent()` doesn't support bytes.
+test_codecencodings_cn.py: There are some multiline byte strings. They can be written using bd-string, while `dedent()` doesn't support bytes.
 
 ```python
 # current
@@ -259,7 +257,7 @@ They are good examples of how d-string can be used to write multiline indented s
 When using dedent(), additional indent() is needed.
 
 ```python
-#current code
+# current
 
         expected = ('  | ExceptionGroup: eg999 (3 sub-exceptions)\n'
                     '  +-+---------------- 1 ----------------\n'
@@ -302,7 +300,7 @@ When using dedent(), additional indent() is needed.
 
 The great benefit of d-string is that it can be used together with t-string, but there are few projects that support t-string, and it is difficult to find combinations of t-string and long multiline strings.
 
-For example, [psycopg2](https://www.psycopg.org/psycopg3/docs/basic/tstrings.html) supports t-string, but [test_tstring.py](https://github.com/psycopg/psycopg/blob/master/tests/test_tstring.py) only contains one line of SQL. The places where d-string can be useful are not open source libraries, but closed source applications.
+For example, [psycopg2](https://www.psycopg.org/psycopg3/docs/basic/tstrings.html) supports t-string, but [test_tstring.py](https://github.com/psycopg/psycopg/blob/master/tests/test_tstring.py) only contains one line of SQL. Maybe, multiline t-strings are used in closed-source applications rather than open-source libraries like psycopg2.
 
-I will also investigate other projects in the same way as CPython, but in most cases, it will be used in test code like CPython.
-
+I will also investigate other projects in the same way as CPython. But CPython test code includes massive amount of multiline strings; Python, JSON, HTML, HTTP, SMTP, etc...
+I haven't found a way to find patterns that are not included in the Python source code yet.
