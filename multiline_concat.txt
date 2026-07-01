@@ -1,2155 +1,2665 @@
-Lib/asyncio/tools.py:232:9: [implicit; multiline, 3 parts]
-  "Error: The specified process cannot be attached to due to insufficient permissions.\n"
-          "See the Python documentation for details on required privileges and troubleshooting:\n"
-          "https:...
-
-Lib/idlelib/config.py:233:24: [implicit; multiline, 3 parts]
-  warning = ('\n Warning: config.py - IdleConf.GetOption -\n'
-                         ' invalid %r value for configuration option %r\n'
-                         ' from section %r: %r' %
-
-Lib/idlelib/config.py:247:24: [implicit; multiline, 4 parts]
-  warning = ('\n Warning: config.py - IdleConf.GetOption -\n'
-                         ' problem retrieving configuration option %r\n'
-                         ' from section %r.\n'
-                         '...
-
-Lib/idlelib/config.py:717:29: [implicit; multiline, 4 parts]
-  '\n Warning: config.py - IdleConf.GetCoreKeys -\n'
-                              ' problem retrieving key binding for event %r\n'
-                              ' from key set %r.\n'
-                        ...
-
-Lib/idlelib/config_key.py:112:33: [explicit; multiline, 6 parts]
-  "Select the desired modifier keys\n"+
-                                  "above, and the final key from the\n"+
-                                  "list on the right.\n\n" +
-                                  "Use upper case Symbols when using\n" +
-  ...
-
-Lib/idlelib/config_key.py:152:18: [explicit; multiline, 7 parts]
-  "Key bindings are specified using Tkinter keysyms as\n"+
-                   "in these samples: <Control-f>, <Shift-F2>, <F12>,\n"
-                   "<Control-space>, <Meta-less>, <Control-Alt-Shift-X>.\n"
-                   "Upper case is used when the Shift modifier is present!\n\n" +
-  ...
-
-Lib/idlelib/config_key.py:153:18: [implicit; multiline, 3 parts]
-  "in these samples: <Control-f>, <Shift-F2>, <F12>,\n"
-                   "<Control-space>, <Meta-less>, <Control-Alt-Shift-X>.\n"
-                   "Upper case is used when the Shift modifier is present!...
-
-Lib/idlelib/configdialog.py:252:5: [implicit; multiline, 26 parts]
-  '<ASCII/Latin1>\n'
-      'AaBbCcDdEeFfGgHhIiJj\n1234567890#:+=(){}[]\n'
-      '\u00a2\u00a3\u00a5\u00a7\u00a9\u00ab\u00ae\u00b6\u00bd\u011e'
-      '\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c7\u00d0\u00d8\u00...
-
-Lib/idlelib/idle_test/htest.py:86:12: [implicit; multiline, 4 parts]
-  'msg': "Typing '(' should display a calltip.\n"
-             "Typing ') should hide the calltip.\n"
-             "So should moving cursor out of argument area.\n"
-             "Force-open-calltip does not w...
-
-Lib/idlelib/idle_test/htest.py:95:12: [implicit; multiline, 4 parts]
-  'msg': "The text is sample Python code.\n"
-             "Ensure components like comments, keywords, builtins,\n"
-             "string, definitions, and break are correctly colored.\n"
-             "The defa...
-
-Lib/idlelib/idle_test/htest.py:105:12: [implicit; multiline, 10 parts]
-  'msg': "IDLE preferences dialog.\n"
-             "In the 'Fonts/Tabs' tab, changing font face, should update the "
-             "font face of the text in the area below it.\nIn the "
-             "'Highligh...
-
-Lib/idlelib/idle_test/htest.py:121:12: [implicit; multiline, 4 parts]
-  'msg': "Enter with <Return> or [OK].  Print valid entry to Shell\n"
-             "Arguments are parsed into a list\n"
-             "Mode is currently restart True or False\n"
-             "Close dialog with...
-
-Lib/idlelib/idle_test/htest.py:130:12: [implicit; multiline, 3 parts]
-  'msg': "Double click on items up to the lowest level.\n"
-             "Attributes of the objects and related information "
-             "will be displayed side-by-side at each level."
-
-Lib/idlelib/idle_test/htest.py:139:12: [implicit; multiline, 3 parts]
-  'msg': "Select one of the many options in the 'old option set'.\n"
-             "Click the button to change the option set.\n"
-             "Select one of the many options in the 'new option set'."
-
-Lib/idlelib/idle_test/htest.py:159:12: [implicit; multiline, 6 parts]
-  'msg': "Test for different key modifier sequences.\n"
-             "<nothing> is invalid.\n"
-             "No modifier key is invalid.\n"
-             "Shift key with [a-z],[0-9], function key, move key, ta...
-
-Lib/idlelib/idle_test/htest.py:170:12: [implicit; multiline, 5 parts]
-  'msg': "Click the 'Show GrepDialog' button.\n"
-             "Test the various 'Find-in-files' functions.\n"
-             "The results should be displayed in a new '*Output*' window.\n"
-             "'Right-...
-
-Lib/idlelib/idle_test/htest.py:184:12: [implicit; multiline, 7 parts]
-  'msg': "Enter menu item name and help file path\n"
-             "'', > than 30 chars, and 'abc' are invalid menu item names.\n"
-             "'' and file does not exist are invalid path items.\n"
-          ...
-
-Lib/idlelib/idle_test/htest.py:196:12: [implicit; multiline, 8 parts]
-  'msg': "Test the following bindings.\n"
-             "<Control-o> to open file from dialog.\n"
-             "Edit the file.\n"
-             "<Control-p> to print the file.\n"
-             "<Control-s> to save...
-
-Lib/idlelib/idle_test/htest.py:209:12: [implicit; multiline, 4 parts]
-  'msg': "The following should trigger a print to console or IDLE Shell.\n"
-             "Entering and leaving the text area, key entry, <Control-Key>,\n"
-             "<Alt-Key-a>, <Control-Key-a>, <Alt-Co...
-
-Lib/idlelib/idle_test/htest.py:234:12: [implicit; multiline, 4 parts]
-  'msg': "Test for correct display of all paths in sys.path.\n"
-             "Toggle nested items out to the lowest level.\n"
-             "Double clicking on an item prints a traceback\n"
-             "for a...
-
-Lib/idlelib/idle_test/htest.py:243:12: [implicit; multiline, 6 parts]
-  'msg': "There are two tracers which can be toggled using a checkbox.\n"
-             "Toggling a tracer 'on' by checking it should print tracer "
-             "output to the console or to the IDLE shell.\...
-
-Lib/idlelib/idle_test/htest.py:257:12: [implicit; multiline, 3 parts]
-  'msg': "Enter with <Return> or [Ok].  Print valid entry to Shell\n"
-             "Blank line, after stripping, is ignored\n"
-             "Close dialog with valid entry, <Escape>, [Cancel], [X]"
-
-Lib/idlelib/idle_test/htest.py:266:12: [implicit; multiline, 3 parts]
-  'msg': "Click the 'Replace' button.\n"
-             "Test various replace options in the 'Replace dialog'.\n"
-             "Click [Close] or [X] to close the 'Replace Dialog'."
-
-Lib/idlelib/idle_test/htest.py:274:12: [implicit; multiline, 4 parts]
-  'msg': "You should see a scrollable list of items\n"
-             "Selecting (clicking) or double clicking an item "
-             "prints the name to the console or Idle shell.\n"
-             "Right clicki...
-
-Lib/idlelib/idle_test/htest.py:283:12: [implicit; multiline, 3 parts]
-  'msg': "Click the 'Search' button.\n"
-             "Test various search options in the 'Search dialog'.\n"
-             "Click [Close] or [X] to close the 'Search Dialog'."
-
-Lib/idlelib/idle_test/htest.py:346:12: [implicit; multiline, 4 parts]
-  'msg': "Click [Undo] to undo any action.\n"
-             "Click [Redo] to redo any action.\n"
-             "Click [Dump] to dump the current state "
-             "by printing to the console or the IDLE shel...
-
-Lib/idlelib/idle_test/test_calltip.py:72:15: [implicit; multiline, 3 parts]
-  '(*args, **kwargs)\n'
-                'Create and return a new object.  '
-                'See help(type) for accurate signature.')
-
-Lib/idlelib/idle_test/test_codecontext.py:273:45: [implicit; multiline, 4 parts]
-  eq(cc.context.get('1.0', 'end-1c'), 'class C1:\n'
-                                              '    def compare(self):\n'
-                                              '        if a > b:\n'
-               ...
-
-Lib/idlelib/idle_test/test_codecontext.py:287:45: [implicit; multiline, 4 parts]
-  eq(cc.context.get('1.0', 'end-1c'), 'class C1:\n'
-                                              '    def compare(self):\n'
-                                              '        if a > b:\n'
-               ...
-
-Lib/idlelib/idle_test/test_format.py:73:13: [implicit; multiline, 3 parts]
-  "# Comment block with no blank lines before\n"
-              "# Comment line\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:79:13: [implicit; multiline, 4 parts]
-  "\n"
-              "# Comment block with whitespace line before and after\n"
-              "# Comment line\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:86:13: [implicit; multiline, 4 parts]
-  "\n"
-              "    # Indented comment block with whitespace before and after\n"
-              "    # Comment line\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:93:13: [implicit; multiline, 3 parts]
-  "\n"
-              "# Single line comment\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:99:13: [implicit; multiline, 3 parts]
-  "\n"
-              "    # Single line comment with leading whitespace\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:105:13: [implicit; multiline, 4 parts]
-  "\n"
-              "# Comment immediately followed by code\n"
-              "x = 42\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:112:13: [implicit; multiline, 4 parts]
-  "\n"
-              "    # Indented comment immediately followed by code\n"
-              "x = 42\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:119:13: [implicit; multiline, 4 parts]
-  "\n"
-              "# Comment immediately followed by indented code\n"
-              "    x = 42\n"
-              "\n")
-
-Lib/idlelib/idle_test/test_format.py:127:13: [implicit; multiline, 4 parts]
-  '"""String with no blank lines before\n'
-              'String line\n'
-              '"""\n'
-              '\n')
-
-Lib/idlelib/idle_test/test_format.py:134:13: [implicit; multiline, 5 parts]
-  "\n"
-              '"""String with whitespace line before and after\n'
-              'String line.\n'
-              '"""\n'
-              '\n')
-
-Lib/idlelib/idle_test/test_format.py:142:13: [implicit; multiline, 5 parts]
-  '\n'
-              '    """Indented string with whitespace before and after\n'
-              '    Comment string.\n'
-              '    """\n'
-              '\n')
-
-Lib/idlelib/idle_test/test_format.py:150:13: [implicit; multiline, 3 parts]
-  '\n'
-              '"""Single line string."""\n'
-              '\n')
-
-Lib/idlelib/idle_test/test_format.py:156:13: [implicit; multiline, 3 parts]
-  '\n'
-              '    """Single line string with leading whitespace."""\n'
-              '\n')
-
-Lib/idlelib/idle_test/test_format.py:257:9: [implicit; multiline, 6 parts]
-  "    '''The first line is under the max width.\n"
-          "    The second line's length is way over the max width. It goes "
-          "on and on until it is over 100 characters long.\n"
-          "    Sa...
-
-Lib/idlelib/idle_test/test_format.py:264:9: [implicit; multiline, 6 parts]
-  "# The first line is under the max width.\n"
-          "# The second line's length is way over the max width. It goes on "
-          "and on until it is over 100 characters long.\n"
-          "# Same thing ...
-
-Lib/idlelib/idle_test/test_format.py:329:1: [implicit; multiline, 4 parts]
-  "    The second line's length is way over the max width. It goes on and\n"
-  "    on until it is over 100 characters long. Same thing with the third\n"
-  "    line. It is also way over the max width, but ...
-
-Lib/idlelib/idle_test/test_format.py:344:1: [implicit; multiline, 5 parts]
-  "# The first line is under the max width. The second line's length is\n"
-  "# way over the max width. It goes on and on until it is over 100\n"
-  "# characters long. Same thing with the third line. It is ...
-
-Lib/idlelib/idle_test/test_format.py:358:1: [implicit; multiline, 3 parts]
-  "# The first line is under the max width.\n"
-  "# The second line's length is way over the max width. It goes on and\n"
-  "# on until it is over 100 characters long.\n")
-
-Lib/idlelib/idle_test/test_format.py:635:13: [implicit; multiline, 6 parts]
-  "Line with an ending tab    \n"
-              "Line ending in 5 spaces     \n"
-              "Linewithnospaces\n"
-              "    indented line\n"
-              "    indented line with trailing space \n"
-   ...
-
-Lib/idlelib/idle_test/test_format.py:642:13: [implicit; multiline, 5 parts]
-  "Line with an ending tab\n"
-              "Line ending in 5 spaces\n"
-              "Linewithnospaces\n"
-              "    indented line\n"
-              "    indented line with trailing space\n")
-
-Lib/idlelib/idle_test/test_hyperparser.py:23:13: [implicit; multiline, 12 parts]
-  '"""This is a module docstring"""\n'
-              '# this line is a comment\n'
-              'x = "this is a string"\n'
-              "y = 'this is also a string'\n"
-              'l = [i for i in range(10)]...
-
-Lib/idlelib/idle_test/test_pyparse.py:75:17: [implicit; multiline, 5 parts]
-  setcode('"""This is a module docstring"""\n'
-                  'class C:\n'
-                  '    def __init__(self, a,\n'
-                  '                 b=True):\n'
-                  '        pass\n'
-
-Lib/idlelib/idle_test/test_pyparse.py:109:17: [implicit; multiline, 4 parts]
-  setcode('"""This is a module docstring"""\n'
-                  'class C:\n'
-                  '    def __init__(self, a, b=True):\n'
-                  '        pass\n'
-
-Lib/idlelib/idle_test/test_pyparse.py:123:17: [implicit; multiline, 5 parts]
-  '"""This is a module docstring"""\n'
-                  'class C:\n'
-                  '    def __init__(self, a,\n'
-                  '                 b=True):\n'
-                  '        pass\n'
-
-Lib/idlelib/idle_test/test_searchengine.py:213:13: [implicit; multiline, 3 parts]
-  'First line\n'
-              'Line with target\n'
-              'Last line\n')
-
-Lib/idlelib/idle_test/test_searchengine.py:281:13: [implicit; multiline, 3 parts]
-  'First line\n'
-              'Line with target\n'
-              'Last line\n')
-
-Lib/idlelib/iomenu.py:138:21: [implicit; multiline, 3 parts]
-  "The file's encoding is invalid for Python 3.x.\n"
-                      "IDLE will convert it to UTF-8.\n"
-                      "What is the current encoding of the file?",
-
-Lib/idlelib/pyshell.py:1150:22: [explicit; multiline, 4 parts]
-  "==== No Subprocess ====\n\n" +
-                      "WARNING: Running IDLE without a Subprocess is deprecated\n" +
-                      "and will be removed in a later version. See Help/IDLE Help\n" +
-                      "for details.\n\n"
-
-Lib/idlelib/pyshell.py:826:13: [implicit; multiline, 3 parts]
-  "IDLE's subprocess didn't make connection.\n"
-              "See the 'Startup failure' section of the IDLE doc, online at\n"
-              "https://docs.python.org/3/library/idle.html#startup-failure",
-
-Lib/pdb.py:2082:24: [implicit; multiline, 3 parts]
-  self.error('run/restart command is disabled when pdb is running in inline mode.\n'
-                         'Use the command line interface to enable restarting your program\n'
-                         'e...
-
-Lib/pdb.py:3758:9: [implicit; multiline, 3 parts]
-  "Error: The specified process cannot be attached to due to insufficient permissions.\n"
-          "See the Python documentation for details on required privileges and troubleshooting:\n"
-          "https:...
-
-Lib/random.py:263:18: [implicit; multiline, 3 parts]
-  warn("Underlying random() generator does not supply \n"
-                   "enough bits to choose from a population range this large.\n"
-                   "To remove the range limitation, add a getrandbi...
-
-Lib/test/datetimetester.py:4704:13: [implicit; multiline, 6 parts]
-  b"cdatetime\ntime\n(S'\\x05\\x06\\x07\\x01\\xe2@'\n"
-              b"ctest.datetimetester\nPicklableFixedOffset\n(tR"
-              b"(dS'_FixedOffset__offset'\ncdatetime\ntimedelta\n"
-              b"(I-1\...
-
-Lib/test/datetimetester.py:5194:13: [implicit; multiline, 7 parts]
-  b'cdatetime\ndatetime\n'
-              b"(S'\\x07\\xdf\\x0b\\x1b\\x14;\\x01\\x01\\xe2@'\n"
-              b'ctest.datetimetester\nPicklableFixedOffset\n(tR'
-              b"(dS'_FixedOffset__offset'\ncdateti...
-
-Lib/test/datetimetester.py:5202:13: [implicit; multiline, 7 parts]
-  b'cdatetime\ndatetime\n'
-              b'(U\n\x07\xdf\x0b\x1b\x14;\x01\x01\xe2@'
-              b'ctest.datetimetester\nPicklableFixedOffset\n)R'
-              b'}(U\x14_FixedOffset__offsetcdatetime\ntimedel...
-
-Lib/test/datetimetester.py:5210:13: [implicit; multiline, 7 parts]
-  b'\x80\x02cdatetime\ndatetime\n'
-              b'U\n\x07\xdf\x0b\x1b\x14;\x01\x01\xe2@'
-              b'ctest.datetimetester\nPicklableFixedOffset\n)R'
-              b'}(U\x14_FixedOffset__offsetcdatetime\n...
-
-Lib/test/pickletester.py:244:5: [implicit; multiline, 16 parts]
-  b'(lp0\nL0L\naL1L\naF2.0\n'
-      b'ac__builtin__\ncomple'
-      b'x\np1\n(F3.0\nF0.0\ntp2\n'
-      b'Rp3\naL1L\naL-1L\naL255'
-      b'L\naL-255L\naL-256L\naL'
-      b'65535L\naL-65535L\naL-'
-      b'65536L\naL21...
-
-Lib/test/pickletester.py:714:15: [implicit; multiline, 3 parts]
-  DATA_UEERR = (b'\x80\x02cexceptions\nUnicodeEncodeError\n'
-                b'q\x00(U\x05asciiq\x01X\x03\x00\x00\x00fooq\x02K\x00K\x01'
-                b'U\x03badq\x03tq\x04Rq\x05.')
-
-Lib/test/pickletester.py:808:24: [implicit; multiline, 4 parts]
-  pickle0 = (b"(i__main__\n"
-                         b"X\n"
-                         b"p0\n"
-                         b"(dp1\nb.").replace(b'X', xname)
-
-Lib/test/pickletester.py:826:24: [implicit; multiline, 3 parts]
-  pickle1 = (b'(c__main__\n'
-                         b'X\n'
-                         b'q\x00oq\x01}q\x02b.').replace(b'X', xname)
-
-Lib/test/pickletester.py:844:24: [implicit; multiline, 3 parts]
-  pickle2 = (b'\x80\x02(c__main__\n'
-                         b'X\n'
-                         b'q\x00oq\x01}q\x02b.').replace(b'X', xname)
-
-Lib/test/support/__init__.py:781:15: [implicit; multiline, 3 parts]
-  'warnings on macOS systems. This behavior is known. Do not\n'
-                'report a bug unless tests are also failing.\n'
-                'See https://github.com/python/cpython/issues/85100')
-
-Lib/test/test_argparse.py:1920:27: [implicit; multiline, 3 parts]
-  ('recursive', b'-a\n'
-                            b'A\n'
-                            b'@hello'),
-
-Lib/test/test_argparse.py:4478:21: [implicit; multiline, 5 parts]
-  description='   oddly    formatted\n'
-                      'description\n'
-                      '\n'
-                      'that is so long that it should go onto multiple '
-                      'lines whe...
-
-Lib/test/test_argparse.py:4489:35: [implicit; multiline, 4 parts]
-  (Sig('title', description='\n'
-                                    '    oddly formatted group\n'
-                                    '\n'
-                                    'description'),
-
-Lib/test/test_argparse.py:4494:20: [implicit; multiline, 4 parts]
-  help=' oddly \n'
-                     'formatted    -a  help  \n'
-                     '    again, so long that it should be wrapped over '
-                     'multiple lines')]),
-
-Lib/test/test_argparse.py:5073:13: [implicit; multiline, 3 parts]
-  'usage: PROG [-h] --nil \n'
-              '            [--a AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
-              'AAAAAAAAAAAAAAAAAAAAAAA]\n'
-
-Lib/test/test_argparse.py:5442:21: [implicit; multiline, 4 parts]
-  description='Keep the formatting\n'
-                      '    exactly as it is written\n'
-                      '\n'
-                      'here\n')
-
-Lib/test/test_argparse.py:5453:35: [implicit; multiline, 3 parts]
-  (Sig('title', description='    This text\n'
-                                    '  should be indented\n'
-                                    '    exactly like it is here\n'),
-
-Lib/test/test_argparse.py:5491:21: [implicit; multiline, 4 parts]
-  description='Keep the formatting\n'
-                      '    exactly as it is written\n'
-                      '\n'
-                      'here\n')
-
-Lib/test/test_argparse.py:5502:35: [implicit; multiline, 3 parts]
-  (Sig('title', description='    This text\n'
-                                    '  should be indented\n'
-                                    '    exactly like it is here\n'),
-
-Lib/test/test_ast/test_ast.py:1954:13: [implicit; multiline, 5 parts]
-  '"""line one\nline two"""\n\n'
-              'def foo():\n  """line one\n  line two"""\n\n'
-              '  def bar():\n    """line one\n    line two"""\n'
-              '  """line one\n  line two"""\n'
-    ...
-
-Lib/test/test_capi/test_misc.py:171:13: [implicit; multiline, 3 parts]
-  "docstring_with_invalid_signature($module, /, boo)\n"
-              "\n"
-              "This docstring has an invalid signature."
-
-Lib/test/test_capi/test_misc.py:178:13: [implicit; multiline, 5 parts]
-  "docstring_with_invalid_signature2($module, /, boo)\n"
-              "\n"
-              "--\n"
-              "\n"
-              "This docstring also has an invalid signature."
-
-Lib/test/test_clinic.py:1395:13: [implicit; multiline, 7 parts]
-  "module t\n"
-              "t.s\n"
-              "   a: object\n"
-              "      Param docstring with trailing whitespace  \n"
-              "Func docstring summary with trailing whitespace  \n"
-         ...
-
-Lib/test/test_clinic.py:4575:13: [implicit; multiline, 3 parts]
-  "one\n"
-              "two\n"
-              "three"
-
-Lib/test/test_clinic.py:4580:13: [implicit; multiline, 3 parts]
-  "    one\n"
-              "    two\n"
-              "    three"
-
-Lib/test/test_clinic.py:4585:13: [implicit; multiline, 3 parts]
-  "        one\n"
-              "        two\n"
-              "        three"
-
-Lib/test/test_clinic.py:4683:13: [implicit; multiline, 4 parts]
-  "\n"
-              "one\n"
-              "two\n"
-              ""
-
-Lib/test/test_clinic.py:4689:13: [implicit; multiline, 4 parts]
-  "bar\n"
-              "barone\n"
-              "bartwo\n"
-              ""
-
-Lib/test/test_clinic.py:4714:13: [implicit; multiline, 4 parts]
-  "\n"
-              "one\n"
-              "two\n"
-              ""
-
-Lib/test/test_clinic.py:4720:13: [implicit; multiline, 4 parts]
-  "foo\n"
-              "onefoo\n"
-              "twofoo\n"
-              ""
-
-Lib/test/test_cmath.py:353:17: [implicit; multiline, 4 parts]
-  '{}: {}(complex({!r}, {!r}))\n'
-                  'Expected: complex({!r}, {!r})\n'
-                  'Received: complex({!r}, {!r})\n'
-                  'Received value insufficiently close to expected val...
-
-Lib/test/test_cmd.py:230:14: [implicit; multiline, 3 parts]
-  ("(Cmd) test\n"
-               "(Cmd) test2\n"
-               "(Cmd) "))
-
-Lib/test/test_cmd.py:242:14: [implicit; multiline, 3 parts]
-  ("(Cmd) test\n"
-               "(Cmd) test2\n"
-               "(Cmd) *** Unknown syntax: EOF\n"))
-
-Lib/test/test_cmd.py:251:14: [implicit; multiline, 3 parts]
-  ("(Cmd) \n"
-               "(Cmd) \n"
-               "(Cmd) *** Unknown syntax: EOF\n"))
-
-Lib/test/test_codecencodings_cn.py:65:10: [implicit; multiline, 3 parts]
-  (b'This sentence is in ASCII.\n'
-           b'The next sentence is in GB.~{<:Ky2;S{#,~}~\n'
-           b'~{NpJ)l6HK!#~}Bye.\n',
-
-Lib/test/test_codecencodings_cn.py:69:10: [implicit; multiline, 4 parts]
-  'This sentence is in ASCII.\n'
-           'The next sentence is in GB.'
-           '\u5df1\u6240\u4e0d\u6b32\uff0c\u52ff\u65bd\u65bc\u4eba\u3002'
-           'Bye.\n'),
-
-Lib/test/test_codecencodings_cn.py:74:10: [implicit; multiline, 4 parts]
-  (b'This sentence is in ASCII.\n'
-           b'The next sentence is in GB.~\n'
-           b'~{<:Ky2;S{#,NpJ)l6HK!#~}~\n'
-           b'Bye.\n',
-
-Lib/test/test_codecencodings_cn.py:79:10: [implicit; multiline, 4 parts]
-  'This sentence is in ASCII.\n'
-           'The next sentence is in GB.'
-           '\u5df1\u6240\u4e0d\u6b32\uff0c\u52ff\u65bd\u65bc\u4eba\u3002'
-           'Bye.\n'),
-
-Lib/test/test_compile.py:1959:21: [implicit; multiline, 4 parts]
-  snippet += ("while x != 0:\n"
-                      "  x -= 1\n"
-                      "while x != 0:\n"
-                      "  x +=  1\n"
-
-Lib/test/test_compile.py:3018:13: [implicit; multiline, 6 parts]
-  'class T:\n'
-              '    def __init__(self):\n'
-              '        self.{V1} = 10\n'
-              '        self.{V2} = 10\n'
-              '    def foo(self):\n'
-              '        self.{V3} = 1...
-
-Lib/test/test_configparser.py:605:13: [implicit; multiline, 16 parts]
-  "[BOOLTEST]\n"
-              "T1{equals}1\n"
-              "T2{equals}TRUE\n"
-              "T3{equals}True\n"
-              "T4{equals}oN\n"
-              "T5{equals}yes\n"
-              "F1{equals}0\n"
-          ...
-
-Lib/test/test_configparser.py:676:13: [implicit; multiline, 12 parts]
-  "[Long Line]\n"
-              "foo{0[0]} this line is much, much longer than my editor\n"
-              "   likes it.\n"
-              "[{default_section}]\n"
-              "foo{0[1]} another very\n"
-          ...
-
-Lib/test/test_configparser.py:704:17: [implicit; multiline, 14 parts]
-  "[{default_section}]\n"
-                  "foo{equals}another very\n"
-                  "\tlong line\n"
-                  "\n"
-                  "[Long Line]\n"
-                  "foo{equals}this line is much, ...
-
-Lib/test/test_configparser.py:722:21: [implicit; multiline, 3 parts]
-  "[Valueless]\n"
-                      "option-without-value\n"
-                      "\n"
-
-Lib/test/test_configparser.py:795:13: [implicit; multiline, 23 parts]
-  "[Foo]\n"
-              "bar{equals}something %(with1)s interpolation (1 step)\n"
-              "bar9{equals}something %(with9)s lots of interpolation (9 steps)\n"
-              "bar10{equals}something %(wi...
-
-Lib/test/test_configparser.py:954:30: [implicit; multiline, 5 parts]
-  cf = self.fromstring("[section]\n"
-                               "option1{eq}xxx\n"
-                               "option2{eq}%(option1)s/xxx\n"
-                               "ok{eq}%(option1)s/%%s\n"
-    ...
-
-Lib/test/test_configparser.py:1461:30: [implicit; multiline, 7 parts]
-  cf = self.fromstring("[b]\n"
-                               "o4=1\n"
-                               "o3=2\n"
-                               "o2=3\n"
-                               "o1=4\n"
-                     ...
-
-Lib/test/test_configparser.py:1471:26: [implicit; multiline, 7 parts]
-  "[a]\n"
-                           "k = v\n\n"
-                           "[b]\n"
-                           "o1 = 4\n"
-                           "o2 = 3\n"
-                           "o3 = 2\n"
-                ...
-
-Lib/test/test_configparser.py:1641:13: [implicit; multiline, 3 parts]
-  "Key without value continued with an indented line.\n"
-              "file: '<???>', line: 3\n"
-              "' KEY2 = VAL2\\n'"
-
-Lib/test/test_coroutines.py:2462:17: [implicit; multiline, 4 parts]
-  code = ("import asyncio\n"
-                  "async def f(): pass\n"
-                  "async def t(): asyncio.gather(f())\n"
-                  "asyncio.run(t())\n")
-
-Lib/test/test_coroutines.py:2468:17: [implicit; multiline, 3 parts]
-  code = ("import sys\n"
-                  "async def f(): pass\n"
-                  "sys.coro = f()\n")
-
-Lib/test/test_coroutines.py:2473:17: [implicit; multiline, 4 parts]
-  code = ("import sys\n"
-                  "async def f(): pass\n"
-                  "sys.corocycle = [f()]\n"
-                  "sys.corocycle.append(sys.corocycle)\n")
-
-Lib/test/test_csv.py:1528:13: [implicit; multiline, 4 parts]
-  "a,b:c\n"
-              "d,e\n"
-              "f,g:c\n"
-              "h,i\n"
-
-Lib/test/test_csv.py:1539:13: [implicit; multiline, 4 parts]
-  "a,b\n"
-              "c:d\n"
-              "e,f\n"
-              "g:h\n"
-
-Lib/test/test_csv.py:1551:13: [implicit; multiline, 4 parts]
-  "a:b\n"
-              "c,d\n"
-              "e:f\n"
-              "g,h\n"
-
-Lib/test/test_dis.py:1078:17: [implicit; multiline, 3 parts]
-  code = ("def f():\n"
-                  "   try: pass\n"
-                  "   finally:pass")
-
-Lib/test/test_docxmlrpc.py:204:45: [implicit; multiline, 3 parts]
-  b'(x: int)</dt>' + docstring + b'</dl>\n'
-               b'<dl><dt><a name="-method_annotation"><strong>'
-               b'method_annotation</strong></a>(x: bytes)</dt></dl>'),
-
-Lib/test/test_email/test__header_value_parser.py:3301:21: [implicit; multiline, 3 parts]
-  'abc <xyz@example.com>, "Fred Blunt" <sharp@example.com>,\n'
-                      ' "J.P.Cool" <hot@example.com>, "K<>y" <key@example.com>,\n'
-                      ' Firesale <cheap@example.com>, <end@e...
-
-Lib/test/test_email/test__header_value_parser.py:3336:14: [implicit; multiline, 3 parts]
-  'A =?utf-8?q?v=C3=A9ry?= long name\n'
-               ' containing =?utf-8?q?a=2C?= comma\n'
-               ' <to@example.com>\n'),
-
-Lib/test/test_email/test__header_value_parser.py:3437:13: [implicit; multiline, 4 parts]
-  "attachment;\n"
-              " filename*0*=us-ascii''TEST_TEST_TEST_TEST_TEST_TEST"
-                  "_TEST_TEST_TEST_TEST_TEST;\n"
-              " filename*1*=_TEST_TES.txt\n",
-
-Lib/test/test_email/test_email.py:4105:13: [implicit; multiline, 11 parts]
-  "From: foo@bar.com\n"
-              "To: baz\n"
-              "Mime-Version: 1.0\n"
-              "Content-Type: multipart/mixed; boundary=BOUNDARY\n"
-              "\n"
-              "--BOUNDARY\n"
-             ...
-
-Lib/test/test_email/test_generator.py:76:13: [implicit; multiline, 8 parts]
-  "To: whom_it_may_concern@example.com\n"
-              "From: nobody_you_want_to_know@example.com\n"
-              "Subject: We the willing led by the unknowing are doing the "
-                "impossible fo...
-
-Lib/test/test_email/test_generator.py:85:13: [implicit; multiline, 8 parts]
-  "To: whom_it_may_concern@example.com\n"
-              "From: nobody_you_want_to_know@example.com\n"
-              "Subject: We the willing led by the unknowing are doing the "
-                  "impossible ...
-
-Lib/test/test_email/test_generator.py:452:21: [implicit; multiline, 3 parts]
-  expected = ('Subject: =?utf-8?b?0KPQstC10LTQvtC80LvQtdC90LjQtSDQviDQv9GA0LjQvdGP0YLQuNC4?=\n'
-                      ' =?utf-8?b?INCyINGA0LDQsdC+0YLRgyDQvtCx0YDQsNGJ0LXQvdC40Y8g0LTQu9GPINC/0L4=?=\n'
-      ...
-
-Lib/test/test_email/test_generator.py:465:21: [implicit; multiline, 3 parts]
-  expected = ('Subject: A very long long long long long long long long long long long long\n'
-                      ' long long long long long long long long long long long =?utf-8?q?s=C3=BAmm?=\n'
-        ...
-
-Lib/test/test_email/test_generator.py:630:13: [implicit; multiline, 3 parts]
-  b'To: j\xc3\xb6rg@example.com,\n'
-              b' "But a long name still works with refold_source" <j\xc3\xb6rg@example.com>\n'
-              b'\n'
-
-Lib/test/test_email/test_headerregistry.py:686:14: [implicit; multiline, 3 parts]
-  ('Content-Type: text/plain;\n'
-               ' name="This is even more %2A%2A%2Afun%2A%2A%2A%20is'
-                  ' it.pdf"\n'),
-
-Lib/test/test_email/test_headerregistry.py:803:13: [implicit; multiline, 4 parts]
-  "Content-Type: application/x-foo;\n"
-              " name*0*=us-ascii''with%20spaceswith%20spaceswith%20spaceswith"
-                  "%20spaceswith;\n"
-              " name*1*=%20spaceswith%20spaceswith%20...
-
-Lib/test/test_email/test_headerregistry.py:1446:25: [implicit; multiline, 3 parts]
-  'to: me <foo@example.com>,\n'
-                          ' bing: fiz <z@b.com>, zif <f@c.com>;,\n'
-                          ' you <bar@example.com>\n')
-
-Lib/test/test_email/test_headerregistry.py:1749:13: [implicit; multiline, 9 parts]
-  'Subject:\n'
-              ' =?utf-8?q?thisisa?=\n'
-              ' =?utf-8?q?verylon?=\n'
-              ' =?utf-8?q?glineco?=\n'
-              ' =?utf-8?q?nsistin?=\n'
-              ' =?utf-8?q?gofasin?=\n'
-    ...
-
-Lib/test/test_email/test_headerregistry.py:1765:13: [implicit; multiline, 14 parts]
-  'Subject:\n'
-              ' =?utf-8?q?thisisa?=\n'
-              ' =?utf-8?q?verylon?=\n'
-              ' =?utf-8?q?glineco?=\n'
-              ' =?utf-8?q?nsistin?=\n'
-              ' =?utf-8?q?gofasin?=\n'
-    ...
-
-Lib/test/test_email/test_parser.py:45:21: [implicit; multiline, 10 parts]
-  "Next-Line: not\x85broken\r\n"
-                      "Null: not\x00broken\r\n"
-                      "Vertical-Tab: not\vbroken\r\n"
-                      "Form-Feed: not\fbroken\r\n"
-                      "F...
-
-Lib/test/test_embed.py:269:26: [implicit; multiline, 5 parts]
-  "<module 'my_test_extension' (static-extension)>\n"
-                           "my_test_extension.executed='yes'\n"
-                           "my_test_extension.exec_slot_ran='yes'\n"
-                     ...
-
-Lib/test/test_embed.py:280:26: [implicit; multiline, 5 parts]
-  "<module 'mp_pkg.mp_submod' (built-in)>\n"
-                           "<module 'mp_pkg.mp_submod' (built-in)>\n"
-                           "Hello from sub-module\n"
-                           "mp_pkg.mp_su...
-
-Lib/test/test_embed.py:291:26: [implicit; multiline, 3 parts]
-  "<module 'sp_pkg.sp_submod' (built-in)>\n"
-                           "<module 'sp_pkg.sp_submod' (built-in)>\n"
-                           "Hello from sub-module\n"
-
-Lib/test/test_embed.py:374:13: [implicit; multiline, 3 parts]
-  "sys.warnoptions: ['once', 'module', 'default']\n"
-              "sys._xoptions: {'not_an_option': '1', 'also_not_an_option': '2'}\n"
-              "warnings.filters[:3]: ['default', 'module', 'once']\n"
-
-Lib/test/test_ftplib.py:40:14: [implicit; multiline, 17 parts]
-  MLSD_DATA = ("type=cdir;perm=el;unique==keVO1+ZF4; test\r\n"
-               "type=pdir;perm=e;unique==keVO1+d?3; ..\r\n"
-               "type=OS.unix=slink:/foobar;perm=;unique==keVO1+4G4; foobar\r\n"
-     ...
-
-Lib/test/test_gdb/test_backtrace.py:93:16: [implicit; multiline, 7 parts]
-  cmd = ('from gc import collect\n'
-                 'id(42)\n'
-                 'def foo():\n'
-                 '    collect()\n'
-                 'def bar():\n'
-                 '    foo()\n'
-                 'ba...
-
-Lib/test/test_gdb/test_misc.py:38:28: [implicit; multiline, 8 parts]
-  self.assertListing('   5    \n'
-                             '   6    def bar(a, b, c):\n'
-                             '   7        baz(a, b, c)\n'
-                             '   8    \n'
-                 ...
-
-Lib/test/test_gdb/test_misc.py:53:28: [implicit; multiline, 4 parts]
-  self.assertListing('   9    def baz(*args):\n'
-                             ' >10        id(42)\n'
-                             '  11    \n'
-                             '  12    foo(1, 2, 3)\n',
-
-Lib/test/test_gdb/test_misc.py:64:28: [implicit; multiline, 3 parts]
-  self.assertListing('   1    # Sample script for use by test_gdb\n'
-                             '   2    \n'
-                             '   3    def foo(a, b, c):\n',
-
-Lib/test/test_gettext.py:956:1: [implicit; multiline, 4 parts]
-  b'''
-  # Dummy translation for the Python test_gettext.py module.
-  # Copyright (C) 2001 Python Software Foundation
-  # Barry Warsaw <barry@python.org>, 2000.
-  #
-  msgid ""
-  msgstr ""
-  "Project-Id-Version: 2.0\n...
-
-Lib/test/test_grammar.py:321:34: [implicit; multiline, 3 parts]
-  check_syntax_error(self, "def f():\n"
-                                   "    x: int\n"
-                                   "    global x\n")
-
-Lib/test/test_grammar.py:324:34: [implicit; multiline, 3 parts]
-  check_syntax_error(self, "def f():\n"
-                                   "    global x\n"
-                                   "    x: int\n")
-
-Lib/test/test_grammar.py:327:34: [implicit; multiline, 3 parts]
-  check_syntax_error(self, "def f():\n"
-                                   "    x: int\n"
-                                   "    nonlocal x\n")
-
-Lib/test/test_grammar.py:330:34: [implicit; multiline, 3 parts]
-  check_syntax_error(self, "def f():\n"
-                                   "    nonlocal x\n"
-                                   "    x: int\n")
-
-Lib/test/test_htmlparser.py:380:14: [implicit; multiline, 4 parts]
-  ('\n//<![CDATA[\n'
-               'document.write(\'<s\'+\'cript type="text/javascript" '
-               'src="http://www.example.org/r=\'+new '
-               'Date().getTime()+\'"><\\/s\'+\'cript>\');\n//...
-
-Lib/test/test_htmlparser.py:965:10: [implicit; multiline, 4 parts]
-  ('\n'
-           '    if (a < b && a > b) {\n'
-           '        printf("[<marquee>How?</marquee>]");\n'
-           '    }\n'),
-
-Lib/test/test_httplib.py:34:5: [implicit; multiline, 10 parts]
-  'HTTP/1.1 200 OK\r\n'
-      'Transfer-Encoding: chunked\r\n\r\n'
-      'a\r\n'
-      'hello worl\r\n'
-      '3\r\n'
-      'd! \r\n'
-      '8\r\n'
-      'and now \r\n'
-      '22\r\n'
-      'for something completely diff...
-
-Lib/test/test_httplib.py:315:13: [implicit; multiline, 3 parts]
-  b'HTTP/1.1 200 OK\r\n'
-              b"!#$%&'*+-.^_`|~: value\r\n"  # Special token characters
-              b'VCHAR: ' + bytes(range(0x21, 0x7E + 1)) + b'\r\n'
-
-Lib/test/test_httplib.py:318:60: [implicit; multiline, 6 parts]
-  b'obs-text: ' + bytes(range(0x80, 0xFF + 1)) + b'\r\n'
-              b'obs-fold: text\r\n'
-              b' folded with space\r\n'
-              b'\tfolded with tab\r\n'
-              b'Content-Length: 0\r\n'...
-
-Lib/test/test_httplib.py:419:13: [implicit; multiline, 4 parts]
-  b'HTTP/1.1 200 OK\r\n'
-              b'First: val\r\n'
-              b'Second: val1\r\n'
-              b'Second: val2\r\n'
-
-Lib/test/test_httplib.py:1030:17: [implicit; multiline, 7 parts]
-  text = ('HTTP/1.1 200 OK\r\n'
-                  'Set-Cookie: Customer="WILE_E_COYOTE"; '
-                  'Version="1"; Path="/acme"\r\n'
-                  'Set-Cookie: Part_Number="Rocket_Launcher_0001"; ...
-
-Lib/test/test_httplib.py:1050:13: [implicit; multiline, 3 parts]
-  'HTTP/1.1 200 OK\r\n'
-              'Content-Length: 14432\r\n'
-              '\r\n',
-
-Lib/test/test_httplib.py:1063:13: [implicit; multiline, 3 parts]
-  'HTTP/1.1 200 OK\r\n'
-              'Content-Length: 14432\r\n'
-              '\r\n',
-
-Lib/test/test_httplib.py:1084:21: [implicit; multiline, 4 parts]
-  expected = (b'GET /foo HTTP/1.1\r\nHost: example.com\r\n'
-                      b'Accept-Encoding: identity\r\n'
-                      b'Transfer-Encoding: chunked\r\n'
-                      b'\r\n')
-
-Lib/test/test_httplib.py:1132:20: [implicit; multiline, 3 parts]
-  expected = b'GET /foo HTTP/1.1\r\nHost: example.com\r\n' \
-                     b'Accept-Encoding: identity\r\nContent-Length: 11\r\n' \
-                     b'\r\nonetwothree'
-
-Lib/test/test_httplib.py:1273:13: [implicit; multiline, 6 parts]
-  'HTTP/1.1 200 OK\r\n'
-              'Transfer-Encoding: chunked\r\n\r\n'
-              'a\r\n'
-              'hello world\r\n'
-              '1\r\n'
-              'd\r\n'
-
-Lib/test/test_httplib.py:1293:13: [implicit; multiline, 6 parts]
-  'HTTP/1.1 200 OK\r\n'
-              'Transfer-Encoding: chunked\r\n\r\n'
-              'a\r\n'
-              'hello world\r\n'
-              '1\r\n'
-              'd\r\n'
-
-Lib/test/test_httplib.py:1340:13: [implicit; multiline, 3 parts]
-  "HTTP/1.0 401 Authorization Required\r\n"
-              "Content-type: text/html\r\n"
-              "WWW-Authenticate: Basic realm=\"example\"\r\n",
-
-Lib/test/test_httplib.py:1385:29: [implicit; multiline, 4 parts]
-  + '0' * 65536 + 'a\r\n'
-              'hello world\r\n'
-              '0\r\n'
-              '\r\n'
-
-Lib/test/test_httplib.py:1568:25: [implicit; multiline, 3 parts]
-  b"HTTP/1.1 200 Ok\r\n"
-                          b"Content-Length: %d\r\n"
-                          b"\r\n" % size)
-
-Lib/test/test_httplib.py:1601:25: [implicit; multiline, 4 parts]
-  b"HTTP/1.1 200 Ok\r\n"
-                          b"Content-Length: %d\r\n"
-                          b"\r\n"
-                          b"Text" % size)
-
-Lib/test/test_httplib.py:1669:9: [implicit; multiline, 6 parts]
-  'HTTP/1.1 200 OK\r\n'
-          '\r\n'
-          'hello world!\n'
-          'and now \n'
-          'for something completely different\n'
-          'foo'
-
-Lib/test/test_httplib.py:1678:9: [implicit; multiline, 14 parts]
-  'HTTP/1.1 200 OK\r\n'
-          'Transfer-Encoding: chunked\r\n\r\n'
-          'a\r\n'
-          'hello worl\r\n'
-          '3\r\n'
-          'd!\n\r\n'
-          '9\r\n'
-          'and now \n\r\n'
-          '23\r\n'...
-
-Lib/test/test_httplib.py:1806:9: [implicit; multiline, 14 parts]
-  'HTTP/1.1 200 OK\r\n'
-          'Transfer-Encoding: chunked\r\n\r\n'
-          'a\r\n'
-          'hello worl\r\n'
-          '3\r\n'
-          'd!\n\r\n'
-          '9\r\n'
-          'and now \n\r\n'
-          '23\r\n'...
-
-Lib/test/test_httplib.py:2038:21: [implicit; multiline, 5 parts]
-  'HTTP/{} 200 OK\r\n'
-                      '{}'
-                      'Content-Length: 12\r\n'
-                      '\r\n'
-                      'Dummy body\r\n'
-
-Lib/test/test_httplib.py:2414:13: [implicit; multiline, 3 parts]
-  'HTTP/1.1 200 OK\r\n\r\n' # Reply to CONNECT
-              'HTTP/1.1 200 OK\r\n' # Reply to HEAD
-              'Content-Length: 42\r\n\r\n'
-
-Lib/test/test_httpservers.py:1107:13: [implicit; multiline, 3 parts]
-  b'GET /spaced out HTTP/1.1\r\n'
-              b'Host: dummy\r\n'
-              b'\r\n'
-
-Lib/test/test_iter.py:738:21: [explicit; multiline, 3 parts]
-  "a\n" + "b\n" + "c\n"
-
-Lib/test/test_json/test_speedups.py:97:13: [implicit; multiline, 6 parts]
-  '[\n'
-              '\t"spam", \n'
-              '\t{\n'
-              '\t\t"ham": "eggs"\n'
-              '\t}\n'
-              ']')
-
-Lib/test/test_json/test_speedups.py:106:13: [implicit; multiline, 6 parts]
-  '[\n'
-              '\t\t\t\t"spam", \n'
-              '\t\t\t\t{\n'
-              '\t\t\t\t\t"ham": "eggs"\n'
-              '\t\t\t\t}\n'
-              '\t\t\t]')
-
-Lib/test/test_minidom.py:17:11: [implicit; multiline, 7 parts]
-  sample = ("<?xml version='1.0' encoding='us-ascii'?>\n"
-            "<!DOCTYPE doc PUBLIC 'http://xml.python.org/public'"
-            " 'http://xml.python.org/system' [\n"
-            "  <!ELEMENT e EMPTY>\...
-
-Lib/test/test_minidom.py:803:27: [implicit; multiline, 6 parts]
-  doc = parseString("<?xml version='1.0'?>\n"
-                      "<!-- comment -->"
-                      "<!DOCTYPE doc [\n"
-                      "<!NOTATION notation SYSTEM 'http://xml.python.org/'>\n"
-  ...
-
-Lib/test/test_minidom.py:815:27: [implicit; multiline, 6 parts]
-  doc = parseString("<?xml version='1.0'?>\n"
-                      "<!-- comment -->"
-                      "<!DOCTYPE doc [\n"
-                      "<!NOTATION notation SYSTEM 'http://xml.python.org/'>\n"
-  ...
-
-Lib/test/test_minidom.py:1534:13: [implicit; multiline, 16 parts]
-  "<!DOCTYPE doc [\n"
-              "  <!ENTITY e1 SYSTEM 'http://xml.python.org/e1'>\n"
-              "  <!ENTITY e2 SYSTEM 'http://xml.python.org/e2'>\n"
-              "  <!ATTLIST doc id   ID       #IMPLIE...
-
-Lib/test/test_minidom.py:1775:26: [implicit; multiline, 4 parts]
-  '<?xml version="1.0" ?>\n'
-                           '<root>\n'
-                           '\t<node><![CDATA[</data>]]></node>\n'
-                           '</root>\n')
-
-Lib/test/test_optparse.py:546:29: [implicit; multiline, 3 parts]
-  "Options:\n"
-                              "  --version   show program's version number and exit\n"
-                              "  -h, --help  show this help message and exit\n")
-
-Lib/test/test_os/test_os.py:3543:22: [implicit; multiline, 3 parts]
-  fp.write('import sys, os\n'
-                       'if os.getenv("FRUIT") != "orange=lemon":\n'
-                       '    raise AssertionError')
-
-Lib/test/test_plistlib.py:209:9: [implicit; multiline, 5 parts]
-  b'\xa1\x01\x00\x08\x0a'
-          b'\x00\x00\x00\x00\x00\x00\x01\x00'
-          b'\x00\x00\x00\x00\x00\x00\x00\x02'
-          b'\x00\x00\x00\x00\x00\x00\x00\x00'
-          b'\x00\x00\x00\x00\x00\x00\x00\x0b'
-
-Lib/test/test_plistlib.py:258:9: [implicit; multiline, 5 parts]
-  b'\xa1\x02\x00\x08\x0a'
-          b'\x00\x00\x00\x00\x00\x00\x01\x01'
-          b'\x00\x00\x00\x00\x00\x00\x00\x02'
-          b'\x00\x00\x00\x00\x00\x00\x00\x00'
-          b'\x00\x00\x00\x00\x00\x00\x00\x0b'
-
-Lib/test/test_plistlib.py:514:13: [implicit; multiline, 3 parts]
-  b'<?xml version="1.0" encoding="UTF-8"?>\n'
-              b'<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n'
-              b'<plist version="1.0">\...
-
-Lib/test/test_plistlib.py:520:13: [implicit; multiline, 10 parts]
-  b'<array>\n'
-              b'\t<dict>\n'
-              b'\t\t<key>bytes</key>\n'
-              b'\t\t<data>\n'
-              b'\t\tAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKiss\n'
-              b...
-
-Lib/test/test_plistlib.py:539:13: [implicit; multiline, 9 parts]
-  b'<array>\n'
-              b' <dict>\n'
-              b'  <key>bytes</key>\n'
-              b'  <data>\n'
-              b'  AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDE=\n'
-              ...
-
-Lib/test/test_plistlib.py:551:13: [implicit; multiline, 10 parts]
-  b'<array>\n'
-              b' \t<dict>\n'
-              b' \t \t<key>bytes</key>\n'
-              b' \t \t<data>\n'
-              b' \t \tAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKiss\n'
-        ...
-
-Lib/test/test_plistlib.py:564:13: [implicit; multiline, 10 parts]
-  b'<array>\n'
-              b'\t   <dict>\n'
-              b'\t   \t   <key>bytes</key>\n'
-              b'\t   \t   <data>\n'
-              b'\t   \t   AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygp...
-
-Lib/test/test_profiling/test_sampling_profiler/test_collectors.py:1891:17: [implicit; multiline, 5 parts]
-  '{"type":"meta","v":0,"run_id":"run-123","sample_interval_usec":1000}\n'
-                  '{"type":"string_table","v":0,"run_id":"run-123","strings":[{"str_id":0,"value":"func1"},{"str_id":1,"value":"f...
-
-Lib/test/test_pydoc/test_pydoc.py:585:17: [implicit; multiline, 6 parts]
-  snip = (" |  Built-in subclasses:\n"
-                  " |      async_generator\n"
-                  " |      BaseException\n"
-                  " |      builtin_function_or_method\n"
-                  " |   ...
-
-Lib/test/test_pydoc/test_pydoc.py:614:17: [implicit; multiline, 4 parts]
-  snip = (" |  Built-in subclasses:\n"
-                  " |      FloatingPointError\n"
-                  " |      OverflowError\n"
-                  " |      ZeroDivisionError")
-
-Lib/test/test_pydoc/test_pydoc.py:644:17: [implicit; multiline, 4 parts]
-  snip = (" |  Built-in subclasses:\n"
-                  " |      ArithmeticError\n"
-                  " |      AssertionError\n"
-                  " |      AttributeError")
-
-Lib/test/test_pyrepl/test_interact.py:261:13: [implicit; multiline, 7 parts]
-  "from dataclasses import dataclass\n"
-              "\n"
-              "@dataclass\n"
-              "class Point:\n"
-              "    x: float\n"
-              "    y: float\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:399:13: [implicit; multiline, 3 parts]
-  "for _ in _:\n"
-              "  hello\n"
-              "  h\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:429:13: [implicit; multiline, 3 parts]
-  "def foo():\n"
-              "  x = '可口可乐; 可口可樂'\n"
-              "  y = 'abckdfjskldfjslkdjf'"
-
-Lib/test/test_pyrepl/test_pyrepl.py:492:13: [implicit; multiline, 3 parts]
-  "def f():\n"
-              "    pass\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:519:13: [implicit; multiline, 4 parts]
-  "def f():\n"
-              "  pass\n"
-              "  pass\n"
-              "  "
-
-Lib/test/test_pyrepl/test_pyrepl.py:550:13: [implicit; multiline, 3 parts]
-  "def g():\n"
-              "  pass\n"
-              "  "
-
-Lib/test/test_pyrepl/test_pyrepl.py:589:13: [implicit; multiline, 4 parts]
-  "def f():\n"
-              "    pass\n"
-              "    pass\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:608:13: [implicit; multiline, 3 parts]
-  "def f():  # foo\n"
-              "    pass\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:626:13: [implicit; multiline, 3 parts]
-  "def f():  ## foo\n"
-              "    pass\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:778:13: [implicit; multiline, 15 parts]
-  "def fo():\n"
-              "...\n"
-              "...\n"
-              "a = 1\n"
-              "b = 2\n"
-              "x = 1\n"
-              "\n"
-              "def fo():\n"
-              "...\n"
-              "...\...
-
-Lib/test/test_pyrepl/test_pyrepl.py:807:13: [implicit; multiline, 7 parts]
-  "def fo():\n"
-              "    ...\n"
-              "    ...\n"
-              "    a = 1\n"
-              "    b = 2\n"
-              "    x = 1\n"
-              "    z = 2"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1836:13: [implicit; multiline, 6 parts]
-  "def a():\n"
-              "  for x in range(10):\n"
-              "    if x%2:\n"
-              "      print(x)\n"
-              "    else:\n"
-              "      pass\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1862:13: [implicit; multiline, 4 parts]
-  "def f():\n"
-              "  x = y\n"
-              "  \n"
-              "  y = z\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1886:13: [implicit; multiline, 4 parts]
-  "def f():\n"
-                  "x = y\n"
-                  "\n"
-                  "y = z\n\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1893:13: [implicit; multiline, 3 parts]
-  "def f():\n"
-              "    x = y\n"
-              "    "
-
-Lib/test/test_pyrepl/test_pyrepl.py:1907:13: [implicit; multiline, 6 parts]
-  "def a():\n"
-                  "for x in range(10):\n"
-                      "if x%2:\n"
-                          "print(x)\n"
-                      "else:\n"
-                          "pass\n\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1916:13: [implicit; multiline, 5 parts]
-  "def a():\n"
-              "    for x in range(10):\n"
-              "        if x%2:\n"
-              "            print(x)\n"
-              "            else:"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1933:13: [implicit; multiline, 8 parts]
-  "def a():\n"
-              "  for x in range(10):\n"
-              "\n"
-              "    if x%2:\n"
-              "      print(x)\n"
-              "\n"
-              "    else:\n"
-              "      pass\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:1944:13: [implicit; multiline, 8 parts]
-  "def a():\n"
-              "  for x in range(10):\n"
-              "\n"
-              "    if x%2:\n"
-              "      print(x)\n"
-              "\n"
-              "    else:\n"
-              "      pass\n"
-
-Lib/test/test_pyrepl/test_pyrepl.py:2178:21: [implicit; multiline, 3 parts]
-  commands = ("import sys\n"
-                      "print('_pyrepl' in sys.modules)\n"
-                      "exit()\n")
-
-Lib/test/test_pyrepl/test_pyrepl.py:2217:21: [implicit; multiline, 4 parts]
-  commands = ("import sys\n"
-                      "sys.excepthook = 1\n"
-                      "1/0\n"
-                      "exit()\n")
-
-Lib/test/test_pyrepl/test_pyrepl.py:2281:25: [implicit; multiline, 5 parts]
-  "def x1(): 1/0\n\n"
-                          "def x2(): x1()\n\n"
-                          "def x3(): x2()\n\n"
-                          "x3()\n"
-                          "exit()\n")
-
-Lib/test/test_pyrepl/test_pyrepl.py:2312:21: [implicit; multiline, 3 parts]
-  commands = ("import runpy\n"
-                      "runpy._run_module_code('blech', {0: '', 'bluch': ''}, '')\n"
-                      "exit()\n")
-
-Lib/test/test_pyrepl/test_reader.py:101:13: [implicit; multiline, 6 parts]
-  ">>> if so\\\n"
-              "me_condit\\\n"
-              "ion:\n"
-              "...     s\\\n"
-              "ome_funct\\\n"
-              "ion()"
-
-Lib/test/test_pyrepl/test_reader.py:271:13: [implicit; multiline, 6 parts]
-  "def foo():\n"
-              "    \n"
-              "    \n"
-              "    a = 1\n"
-              "    \n"
-              "    "  # HistoricalReader will trim trailing whitespace
-
-Lib/test/test_regrtest.py:835:20: [implicit; multiline, 6 parts]
-  msg = ("Command %s failed with exit code %s, but exit code %s expected!\n"
-                     "\n"
-                     "stdout:\n"
-                     "---\n"
-                     "%s\n"
-                   ...
-
-Lib/test/test_regrtest.py:843:25: [implicit; multiline, 5 parts]
-  msg += ("\n"
-                          "stderr:\n"
-                          "---\n"
-                          "%s"
-                          "---\n"
-
-Lib/test/test_signal.py:171:18: [implicit; multiline, 3 parts]
-  "import os, signal, time\n"
-                   "os.kill(os.getpid(), signal.SIGINT)\n"
-                   "for _ in range(999): time.sleep(0.01)"],
-
-Lib/test/test_site.py:1049:13: [implicit; multiline, 5 parts]
-  "os.path\n"                 # no colon
-              "pkg.mod:\n"                # empty callable
-              ":callable\n"               # empty module
-              "pkg.mod:callable:extra\n"  # multipl...
-
-Lib/test/test_smtplib.py:942:17: [implicit; multiline, 5 parts]
-  resp = ('250-testhost\r\n'
-                  '250-EXPN\r\n'
-                  '250-SIZE 20000000\r\n'
-                  '250-STARTTLS\r\n'
-                  '250-DELIVERBY\r\n')
-
-Lib/test/test_source_encoding.py:207:16: [implicit; multiline, 3 parts]
-  src = (b'#!/usr/bin/python\n'
-                 b'#coding:iso8859-15\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:213:16: [implicit; multiline, 3 parts]
-  src = (b'\n'
-                 b'#coding:iso8859-15\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:220:16: [implicit; multiline, 4 parts]
-  src = (b'#!/usr/bin/python\n'
-                 b'#\n'
-                 b'#coding:iso8859-15\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:228:16: [implicit; multiline, 3 parts]
-  src = (b'#coding:iso8859-15\n'
-                 b'#coding:latin1\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:239:16: [implicit; multiline, 3 parts]
-  src = (b'#coding:utf-8\n'
-                 b'#coding:latin1\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:283:16: [implicit; multiline, 3 parts]
-  src = (b'#!/usr/bin/python\n'
-                 b'#coding:iso-8859-15 \xa4\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:294:16: [implicit; multiline, 3 parts]
-  src = (b'#!/usr/bin/python\n'
-                 b'#coding:ascii \xc3\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:304:16: [implicit; multiline, 3 parts]
-  src = (b'\xef\xbb\xbf#\xc3\xa4\n'
-                 b'#\xc3\xa4\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:322:16: [implicit; multiline, 3 parts]
-  src = (b'\xef\xbb\xbf#first\n'
-                 b'#coding:iso-8859-15\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:330:16: [implicit; multiline, 3 parts]
-  src = (b'#!/home/\xa4/bin/python\n'
-                 b'#coding:iso-8859-15\n'
-                 b'print(ascii("\xc3\xa4"))\n')
-
-Lib/test/test_source_encoding.py:336:16: [implicit; multiline, 3 parts]
-  src = (b'#!/home/\xc3\xa4/bin/python\n'
-                 b'#coding:ascii\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:348:16: [implicit; multiline, 3 parts]
-  src = (b'#first\n'
-                 b'#second\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:356:16: [implicit; multiline, 4 parts]
-  src = (b'#first\n'
-                 b'#second\n'
-                 b'#third\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:365:16: [implicit; multiline, 4 parts]
-  src = (b'\xef\xbb\xbf#first\n'
-                 b'#second\n'
-                 b'#third\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:375:16: [implicit; multiline, 4 parts]
-  src = (b'#coding: utf-8\n'
-                 b'#second\n'
-                 b'#third\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:385:16: [implicit; multiline, 4 parts]
-  src = (b'#coding: utf8\n'
-                 b'#second\n'
-                 b'#third\xa4\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:410:16: [implicit; multiline, 4 parts]
-  src = (b'#coding:iso8859-15\x00\n'
-                 b'\n'
-                 b'\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_source_encoding.py:417:16: [implicit; multiline, 4 parts]
-  src = (b'#!/usr/bin/python\n'
-                 b'#coding:iso8859-15\x00\n'
-                 b'\n'
-                 b'raise RuntimeError\n')
-
-Lib/test/test_ssl.py:5782:21: [implicit; multiline, 3 parts]
-  b"HTTP/1.0 307 Temporary Redirect\r\n"
-                      b"Location: https://example.com/someone-elses-server\r\n"
-                      b"\r\n")
-
-Lib/test/test_statistics.py:281:13: [implicit; multiline, 4 parts]
-  '  %r != %r\n'
-              '  values differ by more than tol=%r and rel=%r\n'
-              '  -> absolute error = %r\n'
-              '  -> relative error = %r'
-
-Lib/test/test_subprocess.py:708:31: [implicit; multiline, 3 parts]
-  'import sys\n'
-                                'for i in range(10240):'
-                                'sys.stderr.write("x" * 1024)'],
-
-Lib/test/test_symtable.py:349:33: [implicit; multiline, 5 parts]
-  st6 = symtable.symtable('def g():\n'
-                                  '    x = 2\n'
-                                  '    def f():\n'
-                                  '        nonlocal x\n'
-               ...
-
-Lib/test/test_symtable.py:435:33: [implicit; multiline, 6 parts]
-  st3 = symtable.symtable("def f():\n"
-                                  "   x = 1\n"
-                                  "   class A:\n"
-                                  "       x = 2\n"
-                       ...
-
-Lib/test/test_syntax.py:3373:13: [implicit; multiline, 6 parts]
-  "print(\n"
-              '    "line1"\n'
-              '    "line2"\n'
-              '    "line3"\n'
-              "    x=1\n"
-              ")",
-
-Lib/test/test_sys.py:1041:26: [implicit; multiline, 3 parts]
-  'stdin: surrogateescape\n'
-                           'stdout: surrogateescape\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_sys.py:1048:26: [implicit; multiline, 3 parts]
-  'stdin: ignore\n'
-                           'stdout: ignore\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_sys.py:1055:26: [implicit; multiline, 3 parts]
-  'stdin: strict\n'
-                           'stdout: strict\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_sys.py:1060:26: [implicit; multiline, 3 parts]
-  'stdin: strict\n'
-                           'stdout: strict\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_sys.py:1067:26: [implicit; multiline, 3 parts]
-  'stdin: surrogateescape\n'
-                           'stdout: surrogateescape\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_sys.py:1072:26: [implicit; multiline, 3 parts]
-  'stdin: surrogateescape\n'
-                           'stdout: surrogateescape\n'
-                           'stderr: backslashreplace\n')
-
-Lib/test/test_tabnanny.py:21:9: [implicit; multiline, 6 parts]
-  'fruits = [\n'
-          '    "Apple",\n'
-          '    "Orange",\n'
-          '    "Banana",\n'
-          '\n'
-          'print(fruits)\n'
-
-Lib/test/test_tabnanny.py:29:9: [implicit; multiline, 5 parts]
-  'if True:\n'
-          '    print("hello")\n'
-          '  print("world")\n'
-          'else:\n'
-          '    print("else called")\n'
-
-Lib/test/test_tabnanny.py:36:9: [implicit; multiline, 5 parts]
-  'if True:\n'
-          ' \tprint("hello")\n'
-          '\tprint("world")\n'
-          'else:\n'
-          '    print("else called")\n'
-
-Lib/test/test_tabnanny.py:43:9: [implicit; multiline, 5 parts]
-  'if True:\n'
-          '    print("hello")\n'
-          '    print("world")\n'
-          'else:\n'
-          '    print("else called")\n'
-
-Lib/test/test_tabnanny.py:50:9: [implicit; multiline, 4 parts]
-  'def my_func():\n'
-          '\t  print("hello world")\n'
-          '\t  if True:\n'
-          '\t\tprint("If called")'
-
-Lib/test/test_tabnanny.py:56:9: [implicit; multiline, 4 parts]
-  'def my_func():\n'
-          '\t\tprint("Hello world")\n'
-          '\t\tif True:\n'
-          '\t        print("If called")'
-
-Lib/test/test_threading.py:791:26: [implicit; multiline, 4 parts]
-  "current ident True\n"
-                           "main MainThread\n"
-                           "main ident True\n"
-                           "current is main True\n")
-
-Lib/test/test_threading.py:831:26: [implicit; multiline, 4 parts]
-  "current ident True\n"
-                           "main Thread-1 (func) Thread\n"
-                           "main ident True\n"
-                           "current is main True\n"
-
-Lib/test/test_threading.py:895:26: [implicit; multiline, 5 parts]
-  "current ident True\n"
-                           "main MainThread _MainThread\n"
-                           "main ident True\n"
-                           "current is main True\n"
-                           ...
-
-Lib/test/test_timeit.py:402:21: [implicit; multiline, 9 parts]
-  expected = ('1 0.001\n'
-                      '2 0.002\n'
-                      '5 0.005\n'
-                      '10 0.010\n'
-                      '20 0.020\n'
-                      '50 0.049\n'
-               ...
-
-Lib/test/test_tkinter/test_text.py:623:13: [implicit; multiline, 4 parts]
-  'This is a test. This is only a test.\n'
-              'Another line.\n'
-              'Yet another line.\n'
-              '64-bit')
-
-Lib/test/test_tkinter/test_text.py:730:13: [implicit; multiline, 4 parts]
-  'Lorem ipsum dolor sit amet,\n'
-              'consectetur adipiscing elit,\n'
-              'sed do eiusmod tempor incididunt\n'
-              'ut labore et dolore magna aliqua.')
-
-Lib/test/test_tokenize.py:91:29: [implicit; multiline, 4 parts]
-  self.check_tokenize("if False:\n"
-                              "    # NL\n"
-                              "    \n"
-                              "    True = False # NEWLINE\n", """\
-
-Lib/test/test_tokenize.py:853:29: [implicit; multiline, 3 parts]
-  self.check_tokenize("def f():\n"
-                              "\tif x\n"
-                              "        \tpass", """\
-
-Lib/test/test_tokenize.py:2066:30: [implicit; multiline, 5 parts]
-  self.check_roundtrip("if x == 1:\n"
-                               "    # A comment by itself.\n"
-                               "    print(x) # Comment here, too.\n"
-                               "    # A...
-
-Lib/test/test_tokenize.py:2071:30: [implicit; multiline, 3 parts]
-  self.check_roundtrip("if (x # The comments need to go in the right place\n"
-                               "    == 1):\n"
-                               "    print('x==1')\n")
-
-Lib/test/test_tokenize.py:2074:30: [implicit; multiline, 6 parts]
-  self.check_roundtrip("class Test: # A comment here\n"
-                               "  # A comment with weird indent\n"
-                               "  after_com = 5\n"
-                               "  ...
-
-Lib/test/test_tokenize.py:2082:30: [implicit; multiline, 4 parts]
-  self.check_roundtrip("try: import somemodule\n"
-                               "except ImportError: # comment\n"
-                               "    print('Can not import' # comment2\n)"
-                   ...
-
-Lib/test/test_tokenize.py:2150:30: [implicit; multiline, 10 parts]
-  self.check_roundtrip("a = (3,4, \n"
-                               "5,6)\n"
-                               "y = [3, 4,\n"
-                               "5]\n"
-                               "z = {'a': 5,\n"
-  ...
-
-Lib/test/test_tokenize.py:2163:30: [implicit; multiline, 4 parts]
-  self.check_roundtrip("x=1+\\\n"
-                               "1\n"
-                               "# This is a comment\\\n"
-                               "# This also\n")
-
-Lib/test/test_tools/i18n_data/escapes.py:8:3: [implicit; multiline, 3 parts]
-  _('\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n'
-    '\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15'
-    '\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
-
-Lib/test/test_tools/test_i18n.py:448:13: [implicit; multiline, 3 parts]
-  "*** test.py:1: Expected a string constant for argument 1, got 1 + 2\n"
-              "*** test.py:2: Expected at least 2 positional argument(s) in gettext call, got 1\n"
-              "*** test.py:3: Var...
-
-Lib/test/test_tools/test_i18n.py:592:13: [implicit; multiline, 6 parts]
-  '*** test.py:1: No keywords matched gettext call "_":\n'
-              '\tkeyword="_": Expected a string constant for argument 1, got x\n'
-              '\tkeyword="_:2": Expected a string constant for ar...
-
-Lib/test/test_trace.py:484:17: [implicit; multiline, 4 parts]
-  "       # coding: iso-8859-15\n"
-                  "    1: x = 'spœm'\n"
-                  "    1: if []:\n"
-                  "           print('unreachable')\n"
-
-Lib/test/test_traceback.py:738:13: [implicit; multiline, 6 parts]
-  '    if True: raise ValueError(\n'
-              '             ^^^^^^^^^^^^^^^^^\n'
-              '        "error over multiple lines"\n'
-              '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
-              ' ...
-
-Lib/test/test_traceback.py:774:13: [implicit; multiline, 4 parts]
-  '    return compile(code, "?", "exec")\n'
-              '  File "?", line 7\n'
-              '    foo(a, z\n'
-              '           ^'
-
-Lib/test/test_traceback.py:803:13: [implicit; multiline, 4 parts]
-  '    return compile(code, "?", "exec")\n'
-              '  File "?", line 3\n'
-              '    "dummy value"\n'
-              '    ^^^^^^^^^^^^^'
-
-Lib/test/test_traceback.py:828:13: [implicit; multiline, 4 parts]
-  '    2 + 1 /\n'
-              '        ~~^\n'
-              '    0\n'
-              '    ~'
-
-Lib/test/test_traceback.py:925:13: [implicit; multiline, 6 parts]
-  '       a = b    \\\n'
-              '           ~~~~~~\n'
-              '    +\\\n'
-              '    ^~\n'
-              '          c  # test\n'
-              '          ~\n'
-
-Lib/test/test_traceback.py:956:13: [implicit; multiline, 12 parts]
-  '        (b  # test +\n'
-              '        ~~~~~~~~~~~~\n'
-              '            )  \\\n'
-              '            ~~~~\n'
-              '        # +\n'
-              '        ~~~\n'
-              '  ...
-
-Lib/test/test_traceback.py:986:13: [implicit; multiline, 4 parts]
-  '    a = ("ááá" +\n'
-              '        ~~~~~~~~\n'
-              '        "áá") + b\n'
-              '        ~~~~~~^~~\n'
-
-Lib/test/test_traceback.py:1069:13: [implicit; multiline, 12 parts]
-  '    b = bbbbb \\\n'
-              '        ~~~~~~~\n'
-              '        [  ccc # test\n'
-              '        ^^^^^^^^^^^^^\n'
-              '    \n'
-              '    \n'
-              '         + ddd  ...
-
-Lib/test/test_traceback.py:1173:13: [implicit; multiline, 6 parts]
-  '    a = (g(1).y)(\n'
-              '        ~~~~~~~~~\n'
-              '        2\n'
-              '        ~\n'
-              '    )(3)(4)\n'
-              '    ~^^^\n'
-
-Lib/test/test_traceback.py:1200:13: [implicit; multiline, 5 parts]
-  '    if True: x += (\n'
-              '             ^^^^^^\n'
-              '    ...<2 lines>...\n'
-              '    )  # test\n'
-              '    ^\n'
-
-Lib/test/test_traceback.py:1224:13: [implicit; multiline, 3 parts]
-  '    x += (\n'
-              '    ...<2 lines>...\n'
-              '    )\n'
-
-Lib/test/test_traceback.py:1252:13: [implicit; multiline, 13 parts]
-  '    a = (\n'
-              '        ~\n'
-              '        b +\n'
-              '        ~~~\n'
-              '        b\n'
-              '        ~\n'
-              '    ) + (\n'
-              '    ~~^~~\n'
-  ...
-
-Lib/test/test_traceback.py:2036:13: [implicit; multiline, 5 parts]
-  '    f()\n'
-              '    ~^^\n'
-              # XXX: The following line changes depending on whether the tests
-              # are run through the interactive interpreter or with -m
-              # It a...
-
-Lib/test/test_traceback.py:2083:13: [implicit; multiline, 3 parts]
-  '    return g(count-1) + 1\n'
-              '           ~^^^^^^^^^\n'
-              '  [Previous line repeated 7 more times]\n'
-
-Lib/test/test_traceback.py:2183:13: [implicit; multiline, 3 parts]
-  '    return g(count-1) + 1\n'
-              '           ~^^^^^^^^^\n'
-              '  [Previous line repeated 1 more time]\n'
+Lib/test/test_traceback.py:2895:21: [implicit; multiline, 71 parts]
+        expected = ('  | ExceptionGroup: eg999 (3 sub-exceptions)\n'
+                    '  +-+---------------- 1 ----------------\n'
+                    '    | ValueError: 999\n'
+                    '    +---------------- 2 ----------------\n'
+                    '    | ExceptionGroup: eg998 (3 sub-exceptions)\n'
+                    '    +-+---------------- 1 ----------------\n'
+                    '      | ValueError: 998\n'
+                    '      +---------------- 2 ----------------\n'
+                    '      | ExceptionGroup: eg997 (3 sub-exceptions)\n'
+                    '      +-+---------------- 1 ----------------\n'
+                    '        | ValueError: 997\n'
+                    '        +---------------- 2 ----------------\n'
+                    '        | ExceptionGroup: eg996 (3 sub-exceptions)\n'
+                    '        +-+---------------- 1 ----------------\n'
+                    '          | ValueError: 996\n'
+                    '          +---------------- 2 ----------------\n'
+                    '          | ExceptionGroup: eg995 (3 sub-exceptions)\n'
+                    '          +-+---------------- 1 ----------------\n'
+                    '            | ValueError: 995\n'
+                    '            +---------------- 2 ----------------\n'
+                    '            | ExceptionGroup: eg994 (3 sub-exceptions)\n'
+                    '            +-+---------------- 1 ----------------\n'
+                    '              | ValueError: 994\n'
+                    '              +---------------- 2 ----------------\n'
+                    '              | ExceptionGroup: eg993 (3 sub-exceptions)\n'
+                    '              +-+---------------- 1 ----------------\n'
+                    '                | ValueError: 993\n'
+                    '                +---------------- 2 ----------------\n'
+                    '                | ExceptionGroup: eg992 (3 sub-exceptions)\n'
+                    '                +-+---------------- 1 ----------------\n'
+                    '                  | ValueError: 992\n'
+                    '                  +---------------- 2 ----------------\n'
+                    '                  | ExceptionGroup: eg991 (3 sub-exceptions)\n'
+                    '                  +-+---------------- 1 ----------------\n'
+                    '                    | ValueError: 991\n'
+                    '                    +---------------- 2 ----------------\n'
+                    '                    | ExceptionGroup: eg990 (3 sub-exceptions)\n'
+                    '                    +-+---------------- 1 ----------------\n'
+                    '                      | ValueError: 990\n'
+                    '                      +---------------- 2 ----------------\n'
+                    '                      | ... (max_group_depth is 10)\n'
+                    '                      +---------------- 3 ----------------\n'
+                    '                      | ValueError: -990\n'
+                    '                      +------------------------------------\n'
+                    '                    +---------------- 3 ----------------\n'
+                    '                    | ValueError: -991\n'
+                    '                    +------------------------------------\n'
+                    '                  +---------------- 3 ----------------\n'
+                    '                  | ValueError: -992\n'
+                    '                  +------------------------------------\n'
+                    '                +---------------- 3 ----------------\n'
+                    '                | ValueError: -993\n'
+                    '                +------------------------------------\n'
+                    '              +---------------- 3 ----------------\n'
+                    '              | ValueError: -994\n'
+                    '              +------------------------------------\n'
+                    '            +---------------- 3 ----------------\n'
+                    '            | ValueError: -995\n'
+                    '            +------------------------------------\n'
+                    '          +---------------- 3 ----------------\n'
+                    '          | ValueError: -996\n'
+                    '          +------------------------------------\n'
+                    '        +---------------- 3 ----------------\n'
+                    '        | ValueError: -997\n'
+                    '        +------------------------------------\n'
+                    '      +---------------- 3 ----------------\n'
+                    '      | ValueError: -998\n'
+                    '      +------------------------------------\n'
+                    '    +---------------- 3 ----------------\n'
+                    '    | ValueError: -999\n'
+                    '    +------------------------------------\n')
 
 Lib/test/test_traceback.py:2850:21: [implicit; multiline, 34 parts]
-  expected = ('  | ExceptionGroup: eg (1000 sub-exceptions)\n'
-                      '  +-+---------------- 1 ----------------\n'
-                      '    | ValueError: 0\n'
-                      '    +----...
+        expected = ('  | ExceptionGroup: eg (1000 sub-exceptions)\n'
+                    '  +-+---------------- 1 ----------------\n'
+                    '    | ValueError: 0\n'
+                    '    +---------------- 2 ----------------\n'
+                    '    | ValueError: 1\n'
+                    '    +---------------- 3 ----------------\n'
+                    '    | ValueError: 2\n'
+                    '    +---------------- 4 ----------------\n'
+                    '    | ValueError: 3\n'
+                    '    +---------------- 5 ----------------\n'
+                    '    | ValueError: 4\n'
+                    '    +---------------- 6 ----------------\n'
+                    '    | ValueError: 5\n'
+                    '    +---------------- 7 ----------------\n'
+                    '    | ValueError: 6\n'
+                    '    +---------------- 8 ----------------\n'
+                    '    | ValueError: 7\n'
+                    '    +---------------- 9 ----------------\n'
+                    '    | ValueError: 8\n'
+                    '    +---------------- 10 ----------------\n'
+                    '    | ValueError: 9\n'
+                    '    +---------------- 11 ----------------\n'
+                    '    | ValueError: 10\n'
+                    '    +---------------- 12 ----------------\n'
+                    '    | ValueError: 11\n'
+                    '    +---------------- 13 ----------------\n'
+                    '    | ValueError: 12\n'
+                    '    +---------------- 14 ----------------\n'
+                    '    | ValueError: 13\n'
+                    '    +---------------- 15 ----------------\n'
+                    '    | ValueError: 14\n'
+                    '    +---------------- ... ----------------\n'
+                    '    | and 985 more exceptions\n'
+                    '    +------------------------------------\n')
 
-Lib/test/test_traceback.py:2895:21: [implicit; multiline, 71 parts]
-  expected = ('  | ExceptionGroup: eg999 (3 sub-exceptions)\n'
-                      '  +-+---------------- 1 ----------------\n'
-                      '    | ValueError: 999\n'
-                      '    +--...
+Lib/idlelib/configdialog.py:252:5: [implicit; multiline, 26 parts]
+    '<ASCII/Latin1>\n'
+    'AaBbCcDdEeFfGgHhIiJj\n1234567890#:+=(){}[]\n'
+    '\u00a2\u00a3\u00a5\u00a7\u00a9\u00ab\u00ae\u00b6\u00bd\u011e'
+    '\u00c0\u00c1\u00c2\u00c3\u00c4\u00c5\u00c7\u00d0\u00d8\u00df\n'
+    '\n<IPA,Greek,Cyrillic>\n'
+    '\u0250\u0255\u0258\u025e\u025f\u0264\u026b\u026e\u0270\u0277'
+    '\u027b\u0281\u0283\u0286\u028e\u029e\u02a2\u02ab\u02ad\u02af\n'
+    '\u0391\u03b1\u0392\u03b2\u0393\u03b3\u0394\u03b4\u0395\u03b5'
+    '\u0396\u03b6\u0397\u03b7\u0398\u03b8\u0399\u03b9\u039a\u03ba\n'
+    '\u0411\u0431\u0414\u0434\u0416\u0436\u041f\u043f\u0424\u0444'
+    '\u0427\u0447\u042a\u044a\u042d\u044d\u0460\u0464\u046c\u04dc\n'
+    '\n<Hebrew, Arabic>\n'
+    '\u05d0\u05d1\u05d2\u05d3\u05d4\u05d5\u05d6\u05d7\u05d8\u05d9'
+    '\u05da\u05db\u05dc\u05dd\u05de\u05df\u05e0\u05e1\u05e2\u05e3\n'
+    '\u0627\u0628\u062c\u062f\u0647\u0648\u0632\u062d\u0637\u064a'
+    '\u0660\u0661\u0662\u0663\u0664\u0665\u0666\u0667\u0668\u0669\n'
+    '\n<Devanagari, Tamil>\n'
+    '\u0966\u0967\u0968\u0969\u096a\u096b\u096c\u096d\u096e\u096f'
+    '\u0905\u0906\u0907\u0908\u0909\u090a\u090f\u0910\u0913\u0914\n'
+    '\u0be6\u0be7\u0be8\u0be9\u0bea\u0beb\u0bec\u0bed\u0bee\u0bef'
+    '\u0b85\u0b87\u0b89\u0b8e\n'
+    '\n<East Asian>\n'
+    '\u3007\u4e00\u4e8c\u4e09\u56db\u4e94\u516d\u4e03\u516b\u4e5d\n'
+    '\u6c49\u5b57\u6f22\u5b57\u4eba\u6728\u706b\u571f\u91d1\u6c34\n'
+    '\uac00\ub0d0\ub354\ub824\ubaa8\ubd64\uc218\uc720\uc988\uce58\n'
+    '\u3042\u3044\u3046\u3048\u304a\u30a2\u30a4\u30a6\u30a8\u30aa\n'
 
-Lib/test/test_traceback.py:2982:29: [implicit; multiline, 6 parts]
-  e.add_note(('>> Multi line note\n'
-                              '>> Because I am such\n'
-                              '>> an important exception.\n'
-                              '>> empty lines work too\...
+Lib/test/test_configparser.py:795:13: [implicit; multiline, 23 parts]
+            "[Foo]\n"
+            "bar{equals}something %(with1)s interpolation (1 step)\n"
+            "bar9{equals}something %(with9)s lots of interpolation (9 steps)\n"
+            "bar10{equals}something %(with10)s lots of interpolation (10 steps)\n"
+            "bar11{equals}something %(with11)s lots of interpolation (11 steps)\n"
+            "with11{equals}%(with10)s\n"
+            "with10{equals}%(with9)s\n"
+            "with9{equals}%(with8)s\n"
+            "with8{equals}%(With7)s\n"
+            "with7{equals}%(WITH6)s\n"
+            "with6{equals}%(with5)s\n"
+            "With5{equals}%(with4)s\n"
+            "WITH4{equals}%(with3)s\n"
+            "with3{equals}%(with2)s\n"
+            "with2{equals}%(with1)s\n"
+            "with1{equals}with\n"
+            "\n"
+            "[Mutual Recursion]\n"
+            "foo{equals}%(bar)s\n"
+            "bar{equals}%(foo)s\n"
+            "\n"
+            "[Interpolation Error]\n"
+            # no definition for 'reference'
+            "name{equals}%(reference)s\n".format(equals=self.delimiters[0]))
 
-Lib/test/test_traceback.py:3033:29: [implicit; multiline, 6 parts]
-  e.add_note(('>> Multi line note\n'
-                              '>> Because I am such\n'
-                              '>> an important exception.\n'
-                              '>> empty lines work too\...
+Lib/test/test_ftplib.py:40:14: [implicit; multiline, 17 parts]
+MLSD_DATA = ("type=cdir;perm=el;unique==keVO1+ZF4; test\r\n"
+             "type=pdir;perm=e;unique==keVO1+d?3; ..\r\n"
+             "type=OS.unix=slink:/foobar;perm=;unique==keVO1+4G4; foobar\r\n"
+             "type=OS.unix=chr-13/29;perm=;unique==keVO1+5G4; device\r\n"
+             "type=OS.unix=blk-11/108;perm=;unique==keVO1+6G4; block\r\n"
+             "type=file;perm=awr;unique==keVO1+8G4; writable\r\n"
+             "type=dir;perm=cpmel;unique==keVO1+7G4; promiscuous\r\n"
+             "type=dir;perm=;unique==keVO1+1t2; no-exec\r\n"
+             "type=file;perm=r;unique==keVO1+EG4; two words\r\n"
+             "type=file;perm=r;unique==keVO1+IH4;  leading space\r\n"
+             "type=file;perm=r;unique==keVO1+1G4; file1\r\n"
+             "type=dir;perm=cpmel;unique==keVO1+7G4; incoming\r\n"
+             "type=file;perm=r;unique==keVO1+1G4; file2\r\n"
+             "type=file;perm=r;unique==keVO1+1G4; file3\r\n"
+             "type=file;perm=r;unique==keVO1+1G4; file4\r\n"
+             "type=dir;perm=cpmel;unique==SGP1; dir \xAE non-ascii char\r\n"
+             "type=file;perm=r;unique==SGP2; file \xAE non-ascii char\r\n")
 
-Lib/test/test_traceback.py:3456:14: [implicit; multiline, 6 parts]
-  ['  File "%s", line %d, in some_inner\n'
-               '    return traceback.StackSummary.extract(\n'
-               '    a = 1\n'
-               '    b = 2\n'
-               '    k = 3\n'
-               '    ...
+Lib/test/pickletester.py:244:5: [implicit; multiline, 16 parts]
+    b'(lp0\nL0L\naL1L\naF2.0\n'
+    b'ac__builtin__\ncomple'
+    b'x\np1\n(F3.0\nF0.0\ntp2\n'
+    b'Rp3\naL1L\naL-1L\naL255'
+    b'L\naL-255L\naL-256L\naL'
+    b'65535L\naL-65535L\naL-'
+    b'65536L\naL2147483647L'
+    b'\naL-2147483647L\naL-2'
+    b'147483648L\na(Vabc\np4'
+    b'\ng4\nccopy_reg\n_recon'
+    b'structor\np5\n(c__main'
+    b'__\nC\np6\nc__builtin__'
+    b'\nobject\np7\nNtp8\nRp9\n'
+    b'(dp10\nVfoo\np11\nL1L\ns'
+    b'Vbar\np12\nL2L\nsbg9\ntp'
+    b'13\nag13\naL5L\na.'
 
-Lib/test/test_ttk_textonly.py:246:17: [implicit; multiline, 7 parts]
-  "%sa -other {1 2 3} -children {\n"
-                  "%sb -children {\n"
-                  "%sc -something {1 2} -children {\n"
-                  "%sd -nice opt\n"
-                  "%s}\n"
-                  "%...
+Lib/test/test_configparser.py:605:13: [implicit; multiline, 16 parts]
+            "[BOOLTEST]\n"
+            "T1{equals}1\n"
+            "T2{equals}TRUE\n"
+            "T3{equals}True\n"
+            "T4{equals}oN\n"
+            "T5{equals}yes\n"
+            "F1{equals}0\n"
+            "F2{equals}FALSE\n"
+            "F3{equals}False\n"
+            "F4{equals}oFF\n"
+            "F5{equals}nO\n"
+            "E1{equals}2\n"
+            "E2{equals}foo\n"
+            "E3{equals}-1\n"
+            "E4{equals}0.1\n"
+            "E5{equals}FALSE AND MORE".format(equals=self.delimiters[0])
 
-Lib/test/test_typing.py:7273:17: [implicit; multiline, 4 parts]
-  code = ("class C:\n"
-                  "    def foo(self, a: 'C') -> 'D': pass\n"
-                  "class D:\n"
-                  "    def bar(self, b: 'D') -> C: pass\n"
+Lib/test/test_minidom.py:1534:13: [implicit; multiline, 16 parts]
+            "<!DOCTYPE doc [\n"
+            "  <!ENTITY e1 SYSTEM 'http://xml.python.org/e1'>\n"
+            "  <!ENTITY e2 SYSTEM 'http://xml.python.org/e2'>\n"
+            "  <!ATTLIST doc id   ID       #IMPLIED \n"
+            "                ref  IDREF    #IMPLIED \n"
+            "                refs IDREFS   #IMPLIED \n"
+            "                enum (a|b)    #IMPLIED \n"
+            "                ent  ENTITY   #IMPLIED \n"
+            "                ents ENTITIES #IMPLIED \n"
+            "                nm   NMTOKEN  #IMPLIED \n"
+            "                nms  NMTOKENS #IMPLIED \n"
+            "                text CDATA    #IMPLIED \n"
+            "    >\n"
+            "]><doc id='name' notid='name' text='splat!' enum='b'"
+            "       ref='name' refs='name name' ent='e1' ents='e1 e2'"
+            "       nm='123' nms='123 abc' />")
+
+Lib/test/test_pyrepl/test_pyrepl.py:778:13: [implicit; multiline, 15 parts]
+            "def fo():\n"
+            "...\n"
+            "...\n"
+            "a = 1\n"
+            "b = 2\n"
+            "x = 1\n"
+            "\n"
+            "def fo():\n"
+            "...\n"
+            "...\n"
+            "a = 1\n"
+            "b = 2\n"
+            "x = 1\n"
+            "z = 2\n"
+            "\n"
+
+Lib/test/test_configparser.py:704:17: [implicit; multiline, 14 parts]
+                "[{default_section}]\n"
+                "foo{equals}another very\n"
+                "\tlong line\n"
+                "\n"
+                "[Long Line]\n"
+                "foo{equals}this line is much, much longer than my editor\n"
+                "\tlikes it.\n"
+                "\n"
+                "[Long Line - With Comments!]\n"
+                "test{equals}we\n"
+                "\talso\n"
+                "\tcomments\n"
+                "\tmultiline\n"
+                "\n".format(equals=delimiter,
+
+Lib/test/test_email/test_headerregistry.py:1765:13: [implicit; multiline, 14 parts]
+            'Subject:\n'
+            ' =?utf-8?q?thisisa?=\n'
+            ' =?utf-8?q?verylon?=\n'
+            ' =?utf-8?q?glineco?=\n'
+            ' =?utf-8?q?nsistin?=\n'
+            ' =?utf-8?q?gofasin?=\n'
+            ' =?utf-8?q?gleword?=\n'
+            ' =?utf-8?q?thatwon?=\n'
+            ' =?utf-8?q?tfit_pl?=\n'
+            ' =?utf-8?q?usanoth?=\n'
+            ' =?utf-8?q?erveryl?=\n'
+            ' =?utf-8?q?ongword?=\n'
+            ' =?utf-8?q?thatwon?=\n'
+            ' =?utf-8?q?tfit?=\n'
+
+Lib/test/test_httplib.py:1678:9: [implicit; multiline, 14 parts]
+        'HTTP/1.1 200 OK\r\n'
+        'Transfer-Encoding: chunked\r\n\r\n'
+        'a\r\n'
+        'hello worl\r\n'
+        '3\r\n'
+        'd!\n\r\n'
+        '9\r\n'
+        'and now \n\r\n'
+        '23\r\n'
+        'for something completely different\n\r\n'
+        '3\r\n'
+        'foo\r\n'
+        '0\r\n' # terminating chunk
+        '\r\n'  # end of trailers
+
+Lib/test/test_httplib.py:1806:9: [implicit; multiline, 14 parts]
+        'HTTP/1.1 200 OK\r\n'
+        'Transfer-Encoding: chunked\r\n\r\n'
+        'a\r\n'
+        'hello worl\r\n'
+        '3\r\n'
+        'd!\n\r\n'
+        '9\r\n'
+        'and now \n\r\n'
+        '23\r\n'
+        'for something completely different\n\r\n'
+        '3\r\n'
+        'foo\r\n'
+        '0\r\n' # terminating chunk
+        '\r\n'  # end of trailers
+
+Lib/test/test_traceback.py:1252:13: [implicit; multiline, 13 parts]
+            '    a = (\n'
+            '        ~\n'
+            '        b +\n'
+            '        ~~~\n'
+            '        b\n'
+            '        ~\n'
+            '    ) + (\n'
+            '    ~~^~~\n'
+            '        c +\n'
+            '        ~~~\n'
+            '    ...<2 lines>...\n'
+            '    )\n'
+            '    ~\n'
+
+Lib/idlelib/idle_test/test_hyperparser.py:23:13: [implicit; multiline, 12 parts]
+            '"""This is a module docstring"""\n'
+            '# this line is a comment\n'
+            'x = "this is a string"\n'
+            "y = 'this is also a string'\n"
+            'l = [i for i in range(10)]\n'
+            'm = [py*py for # comment\n'
+            '       py in l]\n'
+            'x.__len__\n'
+            "z = ((r'asdf')+('a')))\n"
+            '[x for x in\n'
+            'for = False\n'
+            'cliché = "this is a string with unicode, what a cliché"'
+
+Lib/test/test_configparser.py:676:13: [implicit; multiline, 12 parts]
+            "[Long Line]\n"
+            "foo{0[0]} this line is much, much longer than my editor\n"
+            "   likes it.\n"
+            "[{default_section}]\n"
+            "foo{0[1]} another very\n"
+            " long line\n"
+            "[Long Line - With Comments!]\n"
+            "test {0[1]} we        {comment} can\n"
+            "            also      {comment} place\n"
+            "            comments  {comment} in\n"
+            "            multiline {comment} values"
+            "\n".format(self.delimiters, comment=self.comment_prefixes[0],
+
+Lib/test/test_traceback.py:956:13: [implicit; multiline, 12 parts]
+            '        (b  # test +\n'
+            '        ~~~~~~~~~~~~\n'
+            '            )  \\\n'
+            '            ~~~~\n'
+            '        # +\n'
+            '        ~~~\n'
+            '    << (c  # test\n'
+            '    ^^~~~~~~~~~~~\n'
+            '        \\\n'
+            '        ~\n'
+            '    )  # test\n'
+            '    ~\n'
+
+Lib/test/test_traceback.py:1069:13: [implicit; multiline, 12 parts]
+            '    b = bbbbb \\\n'
+            '        ~~~~~~~\n'
+            '        [  ccc # test\n'
+            '        ^^^^^^^^^^^^^\n'
+            '    \n'
+            '    \n'
+            '         + ddd  \\\n'
+            '         ^^^^^^^^\n'
+            '    \n'
+            '    \n'
+            '        ] # test\n'
+            '        ^\n'
+
+Lib/test/test_email/test_email.py:4105:13: [implicit; multiline, 11 parts]
+            "From: foo@bar.com\n"
+            "To: baz\n"
+            "Mime-Version: 1.0\n"
+            "Content-Type: multipart/mixed; boundary=BOUNDARY\n"
+            "\n"
+            "--BOUNDARY\n"
+            "Content-Type: text/plain\n"
+            "\n"
+            "body ending with CRLF newline\r\n"
+            "\n"
+            "--BOUNDARY--\n"
+
+Lib/idlelib/idle_test/htest.py:105:12: [implicit; multiline, 10 parts]
+    'msg': "IDLE preferences dialog.\n"
+           "In the 'Fonts/Tabs' tab, changing font face, should update the "
+           "font face of the text in the area below it.\nIn the "
+           "'Highlighting' tab, try different color schemes. Clicking "
+           "items in the sample program should update the choices above it."
+           "\nIn the 'Keys', 'General' and 'Extensions' tabs, test settings "
+           "of interest."
+           "\n[Ok] to close the dialog.[Apply] to apply the settings and "
+           "and [Cancel] to revert all changes.\nRe-run the test to ensure "
+           "changes made have persisted."
+
+Lib/test/test_email/test_parser.py:45:21: [implicit; multiline, 10 parts]
+                    "Next-Line: not\x85broken\r\n"
+                    "Null: not\x00broken\r\n"
+                    "Vertical-Tab: not\vbroken\r\n"
+                    "Form-Feed: not\fbroken\r\n"
+                    "File-Separator: not\x1Cbroken\r\n"
+                    "Group-Separator: not\x1Dbroken\r\n"
+                    "Record-Separator: not\x1Ebroken\r\n"
+                    "Line-Separator: not\u2028broken\r\n"
+                    "Paragraph-Separator: not\u2029broken\r\n"
+                    "\r\n",
+
+Lib/test/test_httplib.py:34:5: [implicit; multiline, 10 parts]
+    'HTTP/1.1 200 OK\r\n'
+    'Transfer-Encoding: chunked\r\n\r\n'
+    'a\r\n'
+    'hello worl\r\n'
+    '3\r\n'
+    'd! \r\n'
+    '8\r\n'
+    'and now \r\n'
+    '22\r\n'
+    'for something completely different\r\n'
+
+Lib/test/test_plistlib.py:520:13: [implicit; multiline, 10 parts]
+            b'<array>\n'
+            b'\t<dict>\n'
+            b'\t\t<key>bytes</key>\n'
+            b'\t\t<data>\n'
+            b'\t\tAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKiss\n'
+            b'\t\tLS4vMDE=\n'
+            b'\t\t</data>\n'
+            b'\t</dict>\n'
+            b'</array>\n'
+            b'</plist>\n')
+
+Lib/test/test_plistlib.py:551:13: [implicit; multiline, 10 parts]
+            b'<array>\n'
+            b' \t<dict>\n'
+            b' \t \t<key>bytes</key>\n'
+            b' \t \t<data>\n'
+            b' \t \tAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKiss\n'
+            b' \t \tLS4vMDE=\n'
+            b' \t \t</data>\n'
+            b' \t</dict>\n'
+            b'</array>\n'
+            b'</plist>\n')
+
+Lib/test/test_plistlib.py:564:13: [implicit; multiline, 10 parts]
+            b'<array>\n'
+            b'\t   <dict>\n'
+            b'\t   \t   <key>bytes</key>\n'
+            b'\t   \t   <data>\n'
+            b'\t   \t   AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygp\n'
+            b'\t   \t   KissLS4vMDE=\n'
+            b'\t   \t   </data>\n'
+            b'\t   </dict>\n'
+            b'</array>\n'
+            b'</plist>\n')
+
+Lib/test/test_tokenize.py:2150:30: [implicit; multiline, 10 parts]
+        self.check_roundtrip("a = (3,4, \n"
+                             "5,6)\n"
+                             "y = [3, 4,\n"
+                             "5]\n"
+                             "z = {'a': 5,\n"
+                             "'b':15, 'c':True}\n"
+                             "x = len(y) + 5 - a[\n"
+                             "3] - a[2]\n"
+                             "+ len(z) - z[\n"
+                             "'b']\n")
+
+Lib/test/test_email/test_headerregistry.py:1749:13: [implicit; multiline, 9 parts]
+            'Subject:\n'
+            ' =?utf-8?q?thisisa?=\n'
+            ' =?utf-8?q?verylon?=\n'
+            ' =?utf-8?q?glineco?=\n'
+            ' =?utf-8?q?nsistin?=\n'
+            ' =?utf-8?q?gofasin?=\n'
+            ' =?utf-8?q?gleword?=\n'
+            ' =?utf-8?q?thatwon?=\n'
+            ' =?utf-8?q?tfit?=\n'
+
+Lib/test/test_plistlib.py:539:13: [implicit; multiline, 9 parts]
+            b'<array>\n'
+            b' <dict>\n'
+            b'  <key>bytes</key>\n'
+            b'  <data>\n'
+            b'  AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDE=\n'
+            b'  </data>\n'
+            b' </dict>\n'
+            b'</array>\n'
+            b'</plist>\n')
+
+Lib/test/test_timeit.py:402:21: [implicit; multiline, 9 parts]
+        expected = ('1 0.001\n'
+                    '2 0.002\n'
+                    '5 0.005\n'
+                    '10 0.010\n'
+                    '20 0.020\n'
+                    '50 0.049\n'
+                    '100 0.098\n'
+                    '200 0.195\n'
+                    '500 0.488\n')
 
 Lib/test/test_unicodedata.py:1141:13: [implicit; multiline, 9 parts]
-  "import gc, sys\n"
-              "assert '\\N{GRINNING FACE}'.encode("
-              "    'ascii', errors='namereplace') == b'\\\\N{GRINNING FACE}'\n"
-              "compile(r\"x = '\\\\N{LATIN CAPITAL LETT...
-
-Lib/test/test_unittest/test_result.py:559:34: [implicit; multiline, 3 parts]
-  '(' + __name__ + '.Test_TextTestResult.testGetDescriptionWithMultiLineDocstring)\n'
-                  'Tests getDescription() for a method with a longer '
-                  'docstring.'))
-
-Lib/test/test_unittest/testmock/testasync.py:1099:31: [implicit; multiline, 3 parts]
-  re.escape('Awaits not found.\n'
-                                'Expected: [call()]\n'
-                                'Actual: [call(1)]'))) as cm:
-
-Lib/test/test_unittest/testmock/testasync.py:1109:25: [implicit; multiline, 5 parts]
-  'Error processing expected awaits.\n'
-                          "Errors: [None, TypeError('too many positional "
-                          "arguments')]\n"
-                          'Expected: [call(), call...
-
-Lib/test/test_unittest/testmock/testhelpers.py:1165:13: [implicit; multiline, 4 parts]
-  "[call(1, 2),\n"
-              " call.foo(a=3),\n"
-              " call.foo.bar(),\n"
-              " call.foo.bar().baz('fish', cat='dog')]"
-
-Lib/test/test_unittest/testmock/testmock.py:1638:13: [implicit; multiline, 3 parts]
-  'Calls not found.\n'
-              'Expected: [call()]\n'
-              '  Actual: [call(1)]'
-
-Lib/test/test_unittest/testmock/testmock.py:1648:13: [implicit; multiline, 3 parts]
-  'Calls not found.\n'
-              'Expected: [call()]\n'
-              '  Actual: []'
-
-Lib/test/test_unittest/testmock/testmock.py:1657:13: [implicit; multiline, 4 parts]
-  'Error processing expected calls.\n'
-              "Errors: [None, TypeError('too many positional arguments')]\n"
-              'Expected: [call(), call(1, 2)]\n'
-              '  Actual: [call(1)]'
-
-Lib/test/test_urllib.py:542:13: [implicit; multiline, 3 parts]
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAIAAAB7\n"
-              "QOjdAAAAAXNSR0IArs4c6QAAAA9JREFUCNdj%0AYGBg%2BP//PwAGAQL%2BCm8 "
-              "vHgAAAABJRU5ErkJggg%3D%3D%0A%20")
-
-Lib/test/test_urllib2.py:1412:21: [implicit; multiline, 4 parts]
-  b'HTTP/1.1 200 OK\r\n'
-                      b'Content-Length: 3\r\n'
-                      b'\r\n'
-                      b'123'
-
-Lib/test/test_urllib2_localnet.py:525:25: [implicit; multiline, 5 parts]
-  b'a\r\n'
-                          b'hello worl\r\n'
-                          b'1\r\n'
-                          b'd\r\n'
-                          b'0\r\n'
-
-Lib/test/test_venv.py:740:21: [implicit; multiline, 3 parts]
-  'python -c \'import sys; print(sys.executable)\'\n'
-                      'python -c \'import os; print(os.environ["VIRTUAL_ENV"])\'\n'
-                      'deactivate\n')
-
-Lib/test/test_venv.py:768:21: [implicit; multiline, 3 parts]
-  'python -c \'import sys; print(sys.executable)\'\n'
-                      'python -c \'import os; print(os.environ["VIRTUAL_ENV"])\'\n'
-                      'deactivate\n')
-
-Lib/test/test_venv.py:802:17: [implicit; multiline, 8 parts]
-  'function .; builtin echo DOT_LEAK; end\n'
-                  'function source; builtin echo SOURCE_LEAK; end\n'
-                  'function echo; command echo ECHO_LEAK; end\n'
-                  'function p...
-
-Lib/test/test_venv.py:865:21: [implicit; multiline, 3 parts]
-  f.write('@echo off\n'
-                      'set "PROMPT=base$G"\n'
-                      'set "VIRTUAL_ENV_DISABLE_PROMPT=1"\n'
-
-Lib/test/test_venv.py:869:21: [implicit; multiline, 5 parts]
-  'echo ACTIVE_PROMPT:%PROMPT%\n'
-                      'echo VIRTUAL_ENV:%VIRTUAL_ENV%\n'
-                      'set "PROMPT=changed$G"\n'
-                      'call deactivate\n'
-                      'echo ...
-
-Lib/test/test_venv.py:889:21: [implicit; multiline, 3 parts]
-  f.write('@echo off\n'
-                      'set "PROMPT=base) $G"\n'
-                      'set "VIRTUAL_ENV_DISABLE_PROMPT="\n'
-
-Lib/test/test_venv.py:893:21: [implicit; multiline, 3 parts]
-  'echo ACTIVE_PROMPT:%PROMPT%\n'
-                      'call deactivate\n'
-                      'echo FINAL_PROMPT:%PROMPT%\n')
-
-Lib/test/test_wsgiref.py:112:45: [implicit; multiline, 3 parts]
-  "Server: WSGIServer " + pyver + "\r\n"
-              "Content-Type: text/plain\r\n"
-              "Date: Mon, 05 Jun 2006 18:49:54 GMT\r\n" +
-
-Lib/test/test_wsgiref.py:126:13: [implicit; multiline, 4 parts]
-  b"GET /p%61th/?query=test HTTP/1.0\n"
-              b"X-Test-Header: Python test \n"
-              b"X-Test-Header: Python test 2\n"
-              b"Content-Length: 0\n\n"
-
-Lib/test/test_wsgiref.py:210:50: [implicit; multiline, 5 parts]
-  b"Server: WSGIServer " + pyver + b"\r\n"
-                  b"Content-Type: text/plain; charset=utf-8\r\n"
-                  b"Date: Wed, 24 Dec 2008 13:29:32 GMT\r\n"
-                  b"\r\n"
-               ...
-
-Lib/test/test_wsgiref.py:502:13: [implicit; multiline, 3 parts]
-  'foo: bar; baz="spam"\r\n'
-              'Foo: bar; cheese\r\n'
-              '\r\n'
-
-Lib/test/test_wsgiref.py:646:14: [implicit; multiline, 4 parts]
-  ("Status: 200 OK\r\n"
-              "Content-Length: 4\r\n"
-              "\r\n"
-              "http").encode("iso-8859-1"))
-
-Lib/test/test_wsgiref.py:654:14: [implicit; multiline, 3 parts]
-  ("Status: 200 OK\r\n"
-              "\r\n"
-              "http").encode("iso-8859-1"))
-
-Lib/test/test_wsgiref.py:661:13: [implicit; multiline, 4 parts]
-  b'Status: 200 OK\r\n'
-              b'Content-Length: 8\r\n'
-              b'\r\n'
-              b'\xd1\x82\xd0\xb5\xd1\x81\xd1\x82')
-
-Lib/test/test_wsgiref.py:669:13: [implicit; multiline, 3 parts]
-  b'Status: 200 OK\r\n'
-              b'Content-Length: 12345\r\n'
-              b'\r\n')
-
-Lib/test/test_wsgiref.py:685:14: [implicit; multiline, 3 parts]
-  ("Status: 200 OK\r\n"
-              "Content-Length: 0\r\n"
-              "\r\n").encode("iso-8859-1"))
-
-Lib/test/test_wsgiref.py:693:14: [implicit; multiline, 4 parts]
-  ("Status: %s\r\n"
-              "Content-Type: text/plain\r\n"
-              "Content-Length: %d\r\n"
-              "\r\n" % (h.error_status,len(h.error_body))).encode('iso-8859-1')
-
-Lib/test/test_wsgiref.py:766:26: [implicit; multiline, 5 parts]
-  self.assertEqual(b"Status: 200 OK\r\n"
-              b"Content-Type: text/plain; charset=utf-8\r\n"
-              b"Content-Length: 4\r\n"
-              b"\r\n"
-              b"data",
-
-Lib/test/test_wsgiref.py:808:26: [implicit; multiline, 6 parts]
-  self.assertEqual(b"HTTP/1.0 200 OK\r\n"
-              b"Content-Type: text/plain\r\n"
-              b"Date: Mon, 05 Jun 2006 18:49:54 GMT\r\n"
-              b"Content-Length: 13\r\n"
-              b"\r\n"
-     ...
-
-Lib/test/test_xml_etree.py:551:17: [implicit; multiline, 5 parts]
-  '<root>\n'
-                  '   <element key="value">text</element>\n'
-                  '   <element>text</element>tail\n'
-                  '   <empty-element />\n'
-                  '</root>')
-
-Lib/test/test_xml_etree.py:560:17: [implicit; multiline, 5 parts]
-  '<ns0:root xmlns:ns0="namespace">\n'
-                  '   <ns0:element key="value">text</ns0:element>\n'
-                  '   <ns0:element>text</ns0:element>tail\n'
-                  '   <ns0:empty-elemen...
-
-Lib/test/test_xml_etree.py:573:17: [implicit; multiline, 5 parts]
-  '<root>\n'
-                  '   <element key="value">text</element>\n'
-                  '   <element>text</element>tail\n'
-                  '   <empty-element />\n'
-                  '</root>')
-
-Lib/test/test_xml_etree.py:583:17: [implicit; multiline, 5 parts]
-  '<root>\n'
-                  '   <element key="value">text</element>\n'
-                  '   <element>text</element>tail\n'
-                  '   <empty-element />\n'
-                  '</root>')
+            "import gc, sys\n"
+            "assert '\\N{GRINNING FACE}'.encode("
+            "    'ascii', errors='namereplace') == b'\\\\N{GRINNING FACE}'\n"
+            "compile(r\"x = '\\\\N{LATIN CAPITAL LETTER A}'\", '<x>', 'exec')\n"
+            "del sys.modules['unicodedata']\n"
+            "gc.collect()\n"
+            "assert '\\N{WINKING FACE}'.encode("
+            "    'ascii', errors='namereplace') == b'\\\\N{WINKING FACE}'\n"
+            "compile(r\"x = '\\\\N{LATIN CAPITAL LETTER B}'\", '<x>', 'exec')\n"
 
 Lib/test/test_xml_etree.py:784:13: [implicit; multiline, 9 parts]
-  b'<html>\n'
-              b'  <body>\n'
-              b'    <p>par</p>\n'
-              b'    <p>text</p>\n'
-              b'    <p>\n'
-              b'      <br />\n'
-              b'    </p>\n'
-              b'  ...
-
-Lib/test/test_xml_etree.py:799:13: [implicit; multiline, 6 parts]
-  b'<html>\n'
-              b'  <body>\n'
-              b'    <p>pre<br />post</p>\n'
-              b'    <p>text</p>\n'
-              b'  </body>\n'
-              b'</html>'
-
-Lib/test/test_xml_etree.py:812:13: [implicit; multiline, 6 parts]
-  b'<html>\n'
-              b'\t<body>\n'
-              b'\t\t<p>pre<br />post</p>\n'
-              b'\t\t<p>text</p>\n'
-              b'\t</body>\n'
-              b'</html>'
-
-Lib/test/test_xml_etree.py:824:13: [implicit; multiline, 6 parts]
-  b'<html>\n'
-              b'<body>\n'
-              b'<p>pre<br />post</p>\n'
-              b'<p>text</p>\n'
-              b'</body>\n'
-              b'</html>'
-
-Lib/test/test_xml_etree.py:860:13: [implicit; multiline, 6 parts]
-  b'<html>\n'
-              b'      <body>\n'
-              b'        <p>pre<br />post</p>\n'
-              b'        <p>text</p>\n'
-              b'      </body>\n'
-              b'    </html>'
-
-Lib/test/test_xml_etree.py:872:13: [implicit; multiline, 6 parts]
-  b'<html>\n'
-              b'  <body>\n'
-              b'   <p>pre<br />post</p>\n'
-              b'   <p>text</p>\n'
-              b'  </body>\n'
-              b' </html>'
-
-Lib/test/test_xml_etree.py:1162:13: [implicit; multiline, 7 parts]
-  '<ns0:body xmlns:ns0="http://effbot.org/ns">\n'
-              '  <ns0:tag>text</ns0:tag>\n'
-              '  <ns0:tag />\n'
-              '  <ns0:section>\n'
-              '    <ns0:tag>subtext</ns0:tag>\n'
-   ...
-
-Lib/test/test_xml_etree.py:1503:13: [implicit; multiline, 3 parts]
-  b"<?xml version='1.0' encoding='iso-8859-1'?>\n"
-              b"<body xmlns='http://&#233;ffbot.org/ns'\n"
-              b"      xmlns:cl\xe9='http://effbot.org/ns'>text</body>\n")
-
-Lib/test/test_xml_etree.py:2129:13: [implicit; multiline, 8 parts]
-  '<document>\n'
-              '  <p>Example.</p>\n'
-              '  <root>\n'
-              '   <element key="value">text</element>\n'
-              '   <element>text</element>tail\n'
-              '   <empty-e...
-
-Lib/test/test_xml_etree.py:2145:13: [implicit; multiline, 8 parts]
-  '<document>\n'
-              '  <p>120 Mz is adequate for an average home user.</p>\n'
-              '  <disclaimer>\n'
-              '  <p>The opinions represented herein represent those of the individual\...
-
-Lib/test/test_xml_etree.py:2158:13: [implicit; multiline, 4 parts]
-  '<document>\n'
-              '  <p>This document has been accessed\n'
-              '  324387 times.</p>\n'
-              '</document>') # C2
-
-Lib/test/test_xml_etree.py:2167:13: [implicit; multiline, 4 parts]
-  '<document>\n'
-              '  <p>This document has been <em>accessed</em>\n'
-              '  324387 times.</p>\n'
-              '</document>') # C2b
-
-Lib/test/test_xml_etree.py:2176:13: [implicit; multiline, 8 parts]
-  '<document>\n'
-              '  <p>The following is the source of the "data.xml" resource:</p>\n'
-              "  <example>&lt;?xml version='1.0'?&gt;\n"
-              '&lt;data&gt;\n'
-              '  &lt;i...
+            b'<html>\n'
+            b'  <body>\n'
+            b'    <p>par</p>\n'
+            b'    <p>text</p>\n'
+            b'    <p>\n'
+            b'      <br />\n'
+            b'    </p>\n'
+            b'  </body>\n'
+            b'</html>'
 
 Lib/test/test_xml_etree.py:2192:13: [implicit; multiline, 9 parts]
-  '<div xmlns:ns0="http://www.w3.org/2001/XInclude">\n'
-              '  <ns0:include href="example.txt" parse="text">\n'
-              '    <ns0:fallback>\n'
-              '      <ns0:include href="fallback-...
-
-Lib/test/test_xml_etree.py:4771:13: [implicit; multiline, 7 parts]
-  '<root>\n'
-              '    \n'
-              '    \n'
-              '    <c>\n'
-              '        <x:d xmlns:x="http://example.com/x">dtext</x:d>\n'
-              '    </c>\n'
-              '</root>')
+            '<div xmlns:ns0="http://www.w3.org/2001/XInclude">\n'
+            '  <ns0:include href="example.txt" parse="text">\n'
+            '    <ns0:fallback>\n'
+            '      <ns0:include href="fallback-example.txt" parse="text">\n'
+            '        <ns0:fallback><a href="mailto:bob@example.org">Report error</a></ns0:fallback>\n'
+            '      </ns0:include>\n'
+            '    </ns0:fallback>\n'
+            '  </ns0:include>\n'
+            '</div>') # C5
 
 Lib/test/test_xml_etree.py:4786:13: [implicit; multiline, 9 parts]
-  '<root>\n'
-              '    <a xmlns:x="http://example.com/x" x:attr="attrx">\n'
-              '        \n'
-              '    </a>\n'
-              '    \n'
-              '    <c>\n'
-              '        \n'...
+            '<root>\n'
+            '    <a xmlns:x="http://example.com/x" x:attr="attrx">\n'
+            '        \n'
+            '    </a>\n'
+            '    \n'
+            '    <c>\n'
+            '        \n'
+            '    </c>\n'
+            '</root>')
+
+Lib/idlelib/idle_test/htest.py:196:12: [implicit; multiline, 8 parts]
+    'msg': "Test the following bindings.\n"
+           "<Control-o> to open file from dialog.\n"
+           "Edit the file.\n"
+           "<Control-p> to print the file.\n"
+           "<Control-s> to save the file.\n"
+           "<Alt-s> to save-as another file.\n"
+           "<Control-c> to save-copy-as another file.\n"
+           "Check that changes were saved by opening the file elsewhere."
+
+Lib/test/test_email/test_generator.py:76:13: [implicit; multiline, 8 parts]
+            "To: whom_it_may_concern@example.com\n"
+            "From: nobody_you_want_to_know@example.com\n"
+            "Subject: We the willing led by the unknowing are doing the "
+              "impossible for the ungrateful. We have done so much for "
+              "so long with so little we are now qualified to do anything "
+              "with nothing.\n"
+              "\n"
+              "None\n")
+
+Lib/test/test_email/test_generator.py:85:13: [implicit; multiline, 8 parts]
+            "To: whom_it_may_concern@example.com\n"
+            "From: nobody_you_want_to_know@example.com\n"
+            "Subject: We the willing led by the unknowing are doing the "
+                "impossible for the ungrateful. We have\n"
+              " done so much for so long with so little we are now qualified "
+                "to do anything with nothing.\n"
+              "\n"
+              "None\n")
+
+Lib/test/test_gdb/test_misc.py:38:28: [implicit; multiline, 8 parts]
+        self.assertListing('   5    \n'
+                           '   6    def bar(a, b, c):\n'
+                           '   7        baz(a, b, c)\n'
+                           '   8    \n'
+                           '   9    def baz(*args):\n'
+                           ' >10        id(42)\n'
+                           '  11    \n'
+                           '  12    foo(1, 2, 3)\n',
+
+Lib/test/test_pyrepl/test_pyrepl.py:1933:13: [implicit; multiline, 8 parts]
+            "def a():\n"
+            "  for x in range(10):\n"
+            "\n"
+            "    if x%2:\n"
+            "      print(x)\n"
+            "\n"
+            "    else:\n"
+            "      pass\n"
+
+Lib/test/test_pyrepl/test_pyrepl.py:1944:13: [implicit; multiline, 8 parts]
+            "def a():\n"
+            "  for x in range(10):\n"
+            "\n"
+            "    if x%2:\n"
+            "      print(x)\n"
+            "\n"
+            "    else:\n"
+            "      pass\n"
+
+Lib/test/test_venv.py:802:17: [implicit; multiline, 8 parts]
+                'function .; builtin echo DOT_LEAK; end\n'
+                'function source; builtin echo SOURCE_LEAK; end\n'
+                'function echo; command echo ECHO_LEAK; end\n'
+                'function printf; command printf PRINTF_LEAK; end\n'
+                'function set_color; command true; end\n'
+                'function _exit7; return 7; end\n'
+                '_exit7\n'
+                'fish_prompt\n'
+
+Lib/test/test_xml_etree.py:2129:13: [implicit; multiline, 8 parts]
+            '<document>\n'
+            '  <p>Example.</p>\n'
+            '  <root>\n'
+            '   <element key="value">text</element>\n'
+            '   <element>text</element>tail\n'
+            '   <empty-element />\n'
+            '</root>\n'
+            '</document>')
+
+Lib/test/test_xml_etree.py:2145:13: [implicit; multiline, 8 parts]
+            '<document>\n'
+            '  <p>120 Mz is adequate for an average home user.</p>\n'
+            '  <disclaimer>\n'
+            '  <p>The opinions represented herein represent those of the individual\n'
+            '  and should not be interpreted as official policy endorsed by this\n'
+            '  organization.</p>\n'
+            '</disclaimer>\n'
+            '</document>') # C1
+
+Lib/test/test_xml_etree.py:2176:13: [implicit; multiline, 8 parts]
+            '<document>\n'
+            '  <p>The following is the source of the "data.xml" resource:</p>\n'
+            "  <example>&lt;?xml version='1.0'?&gt;\n"
+            '&lt;data&gt;\n'
+            '  &lt;item&gt;&lt;![CDATA[Brooks &amp; Shields]]&gt;&lt;/item&gt;\n'
+            '&lt;/data&gt;\n'
+            '</example>\n'
+            '</document>') # C3
+
+Lib/idlelib/config_key.py:152:18: [explicit; multiline, 7 parts]
+            text="Key bindings are specified using Tkinter keysyms as\n"+
+                 "in these samples: <Control-f>, <Shift-F2>, <F12>,\n"
+                 "<Control-space>, <Meta-less>, <Control-Alt-Shift-X>.\n"
+                 "Upper case is used when the Shift modifier is present!\n\n" +
+                 "'Emacs style' multi-keystroke bindings are specified as\n" +
+                 "follows: <Control-x><Control-y>, where the first key\n" +
+                 "is the 'do-nothing' keybinding.\n\n" +
+                 "Multiple separate bindings for one action should be\n"+
+                 "separated by a space, eg., <Alt-v> <Meta-v>." )
+
+Lib/idlelib/idle_test/htest.py:184:12: [implicit; multiline, 7 parts]
+    'msg': "Enter menu item name and help file path\n"
+           "'', > than 30 chars, and 'abc' are invalid menu item names.\n"
+           "'' and file does not exist are invalid path items.\n"
+           "Any url ('www...', 'http...') is accepted.\n"
+           "Test Browse with and without path, as cannot unittest.\n"
+           "[Ok] or <Return> prints valid entry to shell\n"
+           "<Escape>, [Cancel], or [X] prints None to shell"
+
+Lib/test/datetimetester.py:5194:13: [implicit; multiline, 7 parts]
+            b'cdatetime\ndatetime\n'
+            b"(S'\\x07\\xdf\\x0b\\x1b\\x14;\\x01\\x01\\xe2@'\n"
+            b'ctest.datetimetester\nPicklableFixedOffset\n(tR'
+            b"(dS'_FixedOffset__offset'\ncdatetime\ntimedelta\n"
+            b'(I-1\nI68400\nI0\ntRs'
+            b"S'_FixedOffset__dstoffset'\nNs"
+            b"S'_FixedOffset__name'\nS'cookie'\nsbtR.",
+
+Lib/test/datetimetester.py:5202:13: [implicit; multiline, 7 parts]
+            b'cdatetime\ndatetime\n'
+            b'(U\n\x07\xdf\x0b\x1b\x14;\x01\x01\xe2@'
+            b'ctest.datetimetester\nPicklableFixedOffset\n)R'
+            b'}(U\x14_FixedOffset__offsetcdatetime\ntimedelta\n'
+            b'(J\xff\xff\xff\xffJ0\x0b\x01\x00K\x00tR'
+            b'U\x17_FixedOffset__dstoffsetN'
+            b'U\x12_FixedOffset__nameU\x06cookieubtR.',
+
+Lib/test/datetimetester.py:5210:13: [implicit; multiline, 7 parts]
+            b'\x80\x02cdatetime\ndatetime\n'
+            b'U\n\x07\xdf\x0b\x1b\x14;\x01\x01\xe2@'
+            b'ctest.datetimetester\nPicklableFixedOffset\n)R'
+            b'}(U\x14_FixedOffset__offsetcdatetime\ntimedelta\n'
+            b'J\xff\xff\xff\xffJ0\x0b\x01\x00K\x00\x87R'
+            b'U\x17_FixedOffset__dstoffsetN'
+            b'U\x12_FixedOffset__nameU\x06cookieub\x86R.',
+
+Lib/test/test_clinic.py:1395:13: [implicit; multiline, 7 parts]
+            "module t\n"
+            "t.s\n"
+            "   a: object\n"
+            "      Param docstring with trailing whitespace  \n"
+            "Func docstring summary with trailing whitespace  \n"
+            "  \n"
+            "Func docstring body with trailing whitespace  \n"
+
+Lib/test/test_configparser.py:1461:30: [implicit; multiline, 7 parts]
+        cf = self.fromstring("[b]\n"
+                             "o4=1\n"
+                             "o3=2\n"
+                             "o2=3\n"
+                             "o1=4\n"
+                             "[a]\n"
+                             "k=v\n")
+
+Lib/test/test_configparser.py:1471:26: [implicit; multiline, 7 parts]
+                         "[a]\n"
+                         "k = v\n\n"
+                         "[b]\n"
+                         "o1 = 4\n"
+                         "o2 = 3\n"
+                         "o3 = 2\n"
+                         "o4 = 1\n\n")
+
+Lib/test/test_gdb/test_backtrace.py:93:16: [implicit; multiline, 7 parts]
+        cmd = ('from gc import collect\n'
+               'id(42)\n'
+               'def foo():\n'
+               '    collect()\n'
+               'def bar():\n'
+               '    foo()\n'
+               'bar()\n')
+
+Lib/test/test_httplib.py:1030:17: [implicit; multiline, 7 parts]
+        text = ('HTTP/1.1 200 OK\r\n'
+                'Set-Cookie: Customer="WILE_E_COYOTE"; '
+                'Version="1"; Path="/acme"\r\n'
+                'Set-Cookie: Part_Number="Rocket_Launcher_0001"; Version="1";'
+                ' Path="/acme"\r\n'
+                '\r\n'
+                'No body\r\n')
+
+Lib/test/test_minidom.py:17:11: [implicit; multiline, 7 parts]
+sample = ("<?xml version='1.0' encoding='us-ascii'?>\n"
+          "<!DOCTYPE doc PUBLIC 'http://xml.python.org/public'"
+          " 'http://xml.python.org/system' [\n"
+          "  <!ELEMENT e EMPTY>\n"
+          "  <!ENTITY ent SYSTEM 'http://xml.python.org/entity'>\n"
+          "]><doc attr='value'> text\n"
+          "<?pi sample?> <!-- comment --> <e/> </doc>")
+
+Lib/test/test_pyrepl/test_interact.py:261:13: [implicit; multiline, 7 parts]
+            "from dataclasses import dataclass\n"
+            "\n"
+            "@dataclass\n"
+            "class Point:\n"
+            "    x: float\n"
+            "    y: float\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:807:13: [implicit; multiline, 7 parts]
+            "def fo():\n"
+            "    ...\n"
+            "    ...\n"
+            "    a = 1\n"
+            "    b = 2\n"
+            "    x = 1\n"
+            "    z = 2"
+
+Lib/test/test_ttk_textonly.py:246:17: [implicit; multiline, 7 parts]
+                "%sa -other {1 2 3} -children {\n"
+                "%sb -children {\n"
+                "%sc -something {1 2} -children {\n"
+                "%sd -nice opt\n"
+                "%s}\n"
+                "%s}\n"
+                "%s}" % (spaces(), spaces(indent_size),
+
+Lib/test/test_xml_etree.py:1162:13: [implicit; multiline, 7 parts]
+            '<ns0:body xmlns:ns0="http://effbot.org/ns">\n'
+            '  <ns0:tag>text</ns0:tag>\n'
+            '  <ns0:tag />\n'
+            '  <ns0:section>\n'
+            '    <ns0:tag>subtext</ns0:tag>\n'
+            '  </ns0:section>\n'
+            '</ns0:body>')
+
+Lib/test/test_xml_etree.py:4771:13: [implicit; multiline, 7 parts]
+            '<root>\n'
+            '    \n'
+            '    \n'
+            '    <c>\n'
+            '        <x:d xmlns:x="http://example.com/x">dtext</x:d>\n'
+            '    </c>\n'
+            '</root>')
+
+Lib/idlelib/config_key.py:112:33: [explicit; multiline, 6 parts]
+                           text="Select the desired modifier keys\n"+
+                                "above, and the final key from the\n"+
+                                "list on the right.\n\n" +
+                                "Use upper case Symbols when using\n" +
+                                "the Shift modifier.  (Letters will be\n" +
+                                "converted automatically.)")
+
+Lib/idlelib/idle_test/htest.py:159:12: [implicit; multiline, 6 parts]
+    'msg': "Test for different key modifier sequences.\n"
+           "<nothing> is invalid.\n"
+           "No modifier key is invalid.\n"
+           "Shift key with [a-z],[0-9], function key, move key, tab, space "
+           "is invalid.\nNo validity checking if advanced key binding "
+           "entry is used."
+
+Lib/idlelib/idle_test/htest.py:243:12: [implicit; multiline, 6 parts]
+    'msg': "There are two tracers which can be toggled using a checkbox.\n"
+           "Toggling a tracer 'on' by checking it should print tracer "
+           "output to the console or to the IDLE shell.\n"
+           "If both the tracers are 'on', the output from the tracer which "
+           "was switched 'on' later, should be printed first\n"
+           "Test for actions like text entry, and removal."
+
+Lib/idlelib/idle_test/test_format.py:257:9: [implicit; multiline, 6 parts]
+        "    '''The first line is under the max width.\n"
+        "    The second line's length is way over the max width. It goes "
+        "on and on until it is over 100 characters long.\n"
+        "    Same thing with the third line. It is also way over the max "
+        "width, but FormatParagraph will fix it.\n"
+        "    '''\n")
+
+Lib/idlelib/idle_test/test_format.py:264:9: [implicit; multiline, 6 parts]
+        "# The first line is under the max width.\n"
+        "# The second line's length is way over the max width. It goes on "
+        "and on until it is over 100 characters long.\n"
+        "# Same thing with the third line. It is also way over the max "
+        "width, but FormatParagraph will fix it.\n"
+        "# The fourth line is short like the first line.")
+
+Lib/idlelib/idle_test/test_format.py:635:13: [implicit; multiline, 6 parts]
+            "Line with an ending tab    \n"
+            "Line ending in 5 spaces     \n"
+            "Linewithnospaces\n"
+            "    indented line\n"
+            "    indented line with trailing space \n"
+            "    \n")
+
+Lib/test/datetimetester.py:4704:13: [implicit; multiline, 6 parts]
+            b"cdatetime\ntime\n(S'\\x05\\x06\\x07\\x01\\xe2@'\n"
+            b"ctest.datetimetester\nPicklableFixedOffset\n(tR"
+            b"(dS'_FixedOffset__offset'\ncdatetime\ntimedelta\n"
+            b"(I-1\nI68400\nI0\ntRs"
+            b"S'_FixedOffset__dstoffset'\nNs"
+            b"S'_FixedOffset__name'\nS'cookie'\nsbtR.",
+
+Lib/test/test_compile.py:3018:13: [implicit; multiline, 6 parts]
+            'class T:\n'
+            '    def __init__(self):\n'
+            '        self.{V1} = 10\n'
+            '        self.{V2} = 10\n'
+            '    def foo(self):\n'
+            '        self.{V3} = 10\n'
+
+Lib/test/test_httplib.py:318:60: [implicit; multiline, 6 parts]
+            b'obs-text: ' + bytes(range(0x80, 0xFF + 1)) + b'\r\n'
+            b'obs-fold: text\r\n'
+            b' folded with space\r\n'
+            b'\tfolded with tab\r\n'
+            b'Content-Length: 0\r\n'
+            b'\r\n'
+
+Lib/test/test_httplib.py:1273:13: [implicit; multiline, 6 parts]
+            'HTTP/1.1 200 OK\r\n'
+            'Transfer-Encoding: chunked\r\n\r\n'
+            'a\r\n'
+            'hello world\r\n'
+            '1\r\n'
+            'd\r\n'
+
+Lib/test/test_httplib.py:1293:13: [implicit; multiline, 6 parts]
+            'HTTP/1.1 200 OK\r\n'
+            'Transfer-Encoding: chunked\r\n\r\n'
+            'a\r\n'
+            'hello world\r\n'
+            '1\r\n'
+            'd\r\n'
+
+Lib/test/test_httplib.py:1669:9: [implicit; multiline, 6 parts]
+        'HTTP/1.1 200 OK\r\n'
+        '\r\n'
+        'hello world!\n'
+        'and now \n'
+        'for something completely different\n'
+        'foo'
+
+Lib/test/test_json/test_speedups.py:97:13: [implicit; multiline, 6 parts]
+            '[\n'
+            '\t"spam", \n'
+            '\t{\n'
+            '\t\t"ham": "eggs"\n'
+            '\t}\n'
+            ']')
+
+Lib/test/test_json/test_speedups.py:106:13: [implicit; multiline, 6 parts]
+            '[\n'
+            '\t\t\t\t"spam", \n'
+            '\t\t\t\t{\n'
+            '\t\t\t\t\t"ham": "eggs"\n'
+            '\t\t\t\t}\n'
+            '\t\t\t]')
+
+Lib/test/test_minidom.py:803:27: [implicit; multiline, 6 parts]
+        doc = parseString("<?xml version='1.0'?>\n"
+                    "<!-- comment -->"
+                    "<!DOCTYPE doc [\n"
+                    "<!NOTATION notation SYSTEM 'http://xml.python.org/'>\n"
+                    "]>\n"
+                    "<doc attr='value'/>")
+
+Lib/test/test_minidom.py:815:27: [implicit; multiline, 6 parts]
+        doc = parseString("<?xml version='1.0'?>\n"
+                    "<!-- comment -->"
+                    "<!DOCTYPE doc [\n"
+                    "<!NOTATION notation SYSTEM 'http://xml.python.org/'>\n"
+                    "]>\n"
+                    "<doc attr='value'/>")
+
+Lib/test/test_pydoc/test_pydoc.py:585:17: [implicit; multiline, 6 parts]
+        snip = (" |  Built-in subclasses:\n"
+                " |      async_generator\n"
+                " |      BaseException\n"
+                " |      builtin_function_or_method\n"
+                " |      bytearray\n"
+                " |      ... and \\d+ other subclasses")
+
+Lib/test/test_pyrepl/test_pyrepl.py:1836:13: [implicit; multiline, 6 parts]
+            "def a():\n"
+            "  for x in range(10):\n"
+            "    if x%2:\n"
+            "      print(x)\n"
+            "    else:\n"
+            "      pass\n"
+
+Lib/test/test_pyrepl/test_pyrepl.py:1907:13: [implicit; multiline, 6 parts]
+            "def a():\n"
+                "for x in range(10):\n"
+                    "if x%2:\n"
+                        "print(x)\n"
+                    "else:\n"
+                        "pass\n\n"
+
+Lib/test/test_pyrepl/test_reader.py:101:13: [implicit; multiline, 6 parts]
+            ">>> if so\\\n"
+            "me_condit\\\n"
+            "ion:\n"
+            "...     s\\\n"
+            "ome_funct\\\n"
+            "ion()"
+
+Lib/test/test_pyrepl/test_reader.py:271:13: [implicit; multiline, 6 parts]
+            "def foo():\n"
+            "    \n"
+            "    \n"
+            "    a = 1\n"
+            "    \n"
+            "    "  # HistoricalReader will trim trailing whitespace
+
+Lib/test/test_regrtest.py:835:20: [implicit; multiline, 6 parts]
+            msg = ("Command %s failed with exit code %s, but exit code %s expected!\n"
+                   "\n"
+                   "stdout:\n"
+                   "---\n"
+                   "%s\n"
+                   "---\n"
+
+Lib/test/test_symtable.py:435:33: [implicit; multiline, 6 parts]
+        st3 = symtable.symtable("def f():\n"
+                                "   x = 1\n"
+                                "   class A:\n"
+                                "       x = 2\n"
+                                "       def method():\n"
+                                "           return x\n",
+
+Lib/test/test_syntax.py:3373:13: [implicit; multiline, 6 parts]
+            "print(\n"
+            '    "line1"\n'
+            '    "line2"\n'
+            '    "line3"\n'
+            "    x=1\n"
+            ")",
+
+Lib/test/test_tabnanny.py:21:9: [implicit; multiline, 6 parts]
+        'fruits = [\n'
+        '    "Apple",\n'
+        '    "Orange",\n'
+        '    "Banana",\n'
+        '\n'
+        'print(fruits)\n'
+
+Lib/test/test_tokenize.py:2074:30: [implicit; multiline, 6 parts]
+        self.check_roundtrip("class Test: # A comment here\n"
+                             "  # A comment with weird indent\n"
+                             "  after_com = 5\n"
+                             "  def x(m): return m*5 # a one liner\n"
+                             "  def y(m): # A whitespace after the colon\n"
+                             "     return y*4 # 3-space indent\n")
+
+Lib/test/test_tools/test_i18n.py:592:13: [implicit; multiline, 6 parts]
+            '*** test.py:1: No keywords matched gettext call "_":\n'
+            '\tkeyword="_": Expected a string constant for argument 1, got x\n'
+            '\tkeyword="_:2": Expected a string constant for argument 2, got 42\n'
+            '*** test.py:2: No keywords matched gettext call "_":\n'
+            '\tkeyword="_": Expected a string constant for argument 1, got 42\n'
+            '\tkeyword="_:2": Expected a string constant for argument 2, got y\n')
+
+Lib/test/test_traceback.py:738:13: [implicit; multiline, 6 parts]
+            '    if True: raise ValueError(\n'
+            '             ^^^^^^^^^^^^^^^^^\n'
+            '        "error over multiple lines"\n'
+            '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
+            '    )\n'
+            '    ^'
+
+Lib/test/test_traceback.py:925:13: [implicit; multiline, 6 parts]
+            '       a = b    \\\n'
+            '           ~~~~~~\n'
+            '    +\\\n'
+            '    ^~\n'
+            '          c  # test\n'
+            '          ~\n'
+
+Lib/test/test_traceback.py:1173:13: [implicit; multiline, 6 parts]
+            '    a = (g(1).y)(\n'
+            '        ~~~~~~~~~\n'
+            '        2\n'
+            '        ~\n'
+            '    )(3)(4)\n'
+            '    ~^^^\n'
+
+Lib/test/test_traceback.py:2982:29: [implicit; multiline, 6 parts]
+                e.add_note(('>> Multi line note\n'
+                            '>> Because I am such\n'
+                            '>> an important exception.\n'
+                            '>> empty lines work too\n'
+                            '\n'
+                            '(that was an empty line)'))
+
+Lib/test/test_traceback.py:3033:29: [implicit; multiline, 6 parts]
+                e.add_note(('>> Multi line note\n'
+                            '>> Because I am such\n'
+                            '>> an important exception.\n'
+                            '>> empty lines work too\n'
+                            '\n'
+                            '(that was an empty line)'))
+
+Lib/test/test_traceback.py:3456:14: [implicit; multiline, 6 parts]
+            ['  File "%s", line %d, in some_inner\n'
+             '    return traceback.StackSummary.extract(\n'
+             '    a = 1\n'
+             '    b = 2\n'
+             '    k = 3\n'
+             '    v = 4\n' % (__file__, some_inner.__code__.co_firstlineno + 3)
+
+Lib/test/test_wsgiref.py:808:26: [implicit; multiline, 6 parts]
+        self.assertEqual(b"HTTP/1.0 200 OK\r\n"
+            b"Content-Type: text/plain\r\n"
+            b"Date: Mon, 05 Jun 2006 18:49:54 GMT\r\n"
+            b"Content-Length: 13\r\n"
+            b"\r\n"
+            b"Hello, world!",
+
+Lib/test/test_xml_etree.py:799:13: [implicit; multiline, 6 parts]
+            b'<html>\n'
+            b'  <body>\n'
+            b'    <p>pre<br />post</p>\n'
+            b'    <p>text</p>\n'
+            b'  </body>\n'
+            b'</html>'
+
+Lib/test/test_xml_etree.py:812:13: [implicit; multiline, 6 parts]
+            b'<html>\n'
+            b'\t<body>\n'
+            b'\t\t<p>pre<br />post</p>\n'
+            b'\t\t<p>text</p>\n'
+            b'\t</body>\n'
+            b'</html>'
+
+Lib/test/test_xml_etree.py:824:13: [implicit; multiline, 6 parts]
+            b'<html>\n'
+            b'<body>\n'
+            b'<p>pre<br />post</p>\n'
+            b'<p>text</p>\n'
+            b'</body>\n'
+            b'</html>'
+
+Lib/test/test_xml_etree.py:860:13: [implicit; multiline, 6 parts]
+            b'<html>\n'
+            b'      <body>\n'
+            b'        <p>pre<br />post</p>\n'
+            b'        <p>text</p>\n'
+            b'      </body>\n'
+            b'    </html>'
+
+Lib/test/test_xml_etree.py:872:13: [implicit; multiline, 6 parts]
+            b'<html>\n'
+            b'  <body>\n'
+            b'   <p>pre<br />post</p>\n'
+            b'   <p>text</p>\n'
+            b'  </body>\n'
+            b' </html>'
+
+Lib/idlelib/idle_test/htest.py:170:12: [implicit; multiline, 5 parts]
+    'msg': "Click the 'Show GrepDialog' button.\n"
+           "Test the various 'Find-in-files' functions.\n"
+           "The results should be displayed in a new '*Output*' window.\n"
+           "'Right-click'->'Go to file/line' in the search results\n "
+           "should open that file in a new EditorWindow."
+
+Lib/idlelib/idle_test/test_format.py:134:13: [implicit; multiline, 5 parts]
+            "\n"
+            '"""String with whitespace line before and after\n'
+            'String line.\n'
+            '"""\n'
+            '\n')
+
+Lib/idlelib/idle_test/test_format.py:142:13: [implicit; multiline, 5 parts]
+            '\n'
+            '    """Indented string with whitespace before and after\n'
+            '    Comment string.\n'
+            '    """\n'
+            '\n')
+
+Lib/idlelib/idle_test/test_format.py:344:1: [implicit; multiline, 5 parts]
+"# The first line is under the max width. The second line's length is\n"
+"# way over the max width. It goes on and on until it is over 100\n"
+"# characters long. Same thing with the third line. It is also way over\n"
+"# the max width, but FormatParagraph will fix it. The fourth line is\n"
+"# short like the first line.\n")
+
+Lib/idlelib/idle_test/test_format.py:642:13: [implicit; multiline, 5 parts]
+            "Line with an ending tab\n"
+            "Line ending in 5 spaces\n"
+            "Linewithnospaces\n"
+            "    indented line\n"
+            "    indented line with trailing space\n")
+
+Lib/idlelib/idle_test/test_pyparse.py:75:17: [implicit; multiline, 5 parts]
+        setcode('"""This is a module docstring"""\n'
+                'class C:\n'
+                '    def __init__(self, a,\n'
+                '                 b=True):\n'
+                '        pass\n'
+
+Lib/idlelib/idle_test/test_pyparse.py:123:17: [implicit; multiline, 5 parts]
+                '"""This is a module docstring"""\n'
+                'class C:\n'
+                '    def __init__(self, a,\n'
+                '                 b=True):\n'
+                '        pass\n'
+
+Lib/test/test_argparse.py:4478:21: [implicit; multiline, 5 parts]
+        description='   oddly    formatted\n'
+                    'description\n'
+                    '\n'
+                    'that is so long that it should go onto multiple '
+                    'lines when wrapped')
+
+Lib/test/test_ast/test_ast.py:1954:13: [implicit; multiline, 5 parts]
+            '"""line one\nline two"""\n\n'
+            'def foo():\n  """line one\n  line two"""\n\n'
+            '  def bar():\n    """line one\n    line two"""\n'
+            '  """line one\n  line two"""\n'
+            '"""line one\nline two"""\n\n',
+
+Lib/test/test_capi/test_misc.py:178:13: [implicit; multiline, 5 parts]
+            "docstring_with_invalid_signature2($module, /, boo)\n"
+            "\n"
+            "--\n"
+            "\n"
+            "This docstring also has an invalid signature."
+
+Lib/test/test_configparser.py:954:30: [implicit; multiline, 5 parts]
+        cf = self.fromstring("[section]\n"
+                             "option1{eq}xxx\n"
+                             "option2{eq}%(option1)s/xxx\n"
+                             "ok{eq}%(option1)s/%%s\n"
+                             "not_ok{eq}%(option2)s/%%s".format(
+
+Lib/test/test_embed.py:269:26: [implicit; multiline, 5 parts]
+                         "<module 'my_test_extension' (static-extension)>\n"
+                         "my_test_extension.executed='yes'\n"
+                         "my_test_extension.exec_slot_ran='yes'\n"
+                         "<module 'embedded_ext' (static-extension)>\n"
+                         "embedded_ext.executed='yes'\n"
+
+Lib/test/test_embed.py:280:26: [implicit; multiline, 5 parts]
+                         "<module 'mp_pkg.mp_submod' (built-in)>\n"
+                         "<module 'mp_pkg.mp_submod' (built-in)>\n"
+                         "Hello from sub-module\n"
+                         "mp_pkg.mp_submod.mp_submod_exec_slot_ran='yes'\n"
+                         "mp_pkg.mp_pkg_exec_slot_ran='yes'\n"
+
+Lib/test/test_httplib.py:2038:21: [implicit; multiline, 5 parts]
+                    'HTTP/{} 200 OK\r\n'
+                    '{}'
+                    'Content-Length: 12\r\n'
+                    '\r\n'
+                    'Dummy body\r\n'
+
+Lib/test/test_plistlib.py:209:9: [implicit; multiline, 5 parts]
+        b'\xa1\x01\x00\x08\x0a'
+        b'\x00\x00\x00\x00\x00\x00\x01\x00'
+        b'\x00\x00\x00\x00\x00\x00\x00\x02'
+        b'\x00\x00\x00\x00\x00\x00\x00\x00'
+        b'\x00\x00\x00\x00\x00\x00\x00\x0b'
+
+Lib/test/test_plistlib.py:258:9: [implicit; multiline, 5 parts]
+        b'\xa1\x02\x00\x08\x0a'
+        b'\x00\x00\x00\x00\x00\x00\x01\x01'
+        b'\x00\x00\x00\x00\x00\x00\x00\x02'
+        b'\x00\x00\x00\x00\x00\x00\x00\x00'
+        b'\x00\x00\x00\x00\x00\x00\x00\x0b'
+
+Lib/test/test_profiling/test_sampling_profiler/test_collectors.py:1891:17: [implicit; multiline, 5 parts]
+                '{"type":"meta","v":0,"run_id":"run-123","sample_interval_usec":1000}\n'
+                '{"type":"string_table","v":0,"run_id":"run-123","strings":[{"str_id":0,"value":"func1"},{"str_id":1,"value":"file.py"},{"str_id":2,"value":"func2"},{"str_id":3,"value":"other_func"},{"str_id":4,"value":"other.py"}]}\n'
+                '{"type":"frame_table","v":0,"run_id":"run-123","frames":[{"frame_id":0,"path_str_id":1,"func_str_id":0,"line":10,"end_line":10},{"frame_id":1,"path_str_id":1,"func_str_id":2,"line":20,"end_line":20},{"frame_id":2,"path_str_id":4,"func_str_id":3,"line":5,"end_line":5}]}\n'
+                '{"type":"agg","v":0,"run_id":"run-123","kind":"frame","scope":"final","samples_total":3,"entries":[{"frame_id":0,"self":2,"cumulative":2},{"frame_id":1,"self":0,"cumulative":2},{"frame_id":2,"self":1,"cumulative":1}]}\n'
+                '{"type":"end","v":0,"run_id":"run-123","samples_total":3}\n'
+
+Lib/test/test_pyrepl/test_pyrepl.py:1916:13: [implicit; multiline, 5 parts]
+            "def a():\n"
+            "    for x in range(10):\n"
+            "        if x%2:\n"
+            "            print(x)\n"
+            "            else:"
+
+Lib/test/test_pyrepl/test_pyrepl.py:2281:25: [implicit; multiline, 5 parts]
+                        "def x1(): 1/0\n\n"
+                        "def x2(): x1()\n\n"
+                        "def x3(): x2()\n\n"
+                        "x3()\n"
+                        "exit()\n")
+
+Lib/test/test_regrtest.py:843:25: [implicit; multiline, 5 parts]
+                msg += ("\n"
+                        "stderr:\n"
+                        "---\n"
+                        "%s"
+                        "---\n"
+
+Lib/test/test_site.py:1049:13: [implicit; multiline, 5 parts]
+            "os.path\n"                 # no colon
+            "pkg.mod:\n"                # empty callable
+            ":callable\n"               # empty module
+            "pkg.mod:callable:extra\n"  # multiple colons
+            "os.path:join\n"            # valid
+
+Lib/test/test_smtplib.py:942:17: [implicit; multiline, 5 parts]
+        resp = ('250-testhost\r\n'
+                '250-EXPN\r\n'
+                '250-SIZE 20000000\r\n'
+                '250-STARTTLS\r\n'
+                '250-DELIVERBY\r\n')
+
+Lib/test/test_symtable.py:349:33: [implicit; multiline, 5 parts]
+        st6 = symtable.symtable('def g():\n'
+                                '    x = 2\n'
+                                '    def f():\n'
+                                '        nonlocal x\n'
+                                '    x: int',
+
+Lib/test/test_tabnanny.py:29:9: [implicit; multiline, 5 parts]
+        'if True:\n'
+        '    print("hello")\n'
+        '  print("world")\n'
+        'else:\n'
+        '    print("else called")\n'
+
+Lib/test/test_tabnanny.py:36:9: [implicit; multiline, 5 parts]
+        'if True:\n'
+        ' \tprint("hello")\n'
+        '\tprint("world")\n'
+        'else:\n'
+        '    print("else called")\n'
+
+Lib/test/test_tabnanny.py:43:9: [implicit; multiline, 5 parts]
+        'if True:\n'
+        '    print("hello")\n'
+        '    print("world")\n'
+        'else:\n'
+        '    print("else called")\n'
+
+Lib/test/test_threading.py:895:26: [implicit; multiline, 5 parts]
+                         "current ident True\n"
+                         "main MainThread _MainThread\n"
+                         "main ident True\n"
+                         "current is main True\n"
+                         "_dangling ['MainThread']\n")
+
+Lib/test/test_tokenize.py:2066:30: [implicit; multiline, 5 parts]
+        self.check_roundtrip("if x == 1:\n"
+                             "    # A comment by itself.\n"
+                             "    print(x) # Comment here, too.\n"
+                             "    # Another comment.\n"
+                             "after_if = True\n")
+
+Lib/test/test_traceback.py:1200:13: [implicit; multiline, 5 parts]
+            '    if True: x += (\n'
+            '             ^^^^^^\n'
+            '    ...<2 lines>...\n'
+            '    )  # test\n'
+            '    ^\n'
+
+Lib/test/test_traceback.py:2036:13: [implicit; multiline, 5 parts]
+            '    f()\n'
+            '    ~^^\n'
+            # XXX: The following line changes depending on whether the tests
+            # are run through the interactive interpreter or with -m
+            # It also varies depending on the platform (stack size)
+            # Fortunately, we don't care about exactness here, so we use regex
+            r'  \[Previous line repeated (\d+) more times\]' '\n'
+            'RecursionError: maximum recursion depth exceeded\n'
+
+Lib/test/test_unittest/testmock/testasync.py:1109:25: [implicit; multiline, 5 parts]
+                        'Error processing expected awaits.\n'
+                        "Errors: [None, TypeError('too many positional "
+                        "arguments')]\n"
+                        'Expected: [call(), call(1, 2)]\n'
+                        'Actual: [call(1)]'))) as cm:
+
+Lib/test/test_urllib2_localnet.py:525:25: [implicit; multiline, 5 parts]
+                        b'a\r\n'
+                        b'hello worl\r\n'
+                        b'1\r\n'
+                        b'd\r\n'
+                        b'0\r\n'
+
+Lib/test/test_venv.py:869:21: [implicit; multiline, 5 parts]
+                    'echo ACTIVE_PROMPT:%PROMPT%\n'
+                    'echo VIRTUAL_ENV:%VIRTUAL_ENV%\n'
+                    'set "PROMPT=changed$G"\n'
+                    'call deactivate\n'
+                    'echo FINAL_PROMPT:%PROMPT%\n')
+
+Lib/test/test_wsgiref.py:210:50: [implicit; multiline, 5 parts]
+                b"Server: WSGIServer " + pyver + b"\r\n"
+                b"Content-Type: text/plain; charset=utf-8\r\n"
+                b"Date: Wed, 24 Dec 2008 13:29:32 GMT\r\n"
+                b"\r\n"
+                b"data",
+
+Lib/test/test_wsgiref.py:766:26: [implicit; multiline, 5 parts]
+        self.assertEqual(b"Status: 200 OK\r\n"
+            b"Content-Type: text/plain; charset=utf-8\r\n"
+            b"Content-Length: 4\r\n"
+            b"\r\n"
+            b"data",
+
+Lib/test/test_xml_etree.py:551:17: [implicit; multiline, 5 parts]
+                '<root>\n'
+                '   <element key="value">text</element>\n'
+                '   <element>text</element>tail\n'
+                '   <empty-element />\n'
+                '</root>')
+
+Lib/test/test_xml_etree.py:560:17: [implicit; multiline, 5 parts]
+                '<ns0:root xmlns:ns0="namespace">\n'
+                '   <ns0:element key="value">text</ns0:element>\n'
+                '   <ns0:element>text</ns0:element>tail\n'
+                '   <ns0:empty-element />\n'
+                '</ns0:root>')
+
+Lib/test/test_xml_etree.py:573:17: [implicit; multiline, 5 parts]
+                '<root>\n'
+                '   <element key="value">text</element>\n'
+                '   <element>text</element>tail\n'
+                '   <empty-element />\n'
+                '</root>')
+
+Lib/test/test_xml_etree.py:583:17: [implicit; multiline, 5 parts]
+                '<root>\n'
+                '   <element key="value">text</element>\n'
+                '   <element>text</element>tail\n'
+                '   <empty-element />\n'
+                '</root>')
+
+Lib/idlelib/config.py:247:24: [implicit; multiline, 4 parts]
+            warning = ('\n Warning: config.py - IdleConf.GetOption -\n'
+                       ' problem retrieving configuration option %r\n'
+                       ' from section %r.\n'
+                       ' returning default value: %r' %
+
+Lib/idlelib/config.py:717:29: [implicit; multiline, 4 parts]
+                            '\n Warning: config.py - IdleConf.GetCoreKeys -\n'
+                            ' problem retrieving key binding for event %r\n'
+                            ' from key set %r.\n'
+                            ' returning default value: %r' %
+
+Lib/idlelib/idle_test/htest.py:86:12: [implicit; multiline, 4 parts]
+    'msg': "Typing '(' should display a calltip.\n"
+           "Typing ') should hide the calltip.\n"
+           "So should moving cursor out of argument area.\n"
+           "Force-open-calltip does not work here.\n"
+
+Lib/idlelib/idle_test/htest.py:95:12: [implicit; multiline, 4 parts]
+    'msg': "The text is sample Python code.\n"
+           "Ensure components like comments, keywords, builtins,\n"
+           "string, definitions, and break are correctly colored.\n"
+           "The default color scheme is in idlelib/config-highlight.def"
+
+Lib/idlelib/idle_test/htest.py:121:12: [implicit; multiline, 4 parts]
+    'msg': "Enter with <Return> or [OK].  Print valid entry to Shell\n"
+           "Arguments are parsed into a list\n"
+           "Mode is currently restart True or False\n"
+           "Close dialog with valid entry, <Escape>, [Cancel], [X]"
+
+Lib/idlelib/idle_test/htest.py:209:12: [implicit; multiline, 4 parts]
+    'msg': "The following should trigger a print to console or IDLE Shell.\n"
+           "Entering and leaving the text area, key entry, <Control-Key>,\n"
+           "<Alt-Key-a>, <Control-Key-a>, <Alt-Control-Key-a>, \n"
+           "<Control-Button-1>, <Alt-Button-1> and focusing elsewhere."
+
+Lib/idlelib/idle_test/htest.py:234:12: [implicit; multiline, 4 parts]
+    'msg': "Test for correct display of all paths in sys.path.\n"
+           "Toggle nested items out to the lowest level.\n"
+           "Double clicking on an item prints a traceback\n"
+           "for an exception that is ignored."
+
+Lib/idlelib/idle_test/htest.py:274:12: [implicit; multiline, 4 parts]
+    'msg': "You should see a scrollable list of items\n"
+           "Selecting (clicking) or double clicking an item "
+           "prints the name to the console or Idle shell.\n"
+           "Right clicking an item will display a popup."
+
+Lib/idlelib/idle_test/htest.py:346:12: [implicit; multiline, 4 parts]
+    'msg': "Click [Undo] to undo any action.\n"
+           "Click [Redo] to redo any action.\n"
+           "Click [Dump] to dump the current state "
+           "by printing to the console or the IDLE shell.\n"
+
+Lib/idlelib/idle_test/test_codecontext.py:273:45: [implicit; multiline, 4 parts]
+        eq(cc.context.get('1.0', 'end-1c'), 'class C1:\n'
+                                            '    def compare(self):\n'
+                                            '        if a > b:\n'
+                                            '        elif a < b:')
+
+Lib/idlelib/idle_test/test_codecontext.py:287:45: [implicit; multiline, 4 parts]
+        eq(cc.context.get('1.0', 'end-1c'), 'class C1:\n'
+                                            '    def compare(self):\n'
+                                            '        if a > b:\n'
+                                            '        elif a < b:')
+
+Lib/idlelib/idle_test/test_format.py:79:13: [implicit; multiline, 4 parts]
+            "\n"
+            "# Comment block with whitespace line before and after\n"
+            "# Comment line\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:86:13: [implicit; multiline, 4 parts]
+            "\n"
+            "    # Indented comment block with whitespace before and after\n"
+            "    # Comment line\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:105:13: [implicit; multiline, 4 parts]
+            "\n"
+            "# Comment immediately followed by code\n"
+            "x = 42\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:112:13: [implicit; multiline, 4 parts]
+            "\n"
+            "    # Indented comment immediately followed by code\n"
+            "x = 42\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:119:13: [implicit; multiline, 4 parts]
+            "\n"
+            "# Comment immediately followed by indented code\n"
+            "    x = 42\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:127:13: [implicit; multiline, 4 parts]
+            '"""String with no blank lines before\n'
+            'String line\n'
+            '"""\n'
+            '\n')
+
+Lib/idlelib/idle_test/test_format.py:329:1: [implicit; multiline, 4 parts]
+"    The second line's length is way over the max width. It goes on and\n"
+"    on until it is over 100 characters long. Same thing with the third\n"
+"    line. It is also way over the max width, but FormatParagraph will\n"
+"    fix it.\n")
+
+Lib/idlelib/idle_test/test_pyparse.py:109:17: [implicit; multiline, 4 parts]
+        setcode('"""This is a module docstring"""\n'
+                'class C:\n'
+                '    def __init__(self, a, b=True):\n'
+                '        pass\n'
+
+Lib/idlelib/pyshell.py:1150:22: [explicit; multiline, 4 parts]
+            nosub = ("==== No Subprocess ====\n\n" +
+                    "WARNING: Running IDLE without a Subprocess is deprecated\n" +
+                    "and will be removed in a later version. See Help/IDLE Help\n" +
+                    "for details.\n\n")
+
+Lib/test/pickletester.py:808:24: [implicit; multiline, 4 parts]
+            pickle0 = (b"(i__main__\n"
+                       b"X\n"
+                       b"p0\n"
+                       b"(dp1\nb.").replace(b'X', xname)
+
+Lib/test/test_argparse.py:4489:35: [implicit; multiline, 4 parts]
+        (Sig('title', description='\n'
+                                  '    oddly formatted group\n'
+                                  '\n'
+                                  'description'),
+
+Lib/test/test_argparse.py:4494:20: [implicit; multiline, 4 parts]
+              help=' oddly \n'
+                   'formatted    -a  help  \n'
+                   '    again, so long that it should be wrapped over '
+                   'multiple lines')]),
+
+Lib/test/test_argparse.py:5442:21: [implicit; multiline, 4 parts]
+        description='Keep the formatting\n'
+                    '    exactly as it is written\n'
+                    '\n'
+                    'here\n')
+
+Lib/test/test_argparse.py:5491:21: [implicit; multiline, 4 parts]
+        description='Keep the formatting\n'
+                    '    exactly as it is written\n'
+                    '\n'
+                    'here\n')
+
+Lib/test/test_clinic.py:4683:13: [implicit; multiline, 4 parts]
+            "\n"
+            "one\n"
+            "two\n"
+            ""
+
+Lib/test/test_clinic.py:4689:13: [implicit; multiline, 4 parts]
+            "bar\n"
+            "barone\n"
+            "bartwo\n"
+            ""
+
+Lib/test/test_clinic.py:4714:13: [implicit; multiline, 4 parts]
+            "\n"
+            "one\n"
+            "two\n"
+            ""
+
+Lib/test/test_clinic.py:4720:13: [implicit; multiline, 4 parts]
+            "foo\n"
+            "onefoo\n"
+            "twofoo\n"
+            ""
+
+Lib/test/test_cmath.py:353:17: [implicit; multiline, 4 parts]
+                '{}: {}(complex({!r}, {!r}))\n'
+                'Expected: complex({!r}, {!r})\n'
+                'Received: complex({!r}, {!r})\n'
+                'Received value insufficiently close to expected value.'
+
+Lib/test/test_codecencodings_cn.py:69:10: [implicit; multiline, 4 parts]
+         'This sentence is in ASCII.\n'
+         'The next sentence is in GB.'
+         '\u5df1\u6240\u4e0d\u6b32\uff0c\u52ff\u65bd\u65bc\u4eba\u3002'
+         'Bye.\n'),
+
+Lib/test/test_codecencodings_cn.py:74:10: [implicit; multiline, 4 parts]
+        (b'This sentence is in ASCII.\n'
+         b'The next sentence is in GB.~\n'
+         b'~{<:Ky2;S{#,NpJ)l6HK!#~}~\n'
+         b'Bye.\n',
+
+Lib/test/test_codecencodings_cn.py:79:10: [implicit; multiline, 4 parts]
+         'This sentence is in ASCII.\n'
+         'The next sentence is in GB.'
+         '\u5df1\u6240\u4e0d\u6b32\uff0c\u52ff\u65bd\u65bc\u4eba\u3002'
+         'Bye.\n'),
+
+Lib/test/test_compile.py:1959:21: [implicit; multiline, 4 parts]
+        snippet += ("while x != 0:\n"
+                    "  x -= 1\n"
+                    "while x != 0:\n"
+                    "  x +=  1\n"
+
+Lib/test/test_coroutines.py:2462:17: [implicit; multiline, 4 parts]
+        code = ("import asyncio\n"
+                "async def f(): pass\n"
+                "async def t(): asyncio.gather(f())\n"
+                "asyncio.run(t())\n")
+
+Lib/test/test_coroutines.py:2473:17: [implicit; multiline, 4 parts]
+        code = ("import sys\n"
+                "async def f(): pass\n"
+                "sys.corocycle = [f()]\n"
+                "sys.corocycle.append(sys.corocycle)\n")
+
+Lib/test/test_csv.py:1528:13: [implicit; multiline, 4 parts]
+            "a,b:c\n"
+            "d,e\n"
+            "f,g:c\n"
+            "h,i\n"
+
+Lib/test/test_csv.py:1539:13: [implicit; multiline, 4 parts]
+            "a,b\n"
+            "c:d\n"
+            "e,f\n"
+            "g:h\n"
+
+Lib/test/test_csv.py:1551:13: [implicit; multiline, 4 parts]
+            "a:b\n"
+            "c,d\n"
+            "e:f\n"
+            "g,h\n"
+
+Lib/test/test_email/test__header_value_parser.py:3437:13: [implicit; multiline, 4 parts]
+            "attachment;\n"
+            " filename*0*=us-ascii''TEST_TEST_TEST_TEST_TEST_TEST"
+                "_TEST_TEST_TEST_TEST_TEST;\n"
+            " filename*1*=_TEST_TES.txt\n",
+
+Lib/test/test_email/test_headerregistry.py:803:13: [implicit; multiline, 4 parts]
+            "Content-Type: application/x-foo;\n"
+            " name*0*=us-ascii''with%20spaceswith%20spaceswith%20spaceswith"
+                "%20spaceswith;\n"
+            " name*1*=%20spaceswith%20spaceswith%20spaceswith%20spaces\n"
+
+Lib/test/test_gdb/test_misc.py:53:28: [implicit; multiline, 4 parts]
+        self.assertListing('   9    def baz(*args):\n'
+                           ' >10        id(42)\n'
+                           '  11    \n'
+                           '  12    foo(1, 2, 3)\n',
+
+Lib/test/test_gettext.py:956:1: [implicit; multiline, 4 parts]
+b'''
+# Dummy translation for the Python test_gettext.py module.
+# Copyright (C) 2001 Python Software Foundation
+# Barry Warsaw <barry@python.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.0\n"
+"PO-Revision-Date: 2003-04-11 14:32-0400\n"
+"Last-Translator: J. David Ibanez <j-david@noos.fr>\n"
+"Language-Team: XX <python-dev@python.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.1\n"
+"Plural-Forms: nplurals=2; plural=n!=1;\n"
+
+#: test_gettext.py:19 test_gettext.py:25 test_gettext.py:31 test_gettext.py:37
+#: test_gettext.py:51 test_gettext.py:80 test_gettext.py:86 test_gettext.py:92
+#: test_gettext.py:98
+msgid "nudge nudge"
+msgstr "wink wink"
+
+msgctxt "my context"
+msgid "nudge nudge"
+msgstr "wink wink (in \"my context\")"
+
+msgctxt "my other context"
+msgid "nudge nudge"
+msgstr "wink wink (in \"my other context\")"
+
+#: test_gettext.py:16 test_gettext.py:22 test_gettext.py:28 test_gettext.py:34
+#: test_gettext.py:77 test_gettext.py:83 test_gettext.py:89 test_gettext.py:95
+msgid "albatross"
+msgstr ""
+
+#: test_gettext.py:18 test_gettext.py:24 test_gettext.py:30 test_gettext.py:36
+#: test_gettext.py:79 test_gettext.py:85 test_gettext.py:91 test_gettext.py:97
+msgid "Raymond Luxury Yach-t"
+msgstr "Throatwobbler Mangrove"
+
+#: test_gettext.py:17 test_gettext.py:23 test_gettext.py:29 test_gettext.py:35
+#: test_gettext.py:56 test_gettext.py:78 test_gettext.py:84 test_gettext.py:90
+#: test_gettext.py:96
+msgid "mullusk"
+msgstr "bacon"
+
+#: test_gettext.py:40 test_gettext.py:101
+msgid ""
+"This module provides internationalization and localization\n"
+"support for your Python programs by providing an interface to the GNU\n"
+"gettext message catalog library."
+msgstr ""
+"Guvf zbqhyr cebivqrf vagreangvbanyvmngvba naq ybpnyvmngvba\n"
+"fhccbeg sbe lbhe Clguba cebtenzf ol cebivqvat na vagresnpr gb gur TAH\n"
+"trggrkg zrffntr pngnybt yvoenel."
+
+# Manually added, as neither pygettext nor xgettext support plural forms
+# in Python.
+msgid "There is %s file"
+msgid_plural "There are %s files"
+msgstr[0] "Hay %s fichero"
+msgstr[1] "Hay %s ficheros"
+
+# Manually added, as neither pygettext nor xgettext support plural forms
+# and context in Python.
+msgctxt "With context"
+msgid "There is %s file"
+msgid_plural "There are %s files"
+msgstr[0] "Hay %s fichero (context)"
+msgstr[1] "Hay %s ficheros (context)"
+'''
+
+# Here's the second example po file example, used to generate the UMO_DATA
+# containing utf-8 encoded Unicode strings
+
+b'''
+# Dummy translation for the Python test_gettext.py module.
+# Copyright (C) 2001 Python Software Foundation
+# Barry Warsaw <barry@python.org>, 2000.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.0\n"
+"PO-Revision-Date: 2003-04-11 12:42-0400\n"
+"Last-Translator: Barry A. WArsaw <barry@python.org>\n"
+"Language-Team: XX <python-dev@python.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 7bit\n"
+"Generated-By: manually\n"
+
+#: nofile:0
+msgid "ab\xc3\x9e"
+msgstr "\xc2\xa4yz"
+
+#: nofile:1
+msgctxt "mycontext\xc3\x9e"
+msgid "ab\xc3\x9e"
+msgstr "\xc2\xa4yz (context version)"
+'''
+
+# Here's the third example po file, used to generate MMO_DATA
+
+b'''
+msgid ""
+msgstr ""
+"Project-Id-Version: No Project 0.0\n"
+"POT-Creation-Date: Wed Dec 11 07:44:15 2002\n"
+"PO-Revision-Date: 2002-08-14 01:18:58+00:00\n"
+"Last-Translator: John Doe <jdoe@example.com>\n"
+"Jane Foobar <jfoobar@example.com>\n"
+"Language-Team: xx <xx@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: quoted-printable\n"
+"Generated-By: pygettext.py 1.3\n"
+'''
+
+#
+# messages.po, used for bug 17898
+#
+
+b'''
+# test file for http://bugs.python.org/issue17898
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"#-#-#-#-#  messages.po (EdX Studio)  #-#-#-#-#\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+'''
+
+Lib/test/test_htmlparser.py:380:14: [implicit; multiline, 4 parts]
+            ('\n//<![CDATA[\n'
+             'document.write(\'<s\'+\'cript type="text/javascript" '
+             'src="http://www.example.org/r=\'+new '
+             'Date().getTime()+\'"><\\/s\'+\'cript>\');\n//]]>'),
+
+Lib/test/test_htmlparser.py:965:10: [implicit; multiline, 4 parts]
+        ('\n'
+         '    if (a < b && a > b) {\n'
+         '        printf("[<marquee>How?</marquee>]");\n'
+         '    }\n'),
+
+Lib/test/test_httplib.py:419:13: [implicit; multiline, 4 parts]
+            b'HTTP/1.1 200 OK\r\n'
+            b'First: val\r\n'
+            b'Second: val1\r\n'
+            b'Second: val2\r\n'
+
+Lib/test/test_httplib.py:1084:21: [implicit; multiline, 4 parts]
+        expected = (b'GET /foo HTTP/1.1\r\nHost: example.com\r\n'
+                    b'Accept-Encoding: identity\r\n'
+                    b'Transfer-Encoding: chunked\r\n'
+                    b'\r\n')
+
+Lib/test/test_httplib.py:1385:29: [implicit; multiline, 4 parts]
+            + '0' * 65536 + 'a\r\n'
+            'hello world\r\n'
+            '0\r\n'
+            '\r\n'
+
+Lib/test/test_httplib.py:1601:25: [implicit; multiline, 4 parts]
+                        b"HTTP/1.1 200 Ok\r\n"
+                        b"Content-Length: %d\r\n"
+                        b"\r\n"
+                        b"Text" % size)
+
+Lib/test/test_minidom.py:1775:26: [implicit; multiline, 4 parts]
+                         '<?xml version="1.0" ?>\n'
+                         '<root>\n'
+                         '\t<node><![CDATA[</data>]]></node>\n'
+                         '</root>\n')
+
+Lib/test/test_pydoc/test_pydoc.py:614:17: [implicit; multiline, 4 parts]
+        snip = (" |  Built-in subclasses:\n"
+                " |      FloatingPointError\n"
+                " |      OverflowError\n"
+                " |      ZeroDivisionError")
+
+Lib/test/test_pydoc/test_pydoc.py:644:17: [implicit; multiline, 4 parts]
+        snip = (" |  Built-in subclasses:\n"
+                " |      ArithmeticError\n"
+                " |      AssertionError\n"
+                " |      AttributeError")
+
+Lib/test/test_pyrepl/test_pyrepl.py:519:13: [implicit; multiline, 4 parts]
+            "def f():\n"
+            "  pass\n"
+            "  pass\n"
+            "  "
+
+Lib/test/test_pyrepl/test_pyrepl.py:589:13: [implicit; multiline, 4 parts]
+            "def f():\n"
+            "    pass\n"
+            "    pass\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:1862:13: [implicit; multiline, 4 parts]
+            "def f():\n"
+            "  x = y\n"
+            "  \n"
+            "  y = z\n"
+
+Lib/test/test_pyrepl/test_pyrepl.py:1886:13: [implicit; multiline, 4 parts]
+            "def f():\n"
+                "x = y\n"
+                "\n"
+                "y = z\n\n"
+
+Lib/test/test_pyrepl/test_pyrepl.py:2217:21: [implicit; multiline, 4 parts]
+        commands = ("import sys\n"
+                    "sys.excepthook = 1\n"
+                    "1/0\n"
+                    "exit()\n")
+
+Lib/test/test_source_encoding.py:220:16: [implicit; multiline, 4 parts]
+        src = (b'#!/usr/bin/python\n'
+               b'#\n'
+               b'#coding:iso8859-15\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:356:16: [implicit; multiline, 4 parts]
+        src = (b'#first\n'
+               b'#second\n'
+               b'#third\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:365:16: [implicit; multiline, 4 parts]
+        src = (b'\xef\xbb\xbf#first\n'
+               b'#second\n'
+               b'#third\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:375:16: [implicit; multiline, 4 parts]
+        src = (b'#coding: utf-8\n'
+               b'#second\n'
+               b'#third\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:385:16: [implicit; multiline, 4 parts]
+        src = (b'#coding: utf8\n'
+               b'#second\n'
+               b'#third\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:410:16: [implicit; multiline, 4 parts]
+        src = (b'#coding:iso8859-15\x00\n'
+               b'\n'
+               b'\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:417:16: [implicit; multiline, 4 parts]
+        src = (b'#!/usr/bin/python\n'
+               b'#coding:iso8859-15\x00\n'
+               b'\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_statistics.py:281:13: [implicit; multiline, 4 parts]
+            '  %r != %r\n'
+            '  values differ by more than tol=%r and rel=%r\n'
+            '  -> absolute error = %r\n'
+            '  -> relative error = %r'
+
+Lib/test/test_tabnanny.py:50:9: [implicit; multiline, 4 parts]
+        'def my_func():\n'
+        '\t  print("hello world")\n'
+        '\t  if True:\n'
+        '\t\tprint("If called")'
+
+Lib/test/test_tabnanny.py:56:9: [implicit; multiline, 4 parts]
+        'def my_func():\n'
+        '\t\tprint("Hello world")\n'
+        '\t\tif True:\n'
+        '\t        print("If called")'
+
+Lib/test/test_threading.py:791:26: [implicit; multiline, 4 parts]
+                         "current ident True\n"
+                         "main MainThread\n"
+                         "main ident True\n"
+                         "current is main True\n")
+
+Lib/test/test_threading.py:831:26: [implicit; multiline, 4 parts]
+                         "current ident True\n"
+                         "main Thread-1 (func) Thread\n"
+                         "main ident True\n"
+                         "current is main True\n"
+
+Lib/test/test_tkinter/test_text.py:623:13: [implicit; multiline, 4 parts]
+            'This is a test. This is only a test.\n'
+            'Another line.\n'
+            'Yet another line.\n'
+            '64-bit')
+
+Lib/test/test_tkinter/test_text.py:730:13: [implicit; multiline, 4 parts]
+            'Lorem ipsum dolor sit amet,\n'
+            'consectetur adipiscing elit,\n'
+            'sed do eiusmod tempor incididunt\n'
+            'ut labore et dolore magna aliqua.')
+
+Lib/test/test_tokenize.py:91:29: [implicit; multiline, 4 parts]
+        self.check_tokenize("if False:\n"
+                            "    # NL\n"
+                            "    \n"
+                            "    True = False # NEWLINE\n", """\
+
+Lib/test/test_tokenize.py:2082:30: [implicit; multiline, 4 parts]
+        self.check_roundtrip("try: import somemodule\n"
+                             "except ImportError: # comment\n"
+                             "    print('Can not import' # comment2\n)"
+                             "else:   print('Loaded')\n")
+
+Lib/test/test_tokenize.py:2163:30: [implicit; multiline, 4 parts]
+        self.check_roundtrip("x=1+\\\n"
+                             "1\n"
+                             "# This is a comment\\\n"
+                             "# This also\n")
+
+Lib/test/test_trace.py:484:17: [implicit; multiline, 4 parts]
+                "       # coding: iso-8859-15\n"
+                "    1: x = 'spœm'\n"
+                "    1: if []:\n"
+                "           print('unreachable')\n"
+
+Lib/test/test_traceback.py:774:13: [implicit; multiline, 4 parts]
+            '    return compile(code, "?", "exec")\n'
+            '  File "?", line 7\n'
+            '    foo(a, z\n'
+            '           ^'
+
+Lib/test/test_traceback.py:803:13: [implicit; multiline, 4 parts]
+            '    return compile(code, "?", "exec")\n'
+            '  File "?", line 3\n'
+            '    "dummy value"\n'
+            '    ^^^^^^^^^^^^^'
+
+Lib/test/test_traceback.py:828:13: [implicit; multiline, 4 parts]
+            '    2 + 1 /\n'
+            '        ~~^\n'
+            '    0\n'
+            '    ~'
+
+Lib/test/test_traceback.py:986:13: [implicit; multiline, 4 parts]
+            '    a = ("ááá" +\n'
+            '        ~~~~~~~~\n'
+            '        "áá") + b\n'
+            '        ~~~~~~^~~\n'
+
+Lib/test/test_typing.py:7273:17: [implicit; multiline, 4 parts]
+        code = ("class C:\n"
+                "    def foo(self, a: 'C') -> 'D': pass\n"
+                "class D:\n"
+                "    def bar(self, b: 'D') -> C: pass\n"
+
+Lib/test/test_unittest/testmock/testhelpers.py:1165:13: [implicit; multiline, 4 parts]
+            "[call(1, 2),\n"
+            " call.foo(a=3),\n"
+            " call.foo.bar(),\n"
+            " call.foo.bar().baz('fish', cat='dog')]"
+
+Lib/test/test_unittest/testmock/testmock.py:1657:13: [implicit; multiline, 4 parts]
+            'Error processing expected calls.\n'
+            "Errors: [None, TypeError('too many positional arguments')]\n"
+            'Expected: [call(), call(1, 2)]\n'
+            '  Actual: [call(1)]'
+
+Lib/test/test_urllib2.py:1412:21: [implicit; multiline, 4 parts]
+                    b'HTTP/1.1 200 OK\r\n'
+                    b'Content-Length: 3\r\n'
+                    b'\r\n'
+                    b'123'
+
+Lib/test/test_wsgiref.py:126:13: [implicit; multiline, 4 parts]
+            b"GET /p%61th/?query=test HTTP/1.0\n"
+            b"X-Test-Header: Python test \n"
+            b"X-Test-Header: Python test 2\n"
+            b"Content-Length: 0\n\n"
+
+Lib/test/test_wsgiref.py:646:14: [implicit; multiline, 4 parts]
+            ("Status: 200 OK\r\n"
+            "Content-Length: 4\r\n"
+            "\r\n"
+            "http").encode("iso-8859-1"))
+
+Lib/test/test_wsgiref.py:661:13: [implicit; multiline, 4 parts]
+            b'Status: 200 OK\r\n'
+            b'Content-Length: 8\r\n'
+            b'\r\n'
+            b'\xd1\x82\xd0\xb5\xd1\x81\xd1\x82')
+
+Lib/test/test_wsgiref.py:693:14: [implicit; multiline, 4 parts]
+            ("Status: %s\r\n"
+            "Content-Type: text/plain\r\n"
+            "Content-Length: %d\r\n"
+            "\r\n" % (h.error_status,len(h.error_body))).encode('iso-8859-1')
+
+Lib/test/test_xml_etree.py:2158:13: [implicit; multiline, 4 parts]
+            '<document>\n'
+            '  <p>This document has been accessed\n'
+            '  324387 times.</p>\n'
+            '</document>') # C2
+
+Lib/test/test_xml_etree.py:2167:13: [implicit; multiline, 4 parts]
+            '<document>\n'
+            '  <p>This document has been <em>accessed</em>\n'
+            '  324387 times.</p>\n'
+            '</document>') # C2b
+
+Lib/asyncio/tools.py:232:9: [implicit; multiline, 3 parts]
+        "Error: The specified process cannot be attached to due to insufficient permissions.\n"
+        "See the Python documentation for details on required privileges and troubleshooting:\n"
+        "https://docs.python.org/3/howto/remote_debugging.html#permission-requirements\n",
+
+Lib/idlelib/config.py:233:24: [implicit; multiline, 3 parts]
+            warning = ('\n Warning: config.py - IdleConf.GetOption -\n'
+                       ' invalid %r value for configuration option %r\n'
+                       ' from section %r: %r' %
+
+Lib/idlelib/config_key.py:153:18: [implicit; multiline, 3 parts]
+                 "in these samples: <Control-f>, <Shift-F2>, <F12>,\n"
+                 "<Control-space>, <Meta-less>, <Control-Alt-Shift-X>.\n"
+                 "Upper case is used when the Shift modifier is present!\n\n" +
+
+Lib/idlelib/idle_test/htest.py:130:12: [implicit; multiline, 3 parts]
+    'msg': "Double click on items up to the lowest level.\n"
+           "Attributes of the objects and related information "
+           "will be displayed side-by-side at each level."
+
+Lib/idlelib/idle_test/htest.py:139:12: [implicit; multiline, 3 parts]
+    'msg': "Select one of the many options in the 'old option set'.\n"
+           "Click the button to change the option set.\n"
+           "Select one of the many options in the 'new option set'."
+
+Lib/idlelib/idle_test/htest.py:257:12: [implicit; multiline, 3 parts]
+    'msg': "Enter with <Return> or [Ok].  Print valid entry to Shell\n"
+           "Blank line, after stripping, is ignored\n"
+           "Close dialog with valid entry, <Escape>, [Cancel], [X]"
+
+Lib/idlelib/idle_test/htest.py:266:12: [implicit; multiline, 3 parts]
+    'msg': "Click the 'Replace' button.\n"
+           "Test various replace options in the 'Replace dialog'.\n"
+           "Click [Close] or [X] to close the 'Replace Dialog'."
+
+Lib/idlelib/idle_test/htest.py:283:12: [implicit; multiline, 3 parts]
+    'msg': "Click the 'Search' button.\n"
+           "Test various search options in the 'Search dialog'.\n"
+           "Click [Close] or [X] to close the 'Search Dialog'."
+
+Lib/idlelib/idle_test/test_calltip.py:72:15: [implicit; multiline, 3 parts]
+              '(*args, **kwargs)\n'
+              'Create and return a new object.  '
+              'See help(type) for accurate signature.')
+
+Lib/idlelib/idle_test/test_format.py:73:13: [implicit; multiline, 3 parts]
+            "# Comment block with no blank lines before\n"
+            "# Comment line\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:93:13: [implicit; multiline, 3 parts]
+            "\n"
+            "# Single line comment\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:99:13: [implicit; multiline, 3 parts]
+            "\n"
+            "    # Single line comment with leading whitespace\n"
+            "\n")
+
+Lib/idlelib/idle_test/test_format.py:150:13: [implicit; multiline, 3 parts]
+            '\n'
+            '"""Single line string."""\n'
+            '\n')
+
+Lib/idlelib/idle_test/test_format.py:156:13: [implicit; multiline, 3 parts]
+            '\n'
+            '    """Single line string with leading whitespace."""\n'
+            '\n')
+
+Lib/idlelib/idle_test/test_format.py:358:1: [implicit; multiline, 3 parts]
+"# The first line is under the max width.\n"
+"# The second line's length is way over the max width. It goes on and\n"
+"# on until it is over 100 characters long.\n")
+
+Lib/idlelib/idle_test/test_searchengine.py:213:13: [implicit; multiline, 3 parts]
+            'First line\n'
+            'Line with target\n'
+            'Last line\n')
+
+Lib/idlelib/idle_test/test_searchengine.py:281:13: [implicit; multiline, 3 parts]
+            'First line\n'
+            'Line with target\n'
+            'Last line\n')
+
+Lib/idlelib/iomenu.py:138:21: [implicit; multiline, 3 parts]
+                    "The file's encoding is invalid for Python 3.x.\n"
+                    "IDLE will convert it to UTF-8.\n"
+                    "What is the current encoding of the file?",
+
+Lib/idlelib/pyshell.py:826:13: [implicit; multiline, 3 parts]
+            "IDLE's subprocess didn't make connection.\n"
+            "See the 'Startup failure' section of the IDLE doc, online at\n"
+            "https://docs.python.org/3/library/idle.html#startup-failure",
+
+Lib/pdb.py:2082:24: [implicit; multiline, 3 parts]
+            self.error('run/restart command is disabled when pdb is running in inline mode.\n'
+                       'Use the command line interface to enable restarting your program\n'
+                       'e.g. "python -m pdb myscript.py"')
+
+Lib/pdb.py:3758:9: [implicit; multiline, 3 parts]
+        "Error: The specified process cannot be attached to due to insufficient permissions.\n"
+        "See the Python documentation for details on required privileges and troubleshooting:\n"
+        "https://docs.python.org/3.14/howto/remote_debugging.html#permission-requirements\n"
+
+Lib/random.py:263:18: [implicit; multiline, 3 parts]
+            warn("Underlying random() generator does not supply \n"
+                 "enough bits to choose from a population range this large.\n"
+                 "To remove the range limitation, add a getrandbits() method.")
+
+Lib/test/pickletester.py:714:15: [implicit; multiline, 3 parts]
+DATA_UEERR = (b'\x80\x02cexceptions\nUnicodeEncodeError\n'
+              b'q\x00(U\x05asciiq\x01X\x03\x00\x00\x00fooq\x02K\x00K\x01'
+              b'U\x03badq\x03tq\x04Rq\x05.')
+
+Lib/test/pickletester.py:826:24: [implicit; multiline, 3 parts]
+            pickle1 = (b'(c__main__\n'
+                       b'X\n'
+                       b'q\x00oq\x01}q\x02b.').replace(b'X', xname)
+
+Lib/test/pickletester.py:844:24: [implicit; multiline, 3 parts]
+            pickle2 = (b'\x80\x02(c__main__\n'
+                       b'X\n'
+                       b'q\x00oq\x01}q\x02b.').replace(b'X', xname)
+
+Lib/test/support/__init__.py:781:15: [implicit; multiline, 3 parts]
+              'warnings on macOS systems. This behavior is known. Do not\n'
+              'report a bug unless tests are also failing.\n'
+              'See https://github.com/python/cpython/issues/85100')
+
+Lib/test/test_argparse.py:1920:27: [implicit; multiline, 3 parts]
+            ('recursive', b'-a\n'
+                          b'A\n'
+                          b'@hello'),
+
+Lib/test/test_argparse.py:5073:13: [implicit; multiline, 3 parts]
+            'usage: PROG [-h] --nil \n'
+            '            [--a AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+            'AAAAAAAAAAAAAAAAAAAAAAA]\n'
+
+Lib/test/test_argparse.py:5453:35: [implicit; multiline, 3 parts]
+        (Sig('title', description='    This text\n'
+                                  '  should be indented\n'
+                                  '    exactly like it is here\n'),
+
+Lib/test/test_argparse.py:5502:35: [implicit; multiline, 3 parts]
+        (Sig('title', description='    This text\n'
+                                  '  should be indented\n'
+                                  '    exactly like it is here\n'),
+
+Lib/test/test_capi/test_misc.py:171:13: [implicit; multiline, 3 parts]
+            "docstring_with_invalid_signature($module, /, boo)\n"
+            "\n"
+            "This docstring has an invalid signature."
+
+Lib/test/test_clinic.py:4575:13: [implicit; multiline, 3 parts]
+            "one\n"
+            "two\n"
+            "three"
+
+Lib/test/test_clinic.py:4580:13: [implicit; multiline, 3 parts]
+            "    one\n"
+            "    two\n"
+            "    three"
+
+Lib/test/test_clinic.py:4585:13: [implicit; multiline, 3 parts]
+            "        one\n"
+            "        two\n"
+            "        three"
+
+Lib/test/test_cmd.py:230:14: [implicit; multiline, 3 parts]
+            ("(Cmd) test\n"
+             "(Cmd) test2\n"
+             "(Cmd) "))
+
+Lib/test/test_cmd.py:242:14: [implicit; multiline, 3 parts]
+            ("(Cmd) test\n"
+             "(Cmd) test2\n"
+             "(Cmd) *** Unknown syntax: EOF\n"))
+
+Lib/test/test_cmd.py:251:14: [implicit; multiline, 3 parts]
+            ("(Cmd) \n"
+             "(Cmd) \n"
+             "(Cmd) *** Unknown syntax: EOF\n"))
+
+Lib/test/test_codecencodings_cn.py:65:10: [implicit; multiline, 3 parts]
+        (b'This sentence is in ASCII.\n'
+         b'The next sentence is in GB.~{<:Ky2;S{#,~}~\n'
+         b'~{NpJ)l6HK!#~}Bye.\n',
+
+Lib/test/test_configparser.py:722:21: [implicit; multiline, 3 parts]
+                    "[Valueless]\n"
+                    "option-without-value\n"
+                    "\n"
+
+Lib/test/test_configparser.py:1641:13: [implicit; multiline, 3 parts]
+            "Key without value continued with an indented line.\n"
+            "file: '<???>', line: 3\n"
+            "' KEY2 = VAL2\\n'"
+
+Lib/test/test_coroutines.py:2468:17: [implicit; multiline, 3 parts]
+        code = ("import sys\n"
+                "async def f(): pass\n"
+                "sys.coro = f()\n")
+
+Lib/test/test_dis.py:1078:17: [implicit; multiline, 3 parts]
+        code = ("def f():\n"
+                "   try: pass\n"
+                "   finally:pass")
+
+Lib/test/test_docxmlrpc.py:204:45: [implicit; multiline, 3 parts]
+             b'(x: int)</dt>' + docstring + b'</dl>\n'
+             b'<dl><dt><a name="-method_annotation"><strong>'
+             b'method_annotation</strong></a>(x: bytes)</dt></dl>'),
+
+Lib/test/test_email/test__header_value_parser.py:3301:21: [implicit; multiline, 3 parts]
+                    'abc <xyz@example.com>, "Fred Blunt" <sharp@example.com>,\n'
+                    ' "J.P.Cool" <hot@example.com>, "K<>y" <key@example.com>,\n'
+                    ' Firesale <cheap@example.com>, <end@example.com>\n')
+
+Lib/test/test_email/test__header_value_parser.py:3336:14: [implicit; multiline, 3 parts]
+             'A =?utf-8?q?v=C3=A9ry?= long name\n'
+             ' containing =?utf-8?q?a=2C?= comma\n'
+             ' <to@example.com>\n'),
+
+Lib/test/test_email/test_generator.py:452:21: [implicit; multiline, 3 parts]
+        expected = ('Subject: =?utf-8?b?0KPQstC10LTQvtC80LvQtdC90LjQtSDQviDQv9GA0LjQvdGP0YLQuNC4?=\n'
+                    ' =?utf-8?b?INCyINGA0LDQsdC+0YLRgyDQvtCx0YDQsNGJ0LXQvdC40Y8g0LTQu9GPINC/0L4=?=\n'
+                    ' =?utf-8?b?0LTQutC70Y7Rh9C10L3QuNGPINGD0YHQu9GD0LPQuA==?=\n\n').encode('ascii')
+
+Lib/test/test_email/test_generator.py:465:21: [implicit; multiline, 3 parts]
+        expected = ('Subject: A very long long long long long long long long long long long long\n'
+                    ' long long long long long long long long long long long =?utf-8?q?s=C3=BAmm?=\n'
+                    ' =?utf-8?q?=C3=A4ry?=\n\n').encode('ascii')
+
+Lib/test/test_email/test_generator.py:630:13: [implicit; multiline, 3 parts]
+            b'To: j\xc3\xb6rg@example.com,\n'
+            b' "But a long name still works with refold_source" <j\xc3\xb6rg@example.com>\n'
+            b'\n'
+
+Lib/test/test_email/test_headerregistry.py:686:14: [implicit; multiline, 3 parts]
+            ('Content-Type: text/plain;\n'
+             ' name="This is even more %2A%2A%2Afun%2A%2A%2A%20is'
+                ' it.pdf"\n'),
+
+Lib/test/test_email/test_headerregistry.py:1446:25: [implicit; multiline, 3 parts]
+                        'to: me <foo@example.com>,\n'
+                        ' bing: fiz <z@b.com>, zif <f@c.com>;,\n'
+                        ' you <bar@example.com>\n')
+
+Lib/test/test_embed.py:291:26: [implicit; multiline, 3 parts]
+                         "<module 'sp_pkg.sp_submod' (built-in)>\n"
+                         "<module 'sp_pkg.sp_submod' (built-in)>\n"
+                         "Hello from sub-module\n"
+
+Lib/test/test_embed.py:374:13: [implicit; multiline, 3 parts]
+            "sys.warnoptions: ['once', 'module', 'default']\n"
+            "sys._xoptions: {'not_an_option': '1', 'also_not_an_option': '2'}\n"
+            "warnings.filters[:3]: ['default', 'module', 'once']\n"
+
+Lib/test/test_gdb/test_misc.py:64:28: [implicit; multiline, 3 parts]
+        self.assertListing('   1    # Sample script for use by test_gdb\n'
+                           '   2    \n'
+                           '   3    def foo(a, b, c):\n',
+
+Lib/test/test_grammar.py:321:34: [implicit; multiline, 3 parts]
+        check_syntax_error(self, "def f():\n"
+                                 "    x: int\n"
+                                 "    global x\n")
+
+Lib/test/test_grammar.py:324:34: [implicit; multiline, 3 parts]
+        check_syntax_error(self, "def f():\n"
+                                 "    global x\n"
+                                 "    x: int\n")
+
+Lib/test/test_grammar.py:327:34: [implicit; multiline, 3 parts]
+        check_syntax_error(self, "def f():\n"
+                                 "    x: int\n"
+                                 "    nonlocal x\n")
+
+Lib/test/test_grammar.py:330:34: [implicit; multiline, 3 parts]
+        check_syntax_error(self, "def f():\n"
+                                 "    nonlocal x\n"
+                                 "    x: int\n")
+
+Lib/test/test_httplib.py:315:13: [implicit; multiline, 3 parts]
+            b'HTTP/1.1 200 OK\r\n'
+            b"!#$%&'*+-.^_`|~: value\r\n"  # Special token characters
+            b'VCHAR: ' + bytes(range(0x21, 0x7E + 1)) + b'\r\n'
+
+Lib/test/test_httplib.py:1050:13: [implicit; multiline, 3 parts]
+            'HTTP/1.1 200 OK\r\n'
+            'Content-Length: 14432\r\n'
+            '\r\n',
+
+Lib/test/test_httplib.py:1063:13: [implicit; multiline, 3 parts]
+            'HTTP/1.1 200 OK\r\n'
+            'Content-Length: 14432\r\n'
+            '\r\n',
+
+Lib/test/test_httplib.py:1132:20: [implicit; multiline, 3 parts]
+        expected = b'GET /foo HTTP/1.1\r\nHost: example.com\r\n' \
+                   b'Accept-Encoding: identity\r\nContent-Length: 11\r\n' \
+                   b'\r\nonetwothree'
+
+Lib/test/test_httplib.py:1340:13: [implicit; multiline, 3 parts]
+            "HTTP/1.0 401 Authorization Required\r\n"
+            "Content-type: text/html\r\n"
+            "WWW-Authenticate: Basic realm=\"example\"\r\n",
+
+Lib/test/test_httplib.py:1568:25: [implicit; multiline, 3 parts]
+                        b"HTTP/1.1 200 Ok\r\n"
+                        b"Content-Length: %d\r\n"
+                        b"\r\n" % size)
+
+Lib/test/test_httplib.py:2414:13: [implicit; multiline, 3 parts]
+            'HTTP/1.1 200 OK\r\n\r\n' # Reply to CONNECT
+            'HTTP/1.1 200 OK\r\n' # Reply to HEAD
+            'Content-Length: 42\r\n\r\n'
+
+Lib/test/test_httpservers.py:1107:13: [implicit; multiline, 3 parts]
+            b'GET /spaced out HTTP/1.1\r\n'
+            b'Host: dummy\r\n'
+            b'\r\n'
+
+Lib/test/test_iter.py:738:21: [explicit; multiline, 3 parts]
+            f.write("a\n" + "b\n" + "c\n")
+
+Lib/test/test_optparse.py:546:29: [implicit; multiline, 3 parts]
+                            "Options:\n"
+                            "  --version   show program's version number and exit\n"
+                            "  -h, --help  show this help message and exit\n")
+
+Lib/test/test_os/test_os.py:3543:22: [implicit; multiline, 3 parts]
+            fp.write('import sys, os\n'
+                     'if os.getenv("FRUIT") != "orange=lemon":\n'
+                     '    raise AssertionError')
+
+Lib/test/test_plistlib.py:514:13: [implicit; multiline, 3 parts]
+            b'<?xml version="1.0" encoding="UTF-8"?>\n'
+            b'<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n'
+            b'<plist version="1.0">\n')
+
+Lib/test/test_pyrepl/test_pyrepl.py:399:13: [implicit; multiline, 3 parts]
+            "for _ in _:\n"
+            "  hello\n"
+            "  h\n"
+
+Lib/test/test_pyrepl/test_pyrepl.py:429:13: [implicit; multiline, 3 parts]
+            "def foo():\n"
+            "  x = '可口可乐; 可口可樂'\n"
+            "  y = 'abckdfjskldfjslkdjf'"
+
+Lib/test/test_pyrepl/test_pyrepl.py:492:13: [implicit; multiline, 3 parts]
+            "def f():\n"
+            "    pass\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:550:13: [implicit; multiline, 3 parts]
+            "def g():\n"
+            "  pass\n"
+            "  "
+
+Lib/test/test_pyrepl/test_pyrepl.py:608:13: [implicit; multiline, 3 parts]
+            "def f():  # foo\n"
+            "    pass\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:626:13: [implicit; multiline, 3 parts]
+            "def f():  ## foo\n"
+            "    pass\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:1893:13: [implicit; multiline, 3 parts]
+            "def f():\n"
+            "    x = y\n"
+            "    "
+
+Lib/test/test_pyrepl/test_pyrepl.py:2178:21: [implicit; multiline, 3 parts]
+        commands = ("import sys\n"
+                    "print('_pyrepl' in sys.modules)\n"
+                    "exit()\n")
+
+Lib/test/test_pyrepl/test_pyrepl.py:2312:21: [implicit; multiline, 3 parts]
+        commands = ("import runpy\n"
+                    "runpy._run_module_code('blech', {0: '', 'bluch': ''}, '')\n"
+                    "exit()\n")
+
+Lib/test/test_signal.py:171:18: [implicit; multiline, 3 parts]
+                 "import os, signal, time\n"
+                 "os.kill(os.getpid(), signal.SIGINT)\n"
+                 "for _ in range(999): time.sleep(0.01)"],
+
+Lib/test/test_source_encoding.py:207:16: [implicit; multiline, 3 parts]
+        src = (b'#!/usr/bin/python\n'
+               b'#coding:iso8859-15\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:213:16: [implicit; multiline, 3 parts]
+        src = (b'\n'
+               b'#coding:iso8859-15\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:228:16: [implicit; multiline, 3 parts]
+        src = (b'#coding:iso8859-15\n'
+               b'#coding:latin1\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:239:16: [implicit; multiline, 3 parts]
+        src = (b'#coding:utf-8\n'
+               b'#coding:latin1\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:283:16: [implicit; multiline, 3 parts]
+        src = (b'#!/usr/bin/python\n'
+               b'#coding:iso-8859-15 \xa4\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:294:16: [implicit; multiline, 3 parts]
+        src = (b'#!/usr/bin/python\n'
+               b'#coding:ascii \xc3\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:304:16: [implicit; multiline, 3 parts]
+        src = (b'\xef\xbb\xbf#\xc3\xa4\n'
+               b'#\xc3\xa4\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:322:16: [implicit; multiline, 3 parts]
+        src = (b'\xef\xbb\xbf#first\n'
+               b'#coding:iso-8859-15\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:330:16: [implicit; multiline, 3 parts]
+        src = (b'#!/home/\xa4/bin/python\n'
+               b'#coding:iso-8859-15\n'
+               b'print(ascii("\xc3\xa4"))\n')
+
+Lib/test/test_source_encoding.py:336:16: [implicit; multiline, 3 parts]
+        src = (b'#!/home/\xc3\xa4/bin/python\n'
+               b'#coding:ascii\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_source_encoding.py:348:16: [implicit; multiline, 3 parts]
+        src = (b'#first\n'
+               b'#second\xa4\n'
+               b'raise RuntimeError\n')
+
+Lib/test/test_ssl.py:5782:21: [implicit; multiline, 3 parts]
+                    b"HTTP/1.0 307 Temporary Redirect\r\n"
+                    b"Location: https://example.com/someone-elses-server\r\n"
+                    b"\r\n")
+
+Lib/test/test_subprocess.py:708:31: [implicit; multiline, 3 parts]
+                              'import sys\n'
+                              'for i in range(10240):'
+                              'sys.stderr.write("x" * 1024)'],
+
+Lib/test/test_sys.py:1041:26: [implicit; multiline, 3 parts]
+                         'stdin: surrogateescape\n'
+                         'stdout: surrogateescape\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_sys.py:1048:26: [implicit; multiline, 3 parts]
+                         'stdin: ignore\n'
+                         'stdout: ignore\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_sys.py:1055:26: [implicit; multiline, 3 parts]
+                         'stdin: strict\n'
+                         'stdout: strict\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_sys.py:1060:26: [implicit; multiline, 3 parts]
+                         'stdin: strict\n'
+                         'stdout: strict\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_sys.py:1067:26: [implicit; multiline, 3 parts]
+                         'stdin: surrogateescape\n'
+                         'stdout: surrogateescape\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_sys.py:1072:26: [implicit; multiline, 3 parts]
+                         'stdin: surrogateescape\n'
+                         'stdout: surrogateescape\n'
+                         'stderr: backslashreplace\n')
+
+Lib/test/test_tokenize.py:853:29: [implicit; multiline, 3 parts]
+        self.check_tokenize("def f():\n"
+                            "\tif x\n"
+                            "        \tpass", """\
+
+Lib/test/test_tokenize.py:2071:30: [implicit; multiline, 3 parts]
+        self.check_roundtrip("if (x # The comments need to go in the right place\n"
+                             "    == 1):\n"
+                             "    print('x==1')\n")
+
+Lib/test/test_tools/i18n_data/escapes.py:8:3: [implicit; multiline, 3 parts]
+_('\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n'
+  '\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15'
+  '\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f')
+
+Lib/test/test_tools/test_i18n.py:448:13: [implicit; multiline, 3 parts]
+            "*** test.py:1: Expected a string constant for argument 1, got 1 + 2\n"
+            "*** test.py:2: Expected at least 2 positional argument(s) in gettext call, got 1\n"
+            "*** test.py:3: Variable positional arguments are not allowed in gettext calls\n"
+
+Lib/test/test_traceback.py:1224:13: [implicit; multiline, 3 parts]
+            '    x += (\n'
+            '    ...<2 lines>...\n'
+            '    )\n'
+
+Lib/test/test_traceback.py:2083:13: [implicit; multiline, 3 parts]
+            '    return g(count-1) + 1\n'
+            '           ~^^^^^^^^^\n'
+            '  [Previous line repeated 7 more times]\n'
+
+Lib/test/test_traceback.py:2183:13: [implicit; multiline, 3 parts]
+            '    return g(count-1) + 1\n'
+            '           ~^^^^^^^^^\n'
+            '  [Previous line repeated 1 more time]\n'
+
+Lib/test/test_unittest/test_result.py:559:34: [implicit; multiline, 3 parts]
+                '(' + __name__ + '.Test_TextTestResult.testGetDescriptionWithMultiLineDocstring)\n'
+                'Tests getDescription() for a method with a longer '
+                'docstring.'))
+
+Lib/test/test_unittest/testmock/testasync.py:1099:31: [implicit; multiline, 3 parts]
+                    re.escape('Awaits not found.\n'
+                              'Expected: [call()]\n'
+                              'Actual: [call(1)]'))) as cm:
+
+Lib/test/test_unittest/testmock/testmock.py:1638:13: [implicit; multiline, 3 parts]
+            'Calls not found.\n'
+            'Expected: [call()]\n'
+            '  Actual: [call(1)]'
+
+Lib/test/test_unittest/testmock/testmock.py:1648:13: [implicit; multiline, 3 parts]
+            'Calls not found.\n'
+            'Expected: [call()]\n'
+            '  Actual: []'
+
+Lib/test/test_urllib.py:542:13: [implicit; multiline, 3 parts]
+            "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAIAAAB7\n"
+            "QOjdAAAAAXNSR0IArs4c6QAAAA9JREFUCNdj%0AYGBg%2BP//PwAGAQL%2BCm8 "
+            "vHgAAAABJRU5ErkJggg%3D%3D%0A%20")
+
+Lib/test/test_venv.py:740:21: [implicit; multiline, 3 parts]
+                    'python -c \'import sys; print(sys.executable)\'\n'
+                    'python -c \'import os; print(os.environ["VIRTUAL_ENV"])\'\n'
+                    'deactivate\n')
+
+Lib/test/test_venv.py:768:21: [implicit; multiline, 3 parts]
+                    'python -c \'import sys; print(sys.executable)\'\n'
+                    'python -c \'import os; print(os.environ["VIRTUAL_ENV"])\'\n'
+                    'deactivate\n')
+
+Lib/test/test_venv.py:865:21: [implicit; multiline, 3 parts]
+            f.write('@echo off\n'
+                    'set "PROMPT=base$G"\n'
+                    'set "VIRTUAL_ENV_DISABLE_PROMPT=1"\n'
+
+Lib/test/test_venv.py:889:21: [implicit; multiline, 3 parts]
+            f.write('@echo off\n'
+                    'set "PROMPT=base) $G"\n'
+                    'set "VIRTUAL_ENV_DISABLE_PROMPT="\n'
+
+Lib/test/test_venv.py:893:21: [implicit; multiline, 3 parts]
+                    'echo ACTIVE_PROMPT:%PROMPT%\n'
+                    'call deactivate\n'
+                    'echo FINAL_PROMPT:%PROMPT%\n')
+
+Lib/test/test_wsgiref.py:112:45: [implicit; multiline, 3 parts]
+            "Server: WSGIServer " + pyver + "\r\n"
+            "Content-Type: text/plain\r\n"
+            "Date: Mon, 05 Jun 2006 18:49:54 GMT\r\n" +
+
+Lib/test/test_wsgiref.py:502:13: [implicit; multiline, 3 parts]
+            'foo: bar; baz="spam"\r\n'
+            'Foo: bar; cheese\r\n'
+            '\r\n'
+
+Lib/test/test_wsgiref.py:654:14: [implicit; multiline, 3 parts]
+            ("Status: 200 OK\r\n"
+            "\r\n"
+            "http").encode("iso-8859-1"))
+
+Lib/test/test_wsgiref.py:669:13: [implicit; multiline, 3 parts]
+            b'Status: 200 OK\r\n'
+            b'Content-Length: 12345\r\n'
+            b'\r\n')
+
+Lib/test/test_wsgiref.py:685:14: [implicit; multiline, 3 parts]
+            ("Status: 200 OK\r\n"
+            "Content-Length: 0\r\n"
+            "\r\n").encode("iso-8859-1"))
+
+Lib/test/test_xml_etree.py:1503:13: [implicit; multiline, 3 parts]
+            b"<?xml version='1.0' encoding='iso-8859-1'?>\n"
+            b"<body xmlns='http://&#233;ffbot.org/ns'\n"
+            b"      xmlns:cl\xe9='http://effbot.org/ns'>text</body>\n")
 
 Lib/test/test_xmlrpc.py:993:23: [implicit; multiline, 3 parts]
-  conn.send('POST /RPC2 HTTP/1.0\r\n'
-                        'Content-Length: 100\r\n\r\n'
-                        'bye HTTP/1.1\r\n'
+            conn.send('POST /RPC2 HTTP/1.0\r\n'
+                      'Content-Length: 100\r\n\r\n'
+                      'bye HTTP/1.1\r\n'
 

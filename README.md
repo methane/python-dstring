@@ -7,8 +7,8 @@ This repository is for verifying the impact of using [PEP 822 d-string](https://
 
 ### Replace dedent() with dstring
 
-`/dstringify.py` is a script that replaces `dedent("""...""")` with `d"""..."""`.
-The result of running dstringify.py on `Python/Lib` is in `/dstringify.patch`.
+[`dstringify.py`](./dstringify.py) is a script that replaces `dedent("""...""")` with `d"""..."""`.
+The result of running dstringify.py on `Python/Lib` is in [`dstringify.patch`](./dstringify.patch).
 
 The goals of this attempt is to verify the problem caused by the specification of d-string that strips the leading newline.
 Therefore, it does not add an empty line at the beginning when replacing.
@@ -45,16 +45,16 @@ def _captured_script(script):
 
 This code indents the argument script and embeds it in the f-string. However, the first line of `indented` is not indented, and the second line and subsequent lines are indented with 16-space.
 
-The f-string in `wrapped` indents `{indented}` with 8-space. If the script is written with `dedent("""...""")`, the first line has an empty line, so it is not a problem. However, if d-string is used, the first line is indented with 8-space, and the second line and subsequent lines are indented with 16-space, so the indentation is incorrect and the test fails.
+The f-string in `wrapped` indents `{indented}` with 8-space. If the `script` is written with `dedent("""...""")`, the first line has an empty line, so it is not a problem. However, when using d-string for `script` in `test__interpreters.py` and `test__interpchannels.py`, the indentation is incorrect and the test fails.
 
-This behavior is not a technical debt, but a technical debt because it is a technical debt that happens to work by chance. When someone adds a test, if they use `dedent("""...""")`, they will unintentionally encounter an indentation error.
+This technical debt is caused by the fact that `dedent("""...""")` includes an empty line at the beginning. And this is an example of why it is is beneficial for code maintainability that d-string removes the leading newline.
 
-When embedding an indented string in an f-string, it should be done as follows.
+This function should be rewritten as follows.
 
 ```python
 def _captured_script(script):
     r, w = os.pipe()
-    indented = textwrap.indent(script, '                ')
+    indented = textwrap.indent(script, '        ')
     wrapped = fd"""
         import contextlib
         with open({w}, 'w', encoding="utf-8") as spipe:
@@ -64,7 +64,8 @@ def _captured_script(script):
     return wrapped, open(r, encoding="utf-8")
 ```
 
-The same problem exists in `test_gc.py`.
+The similar problem exists in `test_gc.py`. The first line of `code` is indented twice.
+Rewriting `code` with d-string breaks the test because the first line is not empty.
 
 ```python
 # test_gc.py
@@ -100,8 +101,13 @@ To fix this problem, an explicit empty line needs to be added at the beginning o
 
 ### Multiline strings without dedent()
 
-To confirm the usefulness of d-string, it is also important to see cases where dedent() is not used. `/find_multilines.py` is a script that finds multiline strings without dedent().
-`/multiline_literal.txt` is list of multiline string literals without dedent(). `/multiline_concat.txt` is list of concatinated string lines. (e.g. `"foo\n" + "bar\n"`)
+To confirm the usefulness of d-string, it is also important to see cases where dedent() is not used. [`find_multilines.py`](./find_multilines.py) is a script that finds multiline strings without dedent().
+[`/multiline_literal.txt`](./multiline_literal.txt) is list of multiline string literals without dedent().
+[`/multiline_concat.txt`](./multiline_concat.txt) is list of concatinated string lines. (e.g. `"foo\n" + "bar\n"`)
+
+> [!NOTE]
+> Some multiline literals are not directly passed to `dedent()`, but are passed to `dedent()` later.
+> `/multiline_literal.txt` contains such cases.
 
 Of course, in most cases, `dedent()` can be used. The reason why the code writer did not use `dedent()` is only guesswork.
 Maybe they didn't want to import it, or maybe they thought it was better to have fewer calls and parentheses.

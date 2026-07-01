@@ -16,7 +16,8 @@ embedded newline):
 
 **Literal** — triple-quoted string literals (including ``f``/``t``/``b``/``r`` prefixes
 and combinations) spanning at least three source lines that could be prefixed with
-``d`` (not already a d-string; docstrings excluded; closing quotes must be indented).
+``d`` (not already a d-string; docstrings excluded; not already passed to
+``textwrap.dedent()`` / ``dedent()``; closing quotes must be indented).
 
 Usage::
 
@@ -69,8 +70,7 @@ class Hit:
                 flags.append("multiline")
             flags.append(f"{self.parts} parts")
         flag_s = ", ".join(flags)
-        return (f"{display}:{self.lineno}:{self.col_offset + 1}: [{self.kind}; {flag_s}]\n" +
-                f"{' '*self.col_offset}{self.snippet}")
+        return f"{display}:{self.lineno}:{self.col_offset + 1}: [{self.kind}; {flag_s}]\n{self.snippet}"
 
 
 def _string_value(node: ast.AST) -> str | None:
@@ -134,14 +134,23 @@ def _flatten_add(node: ast.AST) -> list[ast.AST]:
     return [node]
 
 
-def _snippet(source: str, node: ast.AST, *, max_lines: int = 4) -> str:
+def _snippet(source: str, node: ast.AST, *, max_lines: int = 20) -> str:
+    lineno = getattr(node, "lineno", None)
+    end_lineno = getattr(node, "end_lineno", None)
+    if lineno is not None:
+        all_lines = source.splitlines()
+        end = end_lineno if end_lineno is not None else lineno
+        snippet_lines = all_lines[lineno - 1 : end]
+        if len(snippet_lines) > max_lines:
+            snippet_lines = snippet_lines[:max_lines] + ["..."]
+        return "\n".join(line.rstrip() for line in snippet_lines)
     segment = ast.get_source_segment(source, node)
     if not segment:
         return "<source unavailable>"
     lines = segment.splitlines()
     if len(lines) > max_lines:
         lines = lines[:max_lines] + ["..."]
-    return "\n  ".join(line.rstrip() for line in lines)
+    return "\n".join(line.rstrip() for line in lines)
 
 
 def _parent_map(tree: ast.AST) -> dict[int, ast.AST]:
@@ -234,6 +243,43 @@ def _is_docstring_node(node: ast.AST, parents: dict[int, ast.AST]) -> bool:
 def _is_inner_literal_part(node: ast.AST, parents: dict[int, ast.AST]) -> bool:
     parent = parents.get(id(node))
     return isinstance(parent, (ast.JoinedStr, ast.TemplateStr, ast.Interpolation))
+
+
+def _is_dedent_call(node: ast.Call) -> bool:
+    func = node.func
+    if (
+        isinstance(func, ast.Attribute)
+        and func.attr == "dedent"
+        and isinstance(func.value, ast.Name)
+        and func.value.id == "textwrap"
+    ):
+        return True
+    return isinstance(func, ast.Name) and func.id == "dedent"
+
+
+def _contains_node(root: ast.AST, target: ast.AST) -> bool:
+    if root is target:
+        return True
+    for child in ast.iter_child_nodes(root):
+        if _contains_node(child, target):
+            return True
+    return False
+
+
+def _is_inside_dedent(node: ast.AST, parents: dict[int, ast.AST]) -> bool:
+    """True when *node* is (part of) the first argument to ``dedent()``."""
+    current: ast.AST | None = node
+    while current is not None:
+        parent = parents.get(id(current))
+        if parent is None:
+            break
+        if isinstance(parent, ast.Call) and _is_dedent_call(parent):
+            if not parent.args:
+                return False
+            arg = parent.args[0]
+            return arg is current or _contains_node(arg, current)
+        current = parent
+    return False
 
 
 def _is_d_string_source(literal_src: str) -> bool:
@@ -347,6 +393,8 @@ class _LiteralFinder(ast.NodeVisitor):
             return
         if _is_docstring_node(node, self.parents):
             return
+        if _is_inside_dedent(node, self.parents):
+            return
         literal_src = ast.get_source_segment(self.source, node)
         if literal_src is None:
             return
@@ -453,9 +501,10 @@ def _find_implicit(path: Path, source: str) -> Iterator[Hit]:
                     continue
                 first, last = group[0], group[-1]
                 snippet_lines = lines[first.start[0] - 1 : last.end[0]]
-                snippet = "".join(snippet_lines).strip()
-                if len(snippet) > 200:
-                    snippet = snippet[:200] + "..."
+                display_lines = [
+                    line.rstrip() for line in snippet_lines
+                ]
+                snippet = "\n".join(display_lines)
                 yield Hit(
                     path=path,
                     lineno=first.start[0],
@@ -463,7 +512,7 @@ def _find_implicit(path: Path, source: str) -> Iterator[Hit]:
                     kind="implicit",
                     parts=len(group),
                     has_multiline=has_multiline,
-                    snippet=snippet.replace("\n", "\n  "),
+                    snippet=snippet,
                     score=len(group) * 30 + (50 if has_multiline else 0),
                 )
         i = j if j > i + 1 else i + 1
@@ -515,7 +564,7 @@ def main(argv: list[str] | None = None) -> int:
         "--min-parts",
         type=int,
         default=3,
-        help="minimum number of concatenated parts (default: 2)",
+        help="minimum number of concatenated parts (default: 3)",
     )
     parser.add_argument(
         "--min-lines",
